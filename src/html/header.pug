@@ -1,1 +1,18 @@
-header Привет!
+- const navItems = ['Каталог', 'О нас', 'Блог', 'Туры']
+- const controls = ['login','cart']
+
+header.header 
+  .container
+    .header__logo 
+      img(src="@img/surf-logo.svg", alt="Наш логотип")
+    nav.header__nav.nav
+      ul.nav__list
+        each navItem in navItems
+          li.nav__item 
+            a.nav__link(href=navItem) #{navItem}
+    ul.header__controls.controls 
+      each control in controls 
+        li.control 
+          a.control__link(href=control)
+            img(src=control, alt=control) 
+
