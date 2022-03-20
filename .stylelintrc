@@ -1,0 +1,6 @@
+{
+  "extends": "stylelint-config-htmlacademy",
+  "rules": {
+    "declaration-block-no-redundant-longhand-properties": null
+  }
+}
