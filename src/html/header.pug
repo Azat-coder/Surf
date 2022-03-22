@@ -13,6 +13,6 @@ header.header
     ul.header__controls.controls 
       each control in controls 
         li.control 
-          a.control__link(href=control)
-            img(src=control, alt=control) 
+          a.control__link(href=`/${control}`)
+            img(src=`img/${control}.svg`, alt=`${control} button`) 
 
