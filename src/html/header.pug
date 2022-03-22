@@ -3,8 +3,9 @@
 
 header.header 
   .container
-    .header__logo 
-      img(src="@img/surf-logo.svg", alt="Наш логотип")
+    .header__logo.logo 
+      img.logo__image(src="@img/surf-logo.svg", alt="Наш логотип")
+      p.logo__text Surf
     nav.header__nav.nav
       ul.nav__list
         each navItem in navItems

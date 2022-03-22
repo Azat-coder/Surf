@@ -1,30 +1,25 @@
-//- - const wetsuits = [
-//-   {
-//-     title: "Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit",
-//-     image: 'wetsuit_1',
-//-     price: '27 398 руб'
-//-   },
-//-   {
-//-     title: "Гидрокостюм BILLABONG 3 Furnace Absolute GBS",
-//-     image: 'wetsuit_2',
-//-     price: '45 205 руб'
-//-   },
-//-   {
-//-     title: "Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS",
-//-     image: 'wetsuit_3',
-//-     price: '15 790 руб'
-//-   },
-//-   {
-//-     title: "Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit",
-//-     image: 'wetsuit_4',
-//-     price: '19 865 руб'
-//-   }
-//- ]
-
 section.popular-goods
-  h2.popular-goods__title Популярные товары
-    .popular-goods__tab 
-      ul.popular-goods__goods-list
-        //- each good in wetsuits
-        //-   li.popular-goods__goods-item 
-        //-     img(src=`img/${good.image}`, alt=`${good.title}`)
+  .container
+    h2.popular-goods__title Популярные товары
+      .popular-goods__tab 
+        ul.popular-goods__goods-list
+          li.popular-goods__goods-item.goods-item 
+            img(src=`@img/goods/wetsuit_1.png`, alt=`Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit`)
+            h4.goods-item__title Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit
+            p.goods-item__price 27 398 руб
+            button.goods-item__btn.button
+          li.popular-goods__goods-item.goods-item 
+            img(src=`@img/goods/wetsuit_2.png`, alt=`Гидрокостюм BILLABONG 3 Furnace Absolute GBS`)
+            h4.goods-item__title Гидрокостюм BILLABONG 3 Furnace Absolute GBS
+            p.goods-item__price 45 205 руб
+            button.goods-item__btn.button 
+          li.popular-goods__goods-item.goods-item 
+            img(src=`@img/goods/wetsuit_3.png`, alt=`Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS`)
+            h4.goods-item__title Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS
+            p.goods-item__price 15 790 руб
+            button.goods-item__btn.button 
+          li.popular-goods__goods-item.goods-item 
+            img(src=`@img/goods/wetsuit_4.png`, alt=`Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit`)
+            h4.goods-item__title Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit
+            p.goods-item__price 19 865 руб
+            button.goods-item__btn.button 

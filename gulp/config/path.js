@@ -19,7 +19,7 @@ export const path = {
         html: `${srcFolder}/*.pug`, // Не забыть переключить на .html, если не используется pug
         scss: `${srcFolder}/scss/style.scss`,
         js: `${srcFolder}/js/main.js`,
-        images: `${srcFolder}/img/**/*.{jpg, jpeg, png, gif, webp}`,
+        images: `${srcFolder}/img/**/*.+(jpg|jpeg|png|gif|webp)`,
         svg: `${srcFolder}/img/**/*.svg`,
         svgicons: `${srcFolder}/svgicons/*.svg`
     },
@@ -28,7 +28,7 @@ export const path = {
         html: `${srcFolder}/**/*.pug`, // Не забыть переключить на .html, если не используется pug
         scss: `${srcFolder}/scss/**/*.scss`,
         js: `${srcFolder}/js/**/*.js`,
-        images: `${srcFolder}/img/**/*.{jpg, jpeg, png, gif, ico, webp, svg}`,
+        images: `${srcFolder}/img/**/*.+(jpg|jpeg|png|gif|ico|webp|svg)`,
     },
     clean: buildFolder,
     buildFolder: buildFolder,
