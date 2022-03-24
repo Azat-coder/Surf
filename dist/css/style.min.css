@@ -1,0 +1,31 @@
+.header {
+  background: radial-gradient(97.99% 14110% at 0.63% 100%, #39B1EE 0%, #73D1FC 48.93%, #37BCF5 96.96%);
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+@media screen and (max-width: 1680px) {
+  .container {
+    width: 992px;
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 1092px) {
+  .container {
+    width: 768px;
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 848px) {
+  .container {
+    width: 320px;
+    padding: 0 20px;
+  }
+}

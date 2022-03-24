@@ -1,0 +1,23 @@
+@import 'header.scss';
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+
+  @media screen and (max-width: 1680px) {
+    width: 992px;
+    padding: 0 50px;
+  }
+
+  @media screen and (max-width: 1092px) {
+    width: 768px;
+    padding: 0 40px;
+  }
+
+  @media screen and (max-width: 848px) {
+    width: 320px;
+    padding: 0 20px;
+  }
+}
+
