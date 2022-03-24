@@ -3,9 +3,10 @@
 
 header.header 
   .container
-    .header__logo.logo 
-      img.logo__image(src="@img/surf-logo.svg", alt="Наш логотип")
-      p.logo__text Surf
+    .header__logo.logo
+      picture 
+        source(media="(max-width: 848px)", srcset="@img/surf-logo-small.svg")  
+        img.logo__image(src="@img/surf-logo.svg", alt="Наш логотип")
     nav.header__nav.nav
       ul.nav__list
         each navItem in navItems
