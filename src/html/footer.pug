@@ -4,10 +4,12 @@
 footer.footer
   .container
     .footer__logo 
-      img.footer__logo-image(src="@img/surf-logo.svg", alt="Наш логотип")
-      p.footer__logo-text - Интернет-магазин по продаже спортинвентаря для серфинга и серф-туров с обучением
+      img.footer__logo-image(src="@img/surf-logo-small.svg", alt="Наш логотип")
+      p.footer__logo-text 
         span.footer__logo-title Surf
-      .footer__copyright Let's surf! © 2020
+        span.footer__logo-subtitle  - Интернет-магазин 
+        |  по продаже спортинвентаря для серфинга и серф-туров с обучением  
+      .footer__logo-copyright Let's surf! © 2020
     .footer__nav.nav
       ul.nav__list
         li.nav__item 
@@ -23,38 +25,40 @@ footer.footer
         //- each product in productNavItems
         //-   li.product-nav__item 
         //-     a.product-nav__link(href='') #{product}
-        li.nav__item 
-          a.nav__link(href='') Гидрокостюм
-        li.nav__item 
-          a.nav__link(href='') Доски
-        li.nav__item 
-          a.nav__link(href='') Вейксерф
-        li.nav__item 
-          a.nav__link(href='') Чехлы
-        li.nav__item 
-          a.nav__link(href='') Фины для серфа
-    .footer__contacts 
-      h3.footer__contacts-title Адрес
-      p.footer__contacts-address Россия, Москва, Московский международный деловой центр Москва-Сити, офис 606, 24 этаж 
-      a.footer__contacts-maplink На карте
-      ul.footer__contacts-sociallist
-        li.footer__contacts-sociallink 
-          a(href="") 
-            img(src="@img/social/instagram.svg", alt="Instagram")
-        li.footer__contacts-sociallink 
-          a(href="") 
-            img(src="@img/social/vk.svg", alt="VKontakte")
-        li.footer__contacts-sociallink 
-          a(href="") 
-            img(src="@img/social/telegram.svg", alt="Telegram")
-      ul.footer__contacts-paymentlist
-        li.footer__contacts-paymentlink 
-          a(href="") 
-            img(src="@img/payment/mastercard.svg", alt="Mastercard")
-        li.footer__contacts-paymentlink 
-          a(href="") 
-            img(src="@img/payment/visa.svg", alt="Visa")
-        li.footer__contacts-paymentlink 
-          a(href="") 
-            img(src="@img/payment/mir.svg", alt="Mir")
+        li.product-nav__item 
+          a.product-nav__link(href='') Гидрокостюм
+        li.product-nav__item 
+          a.product-nav__link(href='') Доски
+        li.product-nav__item 
+          a.product-nav__link(href='') Вейксерф
+        li.product-nav__item 
+          a.product-nav__link(href='') Чехлы
+        li.product-nav__item 
+          a.product-nav__link(href='') Фины для серфа
+    .footer__contacts
+      .footer__contacts-top 
+        h3.footer__contacts-title Адрес
+        p.footer__contacts-address Россия, Москва, Московский международный деловой центр Москва-Сити, офис 606, 24 этаж 
+        a.footer__contacts-maplink(href="") На карте
+      .footer__contacts-bottom
+        ul.footer__contacts-sociallist
+          li.footer__contacts-sociallink 
+            a(href="") 
+              img(src="@img/social/instagram.svg", alt="Instagram")
+          li.footer__contacts-sociallink 
+            a(href="") 
+              img(src="@img/social/vk.svg", alt="VKontakte")
+          li.footer__contacts-sociallink 
+            a(href="") 
+              img(src="@img/social/telegram.svg", alt="Telegram")
+        ul.footer__contacts-paymentlist
+          li.footer__contacts-paymentlink 
+            a(href="") 
+              img(src="@img/payment/mastercard.svg", alt="Mastercard")
+          li.footer__contacts-paymentlink 
+            a(href="") 
+              img(src="@img/payment/visa.svg", alt="Visa")
+          li.footer__contacts-paymentlink 
+            a(href="") 
+              img(src="@img/payment/mir.svg", alt="Mir")
             

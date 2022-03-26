@@ -11,11 +11,11 @@
       <div class="container">
         <div class="header__logo logo">
           <picture> 
-            <source media="(max-width: 848px)" srcset="img/surf-logo-small.svg"/><img class="logo__image" src="img/surf-logo.svg" alt="Наш логотип"/>
+            <source media="(max-width: 768px)" srcset="img/surf-logo-small.svg"/><img class="logo__image" src="img/surf-logo.svg" alt="Наш логотип"/>
           </picture>
         </div>
         <nav class="header__nav nav">
-          <ul class="nav__list">
+          <ul class="nav__list nav__list-main">
             <li class="nav__item"> <a class="nav__link" href="Каталог">Каталог</a></li>
             <li class="nav__item"> <a class="nav__link" href="О нас">О нас</a></li>
             <li class="nav__item"> <a class="nav__link" href="Блог">Блог</a></li>
@@ -26,6 +26,7 @@
           <li class="control"> <a class="control__link" href="/login"><img src="img/login.svg" alt="login button"/></a></li>
           <li class="control"> <a class="control__link" href="/cart"><img src="img/cart.svg" alt="cart button"/></a></li>
         </ul>
+        <button class="header__hamburger hamburger"></button>
       </div>
     </header>
     <main>
@@ -113,9 +114,9 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__logo"> <img class="footer__logo-image" src="img/surf-logo.svg" alt="Наш логотип"/>
-          <p class="footer__logo-text">- Интернет-магазин по продаже спортинвентаря для серфинга и серф-туров с обучением<span class="footer__logo-title">Surf</span></p>
-          <div class="footer__copyright">Let's surf! © 2020</div>
+        <div class="footer__logo"> <img class="footer__logo-image" src="img/surf-logo-small.svg" alt="Наш логотип"/>
+          <p class="footer__logo-text"> <span class="footer__logo-title">Surf</span><span class="footer__logo-subtitle"> - Интернет-магазин </span> по продаже спортинвентаря для серфинга и серф-туров с обучением  </p>
+          <div class="footer__logo-copyright">Let's surf! © 2020</div>
         </div>
         <div class="footer__nav nav">
           <ul class="nav__list">
@@ -127,26 +128,30 @@
         </div>
         <div class="footer__product-nav product-nav">
           <ul class="product-nav__list">
-            <li class="nav__item"> <a class="nav__link" href="">Гидрокостюм</a></li>
-            <li class="nav__item"> <a class="nav__link" href="">Доски</a></li>
-            <li class="nav__item"> <a class="nav__link" href="">Вейксерф</a></li>
-            <li class="nav__item"> <a class="nav__link" href="">Чехлы</a></li>
-            <li class="nav__item"> <a class="nav__link" href="">Фины для серфа</a></li>
+            <li class="product-nav__item"> <a class="product-nav__link" href="">Гидрокостюм</a></li>
+            <li class="product-nav__item"> <a class="product-nav__link" href="">Доски</a></li>
+            <li class="product-nav__item"> <a class="product-nav__link" href="">Вейксерф</a></li>
+            <li class="product-nav__item"> <a class="product-nav__link" href="">Чехлы</a></li>
+            <li class="product-nav__item"> <a class="product-nav__link" href="">Фины для серфа</a></li>
           </ul>
         </div>
-        <div class="footer__contacts"> 
-          <h3 class="footer__contacts-title">Адрес</h3>
-          <p class="footer__contacts-address">Россия, Москва, Московский международный деловой центр Москва-Сити, офис 606, 24 этаж </p><a class="footer__contacts-maplink">На карте</a>
-          <ul class="footer__contacts-sociallist">
-            <li class="footer__contacts-sociallink"> <a href=""> <img src="img/social/instagram.svg" alt="Instagram"/></a></li>
-            <li class="footer__contacts-sociallink"> <a href=""> <img src="img/social/vk.svg" alt="VKontakte"/></a></li>
-            <li class="footer__contacts-sociallink"> <a href=""> <img src="img/social/telegram.svg" alt="Telegram"/></a></li>
-          </ul>
-          <ul class="footer__contacts-paymentlist">
-            <li class="footer__contacts-paymentlink"> <a href=""> <img src="img/payment/mastercard.svg" alt="Mastercard"/></a></li>
-            <li class="footer__contacts-paymentlink"> <a href=""> <img src="img/payment/visa.svg" alt="Visa"/></a></li>
-            <li class="footer__contacts-paymentlink"> <a href=""> <img src="img/payment/mir.svg" alt="Mir"/></a></li>
-          </ul>
+        <div class="footer__contacts">
+          <div class="footer__contacts-top"> 
+            <h3 class="footer__contacts-title">Адрес</h3>
+            <p class="footer__contacts-address">Россия, Москва, Московский международный деловой центр Москва-Сити, офис 606, 24 этаж </p><a class="footer__contacts-maplink" href="">На карте</a>
+          </div>
+          <div class="footer__contacts-bottom">
+            <ul class="footer__contacts-sociallist">
+              <li class="footer__contacts-sociallink"> <a href=""> <img src="img/social/instagram.svg" alt="Instagram"/></a></li>
+              <li class="footer__contacts-sociallink"> <a href=""> <img src="img/social/vk.svg" alt="VKontakte"/></a></li>
+              <li class="footer__contacts-sociallink"> <a href=""> <img src="img/social/telegram.svg" alt="Telegram"/></a></li>
+            </ul>
+            <ul class="footer__contacts-paymentlist">
+              <li class="footer__contacts-paymentlink"> <a href=""> <img src="img/payment/mastercard.svg" alt="Mastercard"/></a></li>
+              <li class="footer__contacts-paymentlink"> <a href=""> <img src="img/payment/visa.svg" alt="Visa"/></a></li>
+              <li class="footer__contacts-paymentlink"> <a href=""> <img src="img/payment/mir.svg" alt="Mir"/></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
