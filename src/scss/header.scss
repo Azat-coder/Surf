@@ -115,6 +115,7 @@
       }
       &__list--active {
         transform: translateY(0);
+        transition: transform ease-in 0.4s;
       }
     }
 

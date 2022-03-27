@@ -597,6 +597,7 @@ body {
   }
   .header .nav__list--active {
     transform: translateY(0);
+    transition: transform ease-in 0.4s;
   }
   .header .controls {
     position: relative;
@@ -765,10 +766,12 @@ body {
   color: #000000;
 }
 .popular-goods__category-link--active {
-  border-bottom: 2px #E9D15C solid;
+  position: relative;
+  border-bottom: 3px #E9D15C solid;
 }
 .popular-goods__goods-list {
   display: flex;
+  justify-content: space-between;
 }
 .popular-goods .goods-item {
   display: flex;
@@ -819,6 +822,88 @@ body {
   transition: background-color ease-in-out 0.3s;
 }
 
+@media screen and (max-width: 1440px) {
+  .popular-goods__category-link {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .popular-goods .goods-item__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .popular-goods .goods-item__price {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .popular-goods .goods-item__btn {
+    font-size: 26px;
+    line-height: 33px;
+  }
+  .popular-goods .goods-item:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .popular-goods__tab {
+    padding: 0 20px;
+  }
+  .popular-goods__category-link {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .popular-goods .goods-item__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .popular-goods .goods-item__price {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .popular-goods .goods-item__btn {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .popular-goods .goods-item:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .popular-goods__tab {
+    width: 320px;
+    margin: 0 auto;
+  }
+  .popular-goods__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .popular-goods__category {
+    flex-wrap: wrap;
+  }
+  .popular-goods__category-link {
+    padding: 0 9px;
+  }
+  .popular-goods .goods-item:nth-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .popular-goods__category-link {
+    padding: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .popular-goods__category-link:last-child {
+    padding-left: 18px;
+    margin-right: auto;
+  }
+  .popular-goods .goods-item__title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .popular-goods .goods-item:nth-child(2) {
+    display: none;
+  }
+}
 .footer {
   background-color: #3A3B3D;
 }
