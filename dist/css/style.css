@@ -1013,6 +1013,126 @@ body {
     background-size: auto;
   }
 }
+.blog__inner {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.blog__title {
+  margin-bottom: 30px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.blog__list {
+  display: flex;
+}
+.blog .blog-item {
+  display: flex;
+  width: 600px;
+  padding-right: 30px;
+}
+.blog .blog-item img {
+  width: 240px;
+  height: 180px;
+  margin-right: 20px;
+}
+.blog .blog-item__title {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.blog .blog-item__text {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.blog .blog-item__text--smallscreens {
+  display: none;
+}
+
+@media screen and (max-width: 1440px) {
+  .blog .blog-item {
+    width: 892px;
+  }
+  .blog .blog-item:nth-child(2) {
+    display: none;
+  }
+  .blog .blog-item__title {
+    margin-bottom: 15px;
+  }
+  .blog .blog-item__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .blog .blog-item__text--largescreens {
+    display: none;
+  }
+  .blog .blog-item__text--smallscreens {
+    display: block;
+  }
+}
+@media screen and (max-width: 992px) {
+  .blog__title {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .blog .blog-item {
+    width: 688px;
+  }
+  .blog .blog-item__title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .blog .blog-item__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .blog .blog-item__text--largescreens {
+    display: none;
+  }
+  .blog .blog-item__text--smallscreens {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog .blog-item {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 320px) {
+  .blog__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .blog .blog-item {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+  }
+  .blog .blog-item__title {
+    text-align: center;
+  }
+  .blog .blog-item__text {
+    text-align: center;
+  }
+  .blog .blog-item img {
+    margin: 0;
+  }
+}
 .footer {
   background-color: #3A3B3D;
 }

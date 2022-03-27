@@ -1,12 +1,17 @@
 section.blog
-  .container 
-    h2.blog__title Блог
-    ul.blog__list
-      li.blog__item.blog-item
-        img(src="@img/blog/blog_1.png", alt="alt")
-        h3.blog-item__title Топ вопросов от начинающих серферов
-        p.blog-item__text Собрали все частые вопросы от начинающих серферов. Некоторые из них довольно забавные, но ответ на каждый из них поможет тебе перестать...
-      li.blog__item.blog-item
-        img(src="@img/blog/blog_2.png", alt="alt")
-        h3.blog-item__title Как выжить в городе после серфинга
-        p.blog-item__text Итак, вы вернулись из серф-лагеря, глаза горят, и чувства не врут: теперь вы ― сёрфер. Но вокруг город и волны далеко. Как дальше жить и...
+  .container
+    .blog__inner  
+      h2.blog__title Блог
+      ul.blog__list
+        li.blog__item.blog-item
+          img(src="@img/blog/blog_1.png", alt="alt", width="240")
+          .blog-item__textblock 
+            h3.blog-item__title Топ вопросов от начинающих серферов
+            p.blog-item__text.blog-item__text--largescreens Собрали все частые вопросы от начинающих серферов. Некоторые из них довольно забавные, но ответ на каждый из них поможет тебе перестать...
+            p.blog-item__text.blog-item__text--smallscreens Собрали все частые вопросы от начинающих серферов. Некоторые из них довольно забавные, но ответ на каждый из них поможет тебе перестать мечтать, собраться и поехать серфить на океан.
+        li.blog__item.blog-item
+          img(src="@img/blog/blog_2.png", alt="alt")
+          .blog-item__textblock 
+            h3.blog-item__title Как выжить в городе после серфинга
+            p.blog-item__text.blog-item__text--largescreens Итак, вы вернулись из серф-лагеря, глаза горят, и чувства не врут: теперь вы ― сёрфер. Но вокруг город и волны далеко. Как дальше жить и...
+            p.blog-item__text.blog-item__text--smallscreens Собрали все частые вопросы от начинающих серферов. Некоторые из них довольно забавные, но ответ на каждый из них поможет тебе перестать мечтать, собраться и поехать серфить на океан.
