@@ -94,22 +94,29 @@ body {
 }
 
 .btn {
-  width: 280px;
+  width: 400px;
   height: 60px; 
-  background: $color-primary-main;
-  border-radius: 5px;
-  color: #FFFFFF;
+  background: $color-primary-light;
+  border-radius: 3px;
+  color: $color-text-primary;
   @extend %ss-b;
   border: none;
+  font-size: 36px;
+  line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  transition: all 0.3s ease-in;
 }
 
 .btn:hover,
 .btn:focus {
-  
+  background: $color-primary-main;
+  transition: all 0.3s ease-in;
 }
 
 .btn:active {
-  
+  background: $color-primary-main;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  outline: none;
+  transition: all 0.3s ease-in;
 }

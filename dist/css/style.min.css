@@ -448,14 +448,30 @@ body {
 }
 
 .btn {
-  width: 280px;
+  width: 400px;
   height: 60px;
-  background: #E9D15C;
-  border-radius: 5px;
-  color: #FFFFFF;
+  background: #FFF51F;
+  border-radius: 3px;
+  color: #000000;
   border: none;
+  font-size: 36px;
+  line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #E9D15C;
+  transition: all 0.3s ease-in;
+}
+
+.btn:active {
+  background: #E9D15C;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  outline: none;
+  transition: all 0.3s ease-in;
 }
 
 @font-face {
@@ -479,11 +495,9 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-.header {
+.header .container {
   background: radial-gradient(97.99% 14110% at 0.63% 100%, #39B1EE 0%, #73D1FC 48.93%, #37BCF5 96.96%);
   box-shadow: 0px 2px 2px rgba(57, 177, 238, 0.96);
-}
-.header .container {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -623,6 +637,103 @@ body {
     top: 28px;
     transform: rotate(-45deg);
     box-shadow: none;
+  }
+}
+.greetings {
+  height: 590px;
+  background-image: url("../img/backgrounds/greetings-bg1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.greetings__contentblock {
+  margin-left: auto;
+  padding-top: 120px;
+  width: 484px;
+}
+.greetings__title {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #FFF51F;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1440px) {
+  .greetings {
+    background-image: url("../img/backgrounds/greetings-bg2.png");
+  }
+  .greetings__contentblock {
+    margin-left: 0;
+    margin-right: auto;
+    width: 446px;
+  }
+  .greetings__title {
+    font-size: 44px;
+    line-height: 55px;
+  }
+  .greetings__btn {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .greetings {
+    background-image: url("../img/backgrounds/greetings-bg3.png");
+  }
+  .greetings__contentblock {
+    width: 400px;
+    padding-top: 175px;
+  }
+  .greetings__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .greetings__btn {
+    width: 354px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .greetings {
+    background-size: auto 100%;
+  }
+  .greetings__contentblock {
+    width: auto;
+    max-width: 400px;
+  }
+  .greetings__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .greetings__btn {
+    width: 280px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .greetings {
+    background-image: url("../img/backgrounds/greetings-bg4.png");
+    background-size: contain;
+  }
+  .greetings__contentblock {
+    width: 280px;
+    padding-top: 225px;
+  }
+  .greetings__title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .greetings__btn {
+    width: 280px;
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 .footer {
