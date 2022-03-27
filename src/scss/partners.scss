@@ -1,0 +1,40 @@
+.partners {
+  &__inner {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .partners {
+    &__inner {
+      padding-top: 50px;
+      padding-bottom: 0px;
+      text-align: center;
+
+      img {
+        width: 223px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .partners {
+    &__inner {
+      padding-top: 70px;
+      
+      img {
+        width: 223px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 320px) {
+  
+}

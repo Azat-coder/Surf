@@ -1133,6 +1133,29 @@ body {
     margin: 0;
   }
 }
+.partners__inner {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1440px) {
+  .partners__inner {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  .partners__inner img {
+    width: 223px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .partners__inner {
+    padding-top: 70px;
+  }
+  .partners__inner img {
+    width: 223px;
+  }
+}
 .footer {
   background-color: #3A3B3D;
 }
