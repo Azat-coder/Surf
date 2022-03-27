@@ -1,15 +1,22 @@
 section.tours
-  .container 
-    .tours__header-block 
-      h2.tours__title Туры
-      a.tours__tourslink Подробнее о турах
-    ul.tours__list 
-      li.tours__item.tour-item 
-        h4.tour-item__title Серф-кемп Бали
-        p.tour-item__category Cерфинг и путешествия
-      li.tours__item.tour-item 
-        h4.tour-item__title Серф-тур на Камчатке
-        p.tour-item__category Cерфинг и путешествия
-      li.tours__item.tour-item 
-        h4.tour-item__title Серф-кемп Бали
-        p.tour-item__category Cерфинг и путешествия
+  .container
+    .tours__inner 
+      .tours__header-block 
+        h2.tours__title Туры
+        a.tours__tourslink Подробнее о турах
+      ul.tours__list 
+        li.tours__item.tour-item
+          img(src="@img/tours/bali.png", alt="alt")
+          .tour-item__infoblock 
+            p.tour-item__category Cерфинг и путешествия
+            h4.tour-item__title Серф-кемп Бали
+        li.tours__item.tour-item
+          img(src="@img/tours/kamchatka.png", alt="alt")
+          .tour-item__infoblock  
+            p.tour-item__category Cерфинг и путешествия
+            h4.tour-item__title Серф-тур на Камчатке
+        li.tours__item.tour-item
+          img(src="@img/tours/shri.png", alt="alt")
+          .tour-item__infoblock  
+            p.tour-item__category Cерфинг и путешествия
+            h4.tour-item__title Серф-тур на Шри Ланку

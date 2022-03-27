@@ -1,11 +1,11 @@
 .footer {
-  background-color: $color-bg-footer;
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: $color-bg-secondary;
   }
 
   &__logo {
@@ -240,6 +240,7 @@
 
 @media screen and (max-width: 768px) {
   .footer {
+    background-color: $color-bg-secondary;
     .container {
       width: 320px;
     }
