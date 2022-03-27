@@ -1,0 +1,103 @@
+.promo {
+  height: 400px;
+  background-image: url("../img/backgrounds/promo-bg1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+
+  .container {
+    height: 100%;
+  }
+  
+  &__inner {
+    height: 100%;
+    padding-bottom: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    width: 378px;
+    margin-top: auto;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: $color-primary-main;
+  }
+
+  &__btn {
+    margin-top: auto;
+    background-color: $color-primary-main;
+    &:hover,
+      &:active {
+        background-color: $color-primary-light;
+      }
+      &:focus {
+        background-color: $color-primary-light;
+      }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .promo {
+    background-image: url("../img/backgrounds/promo-bg2.png");
+    &__title {
+      width: 349px;
+      font-size: 44px;
+      line-height: 55px;
+    }
+    &__btn {
+      width: 374px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .promo {
+    background-image: url("../img/backgrounds/promo-bg3.png");
+    &__title {
+      width: 316px;
+      font-size: 40px;
+      line-height: 50px;
+    }
+    &__btn {
+      width: 314px;
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo {
+    background-size: auto 100%;
+    &__inner {
+      flex-wrap: wrap;
+      align-content: flex-end;
+    }
+    &__title {
+      width: 222px;
+      font-size: 28px;
+      line-height: 35px;
+    }
+    &__btn {
+      width: 280px;
+      margin-top: 40px;
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .promo {
+    background-image: url("../img/backgrounds/promo-bg4.png");
+    background-size: auto;
+  }
+}

@@ -78,6 +78,7 @@ body {
   @extend %ss-r;
   font-size: 20px;
   color: $color-text-primary;
+  min-width: 320px;
 }
 
 .visually-hidden {

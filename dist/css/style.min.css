@@ -432,6 +432,7 @@ button {
 body {
   font-size: 20px;
   color: #000000;
+  min-width: 320px;
 }
 
 .visually-hidden {
@@ -648,7 +649,7 @@ body {
   background-size: contain;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.greetings__contentblock {
+.greetings__inner {
   margin-left: auto;
   padding-top: 120px;
   width: 484px;
@@ -668,7 +669,7 @@ body {
   .greetings {
     background-image: url("../img/backgrounds/greetings-bg2.png");
   }
-  .greetings__contentblock {
+  .greetings__inner {
     margin-left: 0;
     margin-right: auto;
     width: 446px;
@@ -686,7 +687,7 @@ body {
   .greetings {
     background-image: url("../img/backgrounds/greetings-bg3.png");
   }
-  .greetings__contentblock {
+  .greetings__inner {
     width: 400px;
     padding-top: 175px;
   }
@@ -704,7 +705,7 @@ body {
   .greetings {
     background-size: auto 100%;
   }
-  .greetings__contentblock {
+  .greetings__inner {
     width: auto;
     max-width: 400px;
   }
@@ -721,9 +722,9 @@ body {
 @media screen and (max-width: 320px) {
   .greetings {
     background-image: url("../img/backgrounds/greetings-bg4.png");
-    background-size: contain;
+    background-size: auto;
   }
-  .greetings__contentblock {
+  .greetings__inner {
     width: 280px;
     padding-top: 225px;
   }
@@ -757,6 +758,7 @@ body {
   margin-bottom: 50px;
 }
 .popular-goods__category-link {
+  margin-bottom: 0px;
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 400;
@@ -768,6 +770,7 @@ body {
 .popular-goods__category-link--active {
   position: relative;
   border-bottom: 3px #E9D15C solid;
+  margin-bottom: -3px;
 }
 .popular-goods__goods-list {
   display: flex;
@@ -781,6 +784,7 @@ body {
   height: 668px;
 }
 .popular-goods .goods-item img {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .popular-goods .goods-item__title {
@@ -851,6 +855,9 @@ body {
     font-size: 18px;
     line-height: 23px;
   }
+  .popular-goods .goods-item {
+    height: auto;
+  }
   .popular-goods .goods-item__title {
     font-size: 20px;
     line-height: 25px;
@@ -882,18 +889,25 @@ body {
   .popular-goods__category-link {
     padding: 0 9px;
   }
+  .popular-goods .goods-item {
+    height: auto;
+  }
   .popular-goods .goods-item:nth-child(2) {
     display: none;
   }
 }
 @media screen and (max-width: 320px) {
+  .popular-goods__tab {
+    width: auto;
+    padding: 0;
+  }
   .popular-goods__category-link {
     padding: 0;
     font-size: 16px;
     line-height: 20px;
   }
   .popular-goods__category-link:last-child {
-    padding-left: 18px;
+    margin-left: 18px;
     margin-right: auto;
   }
   .popular-goods .goods-item__title {
@@ -902,6 +916,101 @@ body {
   }
   .popular-goods .goods-item:nth-child(2) {
     display: none;
+  }
+}
+.promo {
+  height: 400px;
+  background-image: url("../img/backgrounds/promo-bg1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+.promo .container {
+  height: 100%;
+}
+.promo__inner {
+  height: 100%;
+  padding-bottom: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.promo__title {
+  width: 378px;
+  margin-top: auto;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #E9D15C;
+}
+.promo__btn {
+  margin-top: auto;
+  background-color: #E9D15C;
+}
+.promo__btn:hover, .promo__btn:active {
+  background-color: #FFF51F;
+}
+.promo__btn:focus {
+  background-color: #FFF51F;
+}
+
+@media screen and (max-width: 1440px) {
+  .promo {
+    background-image: url("../img/backgrounds/promo-bg2.png");
+  }
+  .promo__title {
+    width: 349px;
+    font-size: 44px;
+    line-height: 55px;
+  }
+  .promo__btn {
+    width: 374px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .promo {
+    background-image: url("../img/backgrounds/promo-bg3.png");
+  }
+  .promo__title {
+    width: 316px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .promo__btn {
+    width: 314px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .promo {
+    background-size: auto 100%;
+  }
+  .promo__inner {
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+  .promo__title {
+    width: 222px;
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .promo__btn {
+    width: 280px;
+    margin-top: 40px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .promo {
+    background-image: url("../img/backgrounds/promo-bg4.png");
+    background-size: auto;
   }
 }
 .footer {
