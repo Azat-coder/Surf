@@ -1,4 +1,16 @@
 import * as funcs from './modules/functions.js';
+import MyString from './string.js';
+
+// Класс для работы со строкой
+const myString = new MyString('Привет');
+console.log('myString.string: ', myString.string);
+console.log('myString.getString(): ', myString.getString());
+myString.setString('Новая строка');
+console.log('myString.string: ', myString.string);
+console.log('myString.getStringLength(): ', myString.getStringLength());
+console.log('myString.toString(): ', myString.toString());
+console.log('+myString: ', +myString, 'Язык JavaScript не поддерживает operator overloading');
+console.log('myString.toNumber(): ', myString.toNumber());
 
 funcs.isWebp();
 
@@ -53,3 +65,27 @@ for (let i = 0; i < categoryBtns.length; i++) {
         tab.classList.remove('visually-hidden');
     });
 }
+
+// Модальное окно заявка
+const modal = document.querySelector('.modal-request');
+const modalBtn = document.querySelector('.btn--request');
+const btnClose = document.querySelector('.modal-request__btn-close');
+const nameInput = document.querySelector('#modal-request__name');
+
+modalBtn.addEventListener('click', () => {
+    modal.classList.add('modal--active');
+    nameInput.focus();
+});
+
+btnClose.addEventListener('click', () => {
+    modal.classList.remove('modal--active');
+});
+
+document.addEventListener("click", (event) => {
+    let target = event.target;
+    if (target.closest('.modal__wrap')) {
+        event.stopPropagation();
+    } else if (target.closest('.modal')) {
+        modal.classList.remove('modal--active');
+    }
+});

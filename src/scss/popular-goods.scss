@@ -27,6 +27,8 @@
     line-height: 30px;
     text-transform: uppercase;
     color: $color-text-primary;
+    border-bottom-color: #ffffff;
+    transition: border-bottom 0.3s ease-in;
     &--active {
       position: relative;
       border-bottom: 3px $color-primary-main solid;
