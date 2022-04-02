@@ -2,23 +2,28 @@
   const goodsCategories = [
     { 
       name: 'Костюмы',
-      link: '/suits'
+      link: '/suits',
+      img: 'category-suit.png'
     }, 
     { 
       name: 'Доски',
-      link: '/suits'
+      link: '/suits',
+      img: 'category-board.png'
     },
     { 
       name: 'Вейксерф',
-      link: '/suits'
+      link: '/suits',
+      img: 'category-wakesurf.png'
     },
     { 
       name: 'Чехлы',
-      link: '/suits'
+      link: '/suits',
+      img: 'category-case.png'
     },
     { 
       name: 'Фины',
-      link: '/suits'
+      link: '/suits',
+      img: 'category-fins.png'
     }
   ]
 
@@ -30,5 +35,6 @@ section.categories
         each cat in goodsCategories
           li.category 
             a.category__link(href=cat.link) #{cat.name}
+              img.category__image(src="", alt="")(src=`@img/categories/${cat.img}`, alt="")
 
       
