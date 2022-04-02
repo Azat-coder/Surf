@@ -73,7 +73,7 @@
       font-size: 36px;
       line-height: 45px;
       text-transform: uppercase;
-      color: #FF0000;
+      color: $color-text-price-primary;
     }
     &__btn {
       width: 280px;
@@ -164,7 +164,7 @@
     &__category {
       flex-wrap: wrap;
     }
-    &__category-link {
+    &__category-item {
       padding: 0 9px;
     }
     .goods-item {
@@ -176,13 +176,23 @@
   }
 }
 
+@media screen and (max-width: 540px) {
+  .popular-goods {
+    &__category-item {
+      &:last-child {
+        margin-right: auto;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 320px) {
   .popular-goods {
     &__tab {
       width: auto;
       padding: 0;
     }
-    &__category-link {
+    &__category-item {
       padding: 0;
       font-size: 16px;
       line-height: 20px;

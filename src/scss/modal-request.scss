@@ -45,6 +45,11 @@
             outline: none;
             margin-bottom: 30px;
             color: #000000;
+
+            &:focus {
+                outline: none;
+                border-bottom-color: $color-primary-main;
+            }
         }
     }
 
@@ -147,12 +152,8 @@
 
         &__btn-close::before,
         &__btn-close::after {
-            top: -475px;
-            left: 2700px;
-            width: 33px;
-            height: 3px;
-            background-color: #000000;
-            cursor: pointer;
+            top: -480px;
+            left: 2710px;
         }
     }
 }
@@ -194,6 +195,12 @@
             width: 400px;
             align-self: center;
         }
+
+        &__btn-close::before,
+        &__btn-close::after {
+            top: -530px;
+            left: 2605px;
+        }
     }
 }
 
@@ -202,7 +209,7 @@
         &__wrapper {
             width: 320px;
             height: 487px;
-            top: 218px;
+            top: 50px;
         }
 
         &__title {
@@ -242,6 +249,12 @@
         &__btn-info {
             width: 280px;
             text-align: center;
+        }
+
+        &__btn-close::before,
+        &__btn-close::after {
+            top: -415px;
+            left: 2278px;
         }
     }
 }

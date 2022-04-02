@@ -4,12 +4,12 @@
         form.modal-request__form(action="", method="POST")
             p.modal-request__name-container 
                 label(for="modal-request__name") Имя
-                input.modal-request__name(id="modal-request__name", type="text", name="name", autocomplete="off", autofocus)
+                input.modal-request__name.modal-focus(id="modal-request__name", type="text", name="name", autocomplete="off", autofocus)
             p.modal-request__tel-container 
                 label(for="modal-request__tel") Телефон
                 input.modal-request__tel(id="modal-request__tel", type="text", name="name", autocomplete="off")
             .modal-request__btn-block 
                 p.modal-request__btn-info *Нажимая кнопку, я даю свое согласие на обработку персональных данных
-                button.btn.modal-request__btn Хочу на серфинг
-        button.modal-request__btn-close
+                button.btn.modal-request__btn(type="submit") Хочу на серфинг
+        button.modal__btn-close.modal-request__btn-close
 
