@@ -2144,6 +2144,63 @@ body {
     left: 2271px;
   }
 }
+.modal-map__wrapper {
+  position: fixed;
+  top: 199px;
+  display: flex;
+  width: 1240px;
+  height: 700px;
+  padding: 20px;
+  padding-top: 60px;
+  background-color: #ffffff;
+}
+.modal-map__btn-close {
+  position: relative;
+  left: -2000px;
+}
+.modal-map__btn-close::before, .modal-map__btn-close::after {
+  content: "";
+  position: absolute;
+  top: -315px;
+  left: 2580px;
+  width: 33px;
+  height: 3px;
+  background-color: #000000;
+  cursor: pointer;
+}
+.modal-map__btn-close::before {
+  transform: rotate(45deg);
+}
+.modal-map__btn-close::after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 1440px) {
+  .modal-map__wrapper {
+    width: 932px;
+  }
+  .modal-map__btn-close::before, .modal-map__btn-close::after {
+    left: 2425px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .modal-map__wrapper {
+    width: 728px;
+  }
+  .modal-map__btn-close::before, .modal-map__btn-close::after {
+    left: 2325px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal-map__wrapper {
+    top: 50px;
+    width: 320px;
+  }
+  .modal-map__btn-close::before, .modal-map__btn-close::after {
+    left: 2120px;
+    top: -325px;
+  }
+}
 .container {
   width: 1440px;
   margin: 0 auto;
