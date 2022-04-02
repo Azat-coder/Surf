@@ -1,0 +1,31 @@
+-
+  const instagramPhotos = [
+    {
+      img: 'inst1.png',
+      alt: 'Прогулка'
+    },
+    {
+      img: 'inst2.png',
+      alt: 'Прогулка'
+    },
+    {
+      img: 'inst3.png',
+      alt: 'Прогулка'
+    },
+    {
+      img: 'inst4.png',
+      alt: 'Прогулка'
+    },
+    {
+      img: 'inst5.png',
+      alt: 'Прогулка'
+    },
+  ]
+
+section.instagram-feed
+  .container 
+    .instagram-feed__inner 
+      h2.instagram-feed__title Instagram feed: #surf
+      .instagram-feed__images-container
+        each item in instagramPhotos 
+          img(src=`@img/instagram/${item.img}`, alt=item.alt)
