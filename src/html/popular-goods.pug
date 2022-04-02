@@ -1,124 +1,192 @@
+-
+  const popularGoodsCategories = [
+    {
+      title: 'Гидрокостюм',
+      id: 'tab-wetsuit', 
+      active: true 
+    },
+    {
+      title: 'Доски',
+      id: 'tab-surfboards' 
+    },
+    {
+      title: 'Вейксерф',
+      id: 'tab-wakesurfs' 
+    },
+    {
+      title: 'Чехлы',
+      id: 'tab-cases' 
+    },
+    {
+      title: 'Фины для серфа',
+      id: 'tab-fins' 
+    }
+  ]
+
+  const wetsuits = [
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit',
+      price: '27 398 руб',
+      image: 'wetsuit_1.png'
+    },
+    {
+      title: 'Гидрокостюм BILLABONG 3 Furnace Absolute GBS',
+      price: '45 205 руб',
+      image: 'wetsuit_2.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS',
+      price: '15 790 руб',
+      image: 'wetsuit_3.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit',
+      price: '19 865 руб',
+      image: 'wetsuit_4.png'
+    },
+  ]
+
+  const surfboards = [
+    {
+      title: 'Гидрокостюм BILLABONG 3 Furnace Absolute GBS',
+      price: '45 205 руб',
+      image: 'wetsuit_2.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit',
+      price: '27 398 руб',
+      image: 'wetsuit_1.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS',
+      price: '15 790 руб',
+      image: 'wetsuit_3.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit',
+      price: '19 865 руб',
+      image: 'wetsuit_4.png'
+    },
+  ]
+
+  const wakesurfs = [
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS',
+      price: '15 790 руб',
+      image: 'wetsuit_3.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit',
+      price: '19 865 руб',
+      image: 'wetsuit_4.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit',
+      price: '27 398 руб',
+      image: 'wetsuit_1.png'
+    },
+    {
+      title: 'Гидрокостюм BILLABONG 3 Furnace Absolute GBS',
+      price: '45 205 руб',
+      image: 'wetsuit_2.png'
+    }
+  ]
+
+  const cases = [
+    {
+      title: 'Гидрокостюм BILLABONG 3 Furnace Absolute GBS',
+      price: '45 205 руб',
+      image: 'wetsuit_2.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS',
+      price: '15 790 руб',
+      image: 'wetsuit_3.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit',
+      price: '27 398 руб',
+      image: 'wetsuit_1.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit',
+      price: '19 865 руб',
+      image: 'wetsuit_4.png'
+    },
+  ]
+
+  const fins = [
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit',
+      price: '27 398 руб',
+      image: 'wetsuit_1.png'
+    },
+    {
+      title: 'Гидрокостюм BILLABONG 3 Furnace Absolute GBS',
+      price: '45 205 руб',
+      image: 'wetsuit_2.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS',
+      price: '15 790 руб',
+      image: 'wetsuit_3.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit',
+      price: '19 865 руб',
+      image: 'wetsuit_4.png'
+    },
+  ]
+
 section.popular-goods
   .container
     h2.popular-goods__title Популярные товары
     .popular-goods__category
-      .popular-goods__category-item
-        a.popular-goods__category-link.popular-goods__category-link--active(href="#" id="tab-wetsuit") Гидрокостюм
-      .popular-goods__category-item
-        a.popular-goods__category-link(href="" id="tab-surfboards") Доски
-      .popular-goods__category-item
-        a.popular-goods__category-link(href="" id="tab-wakesurfs") Вейксерф
-      .popular-goods__category-item
-        a.popular-goods__category-link(href="" id="tab-cases") Чехлы
-      .popular-goods__category-item
-        a.popular-goods__category-link(href="" id="tab-fins") Фины для серфа
+      each item in popularGoodsCategories
+        .popular-goods__category-item
+          a.popular-goods__category-link(href="", id=item.id, class=item.active ? 'popular-goods__category-link--active' : '') #{ item.title }
+
     .popular-goods__tab.tab-wetsuits
       ul.popular-goods__goods-list
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_1.png`, alt=`Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit`)
-          h4.goods-item__title Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit
-          p.goods-item__price 27 398 руб
-          button.goods-item__btn.btn.btn--quickview Купить
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_2.png`, alt=`Гидрокостюм BILLABONG 3 Furnace Absolute GBS`)
-          h4.goods-item__title Гидрокостюм BILLABONG 3 Furnace Absolute GBS
-          p.goods-item__price 45 205 руб
-          button.goods-item__btn.btn.btn--quickview Купить
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_3.png`, alt=`Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS`)
-          h4.goods-item__title Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS
-          p.goods-item__price 15 790 руб
-          button.goods-item__btn.btn.btn--quickview Купить
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_4.png`, alt=`Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit`)
-          h4.goods-item__title Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit
-          p.goods-item__price 19 865 руб
-          button.goods-item__btn.btn.btn--quickview Купить
+        each item in wetsuits 
+          li.popular-goods__goods-item.goods-item 
+            img(src=`@img/goods/${item.image}`, alt=item.title)
+            h4.goods-item__title #{item.title}
+            p.goods-item__price #{item.price}
+            button.goods-item__btn.btn.btn--quickview Купить
+
     .popular-goods__tab.tab-surfboards.visually-hidden
       ul.popular-goods__goods-list
-        li.popular-goods__goods-item.goods-item 
-            img(src=`@img/goods/wetsuit_2.png`, alt=`Гидрокостюм BILLABONG 3 Furnace Absolute GBS`)
-            h4.goods-item__title Гидрокостюм BILLABONG 3 Furnace Absolute GBS
-            p.goods-item__price 45 205 руб
+        each item in surfboards 
+          li.popular-goods__goods-item.goods-item 
+            img(src=`@img/goods/${item.image}`, alt=item.title)
+            h4.goods-item__title #{item.title}
+            p.goods-item__price #{item.price}
             button.goods-item__btn.btn.btn--quickview Купить
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_1.png`, alt=`Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit`)
-          h4.goods-item__title Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit
-          p.goods-item__price 27 398 руб
-          button.goods-item__btn.btn.btn--quickview Купить
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_3.png`, alt=`Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS`)
-          h4.goods-item__title Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS
-          p.goods-item__price 15 790 руб
-          button.goods-item__btn.btn.btn--quickview Купить
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_4.png`, alt=`Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit`)
-          h4.goods-item__title Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit
-          p.goods-item__price 19 865 руб
-          button.goods-item__btn.btn.btn--quickview Купить
+
     .popular-goods__tab.tab-wakesurfs.visually-hidden
       ul.popular-goods__goods-list
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_3.png`, alt=`Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS`)
-          h4.goods-item__title Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS
-          p.goods-item__price 15 790 руб
-          button.goods-item__btn.btn.btn--quickview Купить
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_4.png`, alt=`Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit`)
-          h4.goods-item__title Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit
-          p.goods-item__price 19 865 руб
-          button.goods-item__btn.btn.btn--quickview Купить
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_1.png`, alt=`Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit`)
-          h4.goods-item__title Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit
-          p.goods-item__price 27 398 руб
-          button.goods-item__btn.btn.btn--quickview Купить
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_2.png`, alt=`Гидрокостюм BILLABONG 3 Furnace Absolute GBS`)
-          h4.goods-item__title Гидрокостюм BILLABONG 3 Furnace Absolute GBS
-          p.goods-item__price 45 205 руб
-          button.goods-item__btn.btn.btn--quickview Купить
+        each item in wakesurfs 
+          li.popular-goods__goods-item.goods-item 
+            img(src=`@img/goods/${item.image}`, alt=item.title)
+            h4.goods-item__title #{item.title}
+            p.goods-item__price #{item.price}
+            button.goods-item__btn.btn.btn--quickview Купить
+
     .popular-goods__tab.tab-cases.visually-hidden
       ul.popular-goods__goods-list
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_1.png`, alt=`Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit`)
-          h4.goods-item__title Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit
-          p.goods-item__price 27 398 руб
-          button.goods-item__btn.btn.btn--quickview Купить
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_4.png`, alt=`Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit`)
-          h4.goods-item__title Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit
-          p.goods-item__price 19 865 руб
-          button.goods-item__btn.btn.btn--quickview Купить
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_2.png`, alt=`Гидрокостюм BILLABONG 3 Furnace Absolute GBS`)
-          h4.goods-item__title Гидрокостюм BILLABONG 3 Furnace Absolute GBS
-          p.goods-item__price 45 205 руб
-          button.goods-item__btn.btn.btn--quickview Купить
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_3.png`, alt=`Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS`)
-          h4.goods-item__title Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS
-          p.goods-item__price 15 790 руб
-          button.goods-item__btn.btn.btn--quickview Купить
+        each item in cases 
+          li.popular-goods__goods-item.goods-item 
+            img(src=`@img/goods/${item.image}`, alt=item.title)
+            h4.goods-item__title #{item.title}
+            p.goods-item__price #{item.price}
+            button.goods-item__btn.btn.btn--quickview Купить
+
     .popular-goods__tab.tab-fins.visually-hidden
       ul.popular-goods__goods-list
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_1.png`, alt=`Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit`)
-          h4.goods-item__title Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit
-          p.goods-item__price 27 398 руб
-          button.goods-item__btn.btn.btn--quickview Купить
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_2.png`, alt=`Гидрокостюм BILLABONG 3 Furnace Absolute GBS`)
-          h4.goods-item__title Гидрокостюм BILLABONG 3 Furnace Absolute GBS
-          p.goods-item__price 45 205 руб
-          button.goods-item__btn.btn.btn--quickview Купить
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_4.png`, alt=`Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit`)
-          h4.goods-item__title Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit
-          p.goods-item__price 19 865 руб
-          button.goods-item__btn.btn.btn--quickview Купить
-        li.popular-goods__goods-item.goods-item 
-          img(src=`@img/goods/wetsuit_3.png`, alt=`Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS`)
-          h4.goods-item__title Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS
-          p.goods-item__price 15 790 руб
-          button.goods-item__btn.btn.btn--quickview Купить
+        each item in fins 
+          li.popular-goods__goods-item.goods-item 
+            img(src=`@img/goods/${item.image}`, alt=item.title)
+            h4.goods-item__title #{item.title}
+            p.goods-item__price #{item.price}
+            button.goods-item__btn.btn.btn--quickview Купить
