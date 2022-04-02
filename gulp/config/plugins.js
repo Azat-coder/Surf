@@ -7,7 +7,7 @@ import ifPlugin from "gulp-if"; // Условные конструкции
 
 export const plugins = {
     replace: replace,
-    // plumber: plumber,
+    plumber: plumber,
     notify: notify,
     browsersync: browsersync,
     newer: newer,

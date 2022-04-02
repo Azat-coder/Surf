@@ -1,4 +1,21 @@
-- const navItems = ['Каталог', 'О нас', 'Блог', 'Туры']
+- 
+  const navItems = [
+    {
+      name: 'Каталог',
+      href: '/catalog'
+    },
+    {
+      name: 'О нас',
+      href: '/catalog'
+    },
+    {
+      name: 'Блог',
+      href: '/catalog'
+    },
+    {
+      name: 'Туры',
+      href: '/catalog'
+    }]
 - const controls = ['login','cart']
 
 header.header 
@@ -11,7 +28,7 @@ header.header
       ul.nav__list.nav__list-main
         each navItem in navItems
           li.nav__item 
-            a.nav__link(href=navItem) #{navItem}
+            a.nav__link(href=navItem.href) #{navItem.name}
     ul.header__controls.controls 
       each control in controls 
         li.control 

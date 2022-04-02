@@ -1,0 +1,34 @@
+-
+  const goodsCategories = [
+    { 
+      name: 'Костюмы',
+      link: '/suits'
+    }, 
+    { 
+      name: 'Доски',
+      link: '/suits'
+    },
+    { 
+      name: 'Вейксерф',
+      link: '/suits'
+    },
+    { 
+      name: 'Чехлы',
+      link: '/suits'
+    },
+    { 
+      name: 'Фины',
+      link: '/suits'
+    }
+  ]
+
+section.categories
+  .container
+    .categories__inner 
+      h2.categories__title Категории
+      ul.categories__container 
+        each cat in goodsCategories
+          li.category 
+            a.category__link(href=cat.link) #{cat.name}
+
+      

@@ -58,6 +58,15 @@
   }
 }
 
+.catalog {
+  .header {
+    .container {
+      background: radial-gradient(97.99% 14110% at 0.63% 100%, #A5CADC 0%, #B9D6E6 48.93%, #80B1CF 96.96%);
+      box-shadow: 0px 2px 2px #80B1CF;
+    }
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .header {
     .nav {
@@ -160,6 +169,15 @@
         top: 28px;
         transform: rotate(-45deg);
         box-shadow: none;
+      }
+    }
+  }
+  .catalog {
+    .header {
+      .nav {
+        &__list-main {
+          background-color:#B9D6E6;
+        }
       }
     }
   }

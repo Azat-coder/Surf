@@ -24,6 +24,17 @@
   }
 }
 
+.catalog {
+  .greetings {
+    height: 500px;
+    background-image: url("../img/backgrounds/catalog-greetings-bg1.png");
+
+    &__inner {
+      width: 550px;
+    }
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .greetings {
     background-image: url("../img/backgrounds/greetings-bg2.png");
@@ -39,6 +50,12 @@
     &__btn { 
       font-size: 32px;
       line-height: 40px;
+    }
+  }
+
+  .catalog {
+    .greetings {
+      background-image: url("../img/backgrounds/catalog-greetings-bg2.png");
     }
   }
 }
@@ -60,6 +77,15 @@
       line-height: 38px;
     }
   }
+
+  .catalog {
+    .greetings {
+      background-image: url("../img/backgrounds/catalog-greetings-bg3.png");
+      &__inner {
+        width: 492px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -77,6 +103,14 @@
       width: 280px;
       font-size: 22px;
       line-height: 28px;
+    }
+  }
+
+  .catalog {
+    .greetings {
+      &__inner {
+        width: 340px;
+      }
     }
   }
 }
@@ -97,6 +131,16 @@
       width: 280px;
       font-size: 22px;
       line-height: 28px;
+    }
+  }
+
+  .catalog {
+    .greetings {
+      height: 500px;
+      background-image: url("../img/backgrounds/catalog-greetings-bg4.png");
+      &__inner {
+        width: 220px;
+      }
     }
   }
 }

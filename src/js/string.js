@@ -3,8 +3,8 @@ export default class MyString {
         this.string = string;
     }
 
-    // set string(value) { this._string = value; }
-    // get string() { return this._string; }
+    set string(value) { this._string = value; }
+    get string() { return this._string; }
     getString() { return this.string; }
     setString(string) { this.string = string; }
     getStringLength() { return this.string.length; }
