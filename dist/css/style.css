@@ -1457,7 +1457,7 @@ body {
 }
 .populargoods-common .goods-item:hover {
   height: 598px;
-  margin-bottom: -142px;
+  margin-bottom: -180px;
   border-color: #DCE5E5;
   transition: all ease-in 0.2s;
 }
@@ -1578,6 +1578,109 @@ body {
   }
   .populargoods-common .goods-item:nth-child(2) {
     display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  .populargoods-common__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+.instagram-feed .container {
+  background-color: #E5E5E5;
+}
+.instagram-feed__inner {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.instagram-feed__title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Alegreya SC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.instagram-feed__hashtag {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+}
+.instagram-feed__images-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1200px;
+  height: 240px;
+  background-color: #ffffff;
+}
+.instagram-feed__images-container img {
+  width: 220px;
+  height: 220px;
+}
+
+@media screen and (max-width: 1440px) {
+  .instagram-feed__title {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .instagram-feed__hashtag {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .instagram-feed__images-container {
+    width: 892px;
+    height: 230px;
+  }
+  .instagram-feed__images-container img {
+    width: 210px;
+    height: 210px;
+  }
+  .instagram-feed__images-container img:last-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .instagram-feed__title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .instagram-feed__hashtag {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .instagram-feed__images-container {
+    width: 688px;
+  }
+  .instagram-feed__images-container img:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .instagram-feed__images-container {
+    flex-direction: column;
+    width: 280px;
+    height: 800px;
+    margin: 0 auto;
+  }
+  .instagram-feed__images-container img {
+    width: 240px;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .instagram-feed__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .instagram-feed__hashtag {
+    font-size: 22px;
+    line-height: 30px;
   }
 }
 .footer .container {

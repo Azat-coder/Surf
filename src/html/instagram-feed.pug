@@ -25,7 +25,8 @@
 section.instagram-feed
   .container 
     .instagram-feed__inner 
-      h2.instagram-feed__title Instagram feed: #surf
+      h2.instagram-feed__title Instagram feed: 
+        span.instagram-feed__hashtag #surf
       .instagram-feed__images-container
         each item in instagramPhotos 
           img(src=`@img/instagram/${item.img}`, alt=item.alt)

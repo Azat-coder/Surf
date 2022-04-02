@@ -33,7 +33,7 @@
 
     &:hover {
       height: 598px;
-      margin-bottom: -142px;
+      margin-bottom: -180px;
       border-color: #DCE5E5;
       transition: all ease-in 0.2s;
     }
@@ -192,7 +192,12 @@
 }
 
 @media screen and (max-width: 540px) {
-
+  .populargoods-common {
+    &__title {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
 }
 
 @media screen and (max-width: 320px) {

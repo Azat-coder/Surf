@@ -1,0 +1,125 @@
+.instagram-feed {
+  .container {
+    background-color: $color-bg-modal;
+  }
+
+  &__inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Alegreya SC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: $color-text-primary;
+  }
+
+  &__hashtag {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  &__images-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    height: 240px;
+    background-color: #ffffff;
+
+    img {
+      width: 220px;
+      height: 220px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .instagram-feed {
+    &__title {
+      font-size: 32px;
+      line-height: 44px;
+    }
+  
+    &__hashtag {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__images-container {
+      width: 892px;
+      height: 230px;
+  
+      img {
+        width: 210px;
+        height: 210px;
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .instagram-feed {
+    &__title {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  
+    &__hashtag {
+      font-size: 28px;
+      line-height: 35px;
+    }
+
+    &__images-container {
+      width: 688px;
+  
+      img {
+        &:nth-child(4) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .instagram-feed {
+    &__images-container {
+      flex-direction: column;
+      width: 280px;
+      height: 800px;
+      margin: 0 auto;
+
+      img {
+        width: 240px;
+        height: 240px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .instagram-feed {
+    &__title {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    &__hashtag {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+}
