@@ -96,7 +96,7 @@ section.catalog
               a(href="#") Доски
         .catalog__sortblock 
           .catalog__sortby
-            .select(name='sortby') Упорядочить
+            .select.unselectable(name='sortby') Упорядочить
               span.changing-text по цене
             .option-list.visually-hidden 
               .option.option--colored(value='value1', selected)
@@ -109,7 +109,7 @@ section.catalog
                 .option-text По популярности
                 .option-image 
           .catalog__sortbycount
-            .select(name='sortbycount') Показать по
+            .select.unselectable(name='sortbycount') Показать по
               span.changing-text 10
             .option-list.visually-hidden
               .option(value='value1', selected) 10
