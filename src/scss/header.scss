@@ -67,6 +67,15 @@
   }
 }
 
+.catalog-category {
+  .header {
+    .container {
+      background: radial-gradient(97.99% 14110% at 0.63% 100%, #113921 0%, #2E7145 52.08%, #1A522F 96.96%);
+      box-shadow: 0px 2px 2px #113921;
+    }
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .header {
     .nav {
@@ -172,11 +181,22 @@
       }
     }
   }
+
   .catalog {
     .header {
       .nav {
         &__list-main {
           background-color:#B9D6E6;
+        }
+      }
+    }
+  }
+
+  .catalog-category {
+    .header {
+      .nav {
+        &__list-main {
+          background-color:#1A522F;
         }
       }
     }

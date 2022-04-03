@@ -553,6 +553,11 @@ body {
   box-shadow: 0px 2px 2px #80B1CF;
 }
 
+.catalog-category .header .container {
+  background: radial-gradient(97.99% 14110% at 0.63% 100%, #113921 0%, #2E7145 52.08%, #1A522F 96.96%);
+  box-shadow: 0px 2px 2px #113921;
+}
+
 @media screen and (max-width: 1440px) {
   .header .nav {
     position: relative;
@@ -650,6 +655,10 @@ body {
   .catalog .header .nav__list-main {
     background-color: #B9D6E6;
   }
+
+  .catalog-category .header .nav__list-main {
+    background-color: #1A522F;
+  }
 }
 .greetings {
   height: 590px;
@@ -683,6 +692,14 @@ body {
   width: 550px;
 }
 
+.catalog-category .greetings {
+  height: 500px;
+  background-image: url("../img/backgrounds/catalog-category-greetings-bg1.png");
+}
+.catalog-category .greetings__inner {
+  width: 550px;
+}
+
 @media screen and (max-width: 1440px) {
   .greetings {
     background-image: url("../img/backgrounds/greetings-bg2.png");
@@ -703,6 +720,10 @@ body {
 
   .catalog .greetings {
     background-image: url("../img/backgrounds/catalog-greetings-bg2.png");
+  }
+
+  .catalog-category .greetings {
+    background-image: url("../img/backgrounds/catalog-category-greetings-bg2.png");
   }
 }
 @media screen and (max-width: 992px) {
@@ -729,6 +750,13 @@ body {
   .catalog .greetings__inner {
     width: 492px;
   }
+
+  .catalog-category .greetings {
+    background-image: url("../img/backgrounds/catalog-category-greetings-bg3.png");
+  }
+  .catalog-category .greetings__inner {
+    width: 492px;
+  }
 }
 @media screen and (max-width: 768px) {
   .greetings {
@@ -749,6 +777,10 @@ body {
   }
 
   .catalog .greetings__inner {
+    width: 340px;
+  }
+
+  .catalog-category .greetings__inner {
     width: 340px;
   }
 }
@@ -776,6 +808,14 @@ body {
     background-image: url("../img/backgrounds/catalog-greetings-bg4.png");
   }
   .catalog .greetings__inner {
+    width: 220px;
+  }
+
+  .catalog-category .greetings {
+    height: 500px;
+    background-image: url("../img/backgrounds/catalog-category-greetings-bg4.png");
+  }
+  .catalog-category .greetings__inner {
     width: 220px;
   }
 }

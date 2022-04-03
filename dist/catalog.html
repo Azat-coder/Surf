@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width" initial-scale="1"/>
     <link rel="stylesheet" href="/css/style.min.css"/>
   </head>
-  <body class="catalog-category"> 
+  <body class="catalog"> 
     <header class="header"> 
       <div class="container">
         <h2 class="visually-hidden">Шапка сайта</h2>
@@ -39,158 +39,17 @@
           </div>
         </div>
       </section>
-      <section class="catalog">
+      <section class="categories">
         <div class="container">
-          <div class="catalog__inner">
-            <h2 class="visually-hidden">Каталог товаров </h2>
-            <div class="catalog__controls"> 
-              <div class="catalog__breadcrumbs breadcrumbs">
-                <ul class="breadcrumbs__list">
-                  <li><a href="#"></a></li>
-                  <li> <a href="#">Каталог</a></li>
-                  <li id="breadcrumbs-current"> <a href="#">Доски</a></li>
-                </ul>
-              </div>
-              <div class="catalog__sortblock"> 
-                <div class="catalog__sortby">
-                  <select name="sortby">
-                    <option value="value1" selected="selected">По цене</option>
-                    <option value="value2">По названию</option>
-                    <option value="value3">По популярности</option>
-                  </select>
-                </div>
-                <div class="catalog__sortbycount">
-                  <select name="sortbycount">
-                    <option value="value1" selected="selected">10</option>
-                    <option value="value2">20</option>
-                    <option value="value3">50</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="catalog__goodsblock"> 
-              <form class="params" action="" method="POST"> 
-                <h3 class="params__title">Параметры</h3>
-                <div class="params__price">
-                  <div class="params__price-titleblock"> 
-                    <div class="params__price-title">Цена</div>
-                    <div class="params__price-inputblock"> 
-                      <input type="text" name="min-price" value=""/>
-                      <input type="text" name="max-price" value=""/>
-                    </div>
-                    <div class="params__price-rangeslider"></div>
-                  </div>
-                </div>
-                <div class="params__brand brand">
-                  <div class="brand__titleblock">
-                    <div class="brand__title">Бренд</div>
-                    <ul class="brand__list">
-                      <li class="brand__item">
-                        <input class="visually-hidden brand__item-radio" type="radio" name="Vissla" value="Vissla" id="brand-Vissla"/>
-                        <label for="Vissla">Vissla</label>
-                      </li>
-                      <li class="brand__item">
-                        <input class="visually-hidden brand__item-radio" type="radio" name="BILLABONG" value="BILLABONG" id="brand-BILLABONG"/>
-                        <label for="BILLABONG">BILLABONG</label>
-                      </li>
-                      <li class="brand__item">
-                        <input class="visually-hidden brand__item-radio" type="radio" name="QUIKSILVER" value="QUIKSILVER" id="brand-QUIKSILVER" checked="checked"/>
-                        <label for="QUIKSILVER">QUIKSILVER</label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="params__color color">
-                  <div class="color__titleblock">
-                    <div class="color__title">Цвет</div>
-                    <ul class="color__list">
-                      <li class="color__item">
-                        <input class="visually-hidden color__item-radio" type="radio" name="Черный" value="Черный" id="color-Черный" checked="checked"/>
-                        <label for="Черный">Черный</label>
-                      </li>
-                      <li class="color__item">
-                        <input class="visually-hidden color__item-radio" type="radio" name="Синий" value="Синий" id="color-Синий"/>
-                        <label for="Синий">Синий</label>
-                      </li>
-                      <li class="color__item">
-                        <input class="visually-hidden color__item-radio" type="radio" name="Красный" value="Красный" id="color-Красный"/>
-                        <label for="Красный">Красный</label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="params__availability availability">
-                  <div class="availability__titleblock">
-                    <div class="availability__title">Наличие</div>
-                    <ul class="availability__list">
-                      <li class="availability__item">
-                        <input class="visually-hidden availability__item-radio" type="radio" name="В наличии" value="В наличии" id="availability-В наличии" checked="checked"/>
-                        <label for="В наличии">В наличии </label>
-                      </li>
-                      <li class="availability__item">
-                        <input class="visually-hidden availability__item-radio" type="radio" name="Под заказ" value="Под заказ" id="availability-Под заказ"/>
-                        <label for="Под заказ">Под заказ </label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <button class="params__show">Показать</button>
-                <button class="params__clear">Очистить</button>
-              </form>
-              <div class="catalog-goods"> 
-                <ul class="catalog-goods__goods-list">
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_1.png" alt="Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit"/>
-                    <h4 class="goods-item__title">Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit</h4>
-                    <p class="goods-item__price">27 398 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_2.png" alt="Гидрокостюм BILLABONG 3 Furnace Absolute GBS"/>
-                    <h4 class="goods-item__title">Гидрокостюм BILLABONG 3 Furnace Absolute GBS</h4>
-                    <p class="goods-item__price">45 205 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_3.png" alt="Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS"/>
-                    <h4 class="goods-item__title">Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS</h4>
-                    <p class="goods-item__price">15 790 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_4.png" alt="Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit"/>
-                    <h4 class="goods-item__title">Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit</h4>
-                    <p class="goods-item__price">19 865 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_1.png" alt="Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit"/>
-                    <h4 class="goods-item__title">Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit</h4>
-                    <p class="goods-item__price">27 398 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_2.png" alt="Гидрокостюм BILLABONG 3 Furnace Absolute GBS"/>
-                    <h4 class="goods-item__title">Гидрокостюм BILLABONG 3 Furnace Absolute GBS</h4>
-                    <p class="goods-item__price">45 205 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_3.png" alt="Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS"/>
-                    <h4 class="goods-item__title">Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS</h4>
-                    <p class="goods-item__price">15 790 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_4.png" alt="Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit"/>
-                    <h4 class="goods-item__title">Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit</h4>
-                    <p class="goods-item__price">19 865 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="catalog__pagination pagination">
-              <ul class="pagination__list">
-                <li id="pagination-current"><a href="#">1</a></li>
-                <li> <a href="#">2</a></li>
-                <li> <a href="#">3</a></li>
-                <li> <a href="#">...</a></li>
-                <li> <a href="#">9</a></li>
-              </ul>
-            </div>
+          <div class="categories__inner"> 
+            <h2 class="categories__title">Категории</h2>
+            <ul class="categories__container"> 
+              <li class="category"> <a class="category__link" href="/suits">Костюмы<img class="category__image" src="img/categories/category-suit.png" alt=""/></a></li>
+              <li class="category"> <a class="category__link" href="/suits">Доски<img class="category__image" src="img/categories/category-board.png" alt=""/></a></li>
+              <li class="category"> <a class="category__link" href="/suits">Вейксерф<img class="category__image" src="img/categories/category-wakesurf.png" alt=""/></a></li>
+              <li class="category"> <a class="category__link" href="/suits">Чехлы<img class="category__image" src="img/categories/category-case.png" alt=""/></a></li>
+              <li class="category"> <a class="category__link" href="/suits">Фины<img class="category__image" src="img/categories/category-fins.png" alt=""/></a></li>
+            </ul>
           </div>
         </div>
       </section>

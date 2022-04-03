@@ -1,0 +1,173 @@
+-
+  const goods = [
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit',
+      price: '27 398 руб',
+      image: 'wetsuit_1.png'
+    },
+    {
+      title: 'Гидрокостюм BILLABONG 3 Furnace Absolute GBS',
+      price: '45 205 руб',
+      image: 'wetsuit_2.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS',
+      price: '15 790 руб',
+      image: 'wetsuit_3.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit',
+      price: '19 865 руб',
+      image: 'wetsuit_4.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit',
+      price: '27 398 руб',
+      image: 'wetsuit_1.png'
+    },
+    {
+      title: 'Гидрокостюм BILLABONG 3 Furnace Absolute GBS',
+      price: '45 205 руб',
+      image: 'wetsuit_2.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS',
+      price: '15 790 руб',
+      image: 'wetsuit_3.png'
+    },
+    {
+      title: 'Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit',
+      price: '19 865 руб',
+      image: 'wetsuit_4.png'
+    }
+  ]
+
+  const brands = [
+    {
+      name: 'Vissla',
+    },
+    {
+      name: 'BILLABONG',
+    },
+    {
+      name: 'QUIKSILVER',
+      checked: true 
+    }
+  ]
+
+  const colors = [
+    {
+      name: 'Черный',
+      checked: true 
+    },
+    {
+      name: 'Синий',
+    },
+    {
+      name: 'Красный'
+    }
+  ]
+
+  const availabilities = [
+    {
+      name: 'В наличии',
+      checked: true 
+    },
+    {
+      name: 'Под заказ',
+    },
+  ]
+
+section.catalog
+  .container
+    .catalog__inner
+      h2.visually-hidden Каталог товаров 
+      .catalog__controls 
+        .catalog__breadcrumbs.breadcrumbs
+          ul.breadcrumbs__list
+            li
+              a(href="#")
+            li 
+              a(href="#") Каталог
+            li(id='breadcrumbs-current') 
+              a(href="#") Доски
+        .catalog__sortblock 
+          .catalog__sortby
+            select(name='sortby')
+              option(value='value1', selected) По цене
+              option(value='value2') По названию
+              option(value='value3') По популярности
+          .catalog__sortbycount
+            select(name='sortbycount')
+              option(value='value1', selected) 10
+              option(value='value2') 20
+              option(value='value3') 50
+      .catalog__goodsblock 
+        form(action='' method='POST').params 
+          h3.params__title Параметры
+          .params__price
+            .params__price-titleblock 
+              .params__price-title Цена
+              .params__price-inputblock 
+                input(type='text' name='min-price' value='')
+                input(type='text' name='max-price' value='')
+              .params__price-rangeslider
+          .params__brand.brand
+            .brand__titleblock
+              .brand__title Бренд
+              ul.brand__list
+                each brand in brands
+                  li.brand__item
+                    input.visually-hidden.brand__item-radio(type='radio',
+                      name=brand.name, 
+                      value=brand.name, 
+                      id=`brand-${brand.name}`,
+                      checked=brand.checked)
+                    label(for=brand.name) #{brand.name}
+          .params__color.color
+            .color__titleblock
+              .color__title Цвет
+              ul.color__list
+                each color in colors
+                  li.color__item
+                    input.visually-hidden.color__item-radio(type='radio',
+                      name=color.name, 
+                      value=color.name, 
+                      id=`color-${color.name}`,
+                      checked=color.checked)
+                    label(for=color.name) #{color.name}
+          .params__availability.availability
+            .availability__titleblock
+              .availability__title Наличие
+              ul.availability__list
+                each availability in availabilities
+                  li.availability__item
+                    input.visually-hidden.availability__item-radio(type='radio',
+                      name=availability.name, 
+                      value=availability.name, 
+                      id=`availability-${availability.name}`,
+                      checked=availability.checked)
+                    label(for=availability.name) #{availability.name} 
+          button.params__show Показать
+          button.params__clear Очистить
+        .catalog-goods 
+          ul.catalog-goods__goods-list
+            each item in goods  
+              li.catalog-goods__goods-item.goods-item 
+                img(src=`@img/goods/${item.image}`, alt=item.title)
+                h4.goods-item__title #{item.title}
+                p.goods-item__price #{item.price}
+                button.goods-item__btn.btn.btn--quickview Купить
+      .catalog__pagination.pagination
+        ul.pagination__list
+          li(id='pagination-current')
+            a(href="#") 1
+          li 
+            a(href="#") 2
+          li 
+            a(href="#") 3
+          li 
+            a(href="#") ...
+          li 
+            a(href="#") 9
+

@@ -35,6 +35,17 @@
   }
 }
 
+.catalog-category {
+  .greetings {
+    height: 500px;
+    background-image: url("../img/backgrounds/catalog-category-greetings-bg1.png");
+
+    &__inner {
+      width: 550px;
+    }
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .greetings {
     background-image: url("../img/backgrounds/greetings-bg2.png");
@@ -56,6 +67,12 @@
   .catalog {
     .greetings {
       background-image: url("../img/backgrounds/catalog-greetings-bg2.png");
+    }
+  }
+
+  .catalog-category {
+    .greetings {
+      background-image: url("../img/backgrounds/catalog-category-greetings-bg2.png");
     }
   }
 }
@@ -81,6 +98,15 @@
   .catalog {
     .greetings {
       background-image: url("../img/backgrounds/catalog-greetings-bg3.png");
+      &__inner {
+        width: 492px;
+      }
+    }
+  }
+
+  .catalog-category {
+    .greetings {
+      background-image: url("../img/backgrounds/catalog-category-greetings-bg3.png");
       &__inner {
         width: 492px;
       }
@@ -113,6 +139,14 @@
       }
     }
   }
+
+  .catalog-category {
+    .greetings {
+      &__inner {
+        width: 340px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -138,6 +172,16 @@
     .greetings {
       height: 500px;
       background-image: url("../img/backgrounds/catalog-greetings-bg4.png");
+      &__inner {
+        width: 220px;
+      }
+    }
+  }
+
+  .catalog-category {
+    .greetings {
+      height: 500px;
+      background-image: url("../img/backgrounds/catalog-category-greetings-bg4.png");
       &__inner {
         width: 220px;
       }
