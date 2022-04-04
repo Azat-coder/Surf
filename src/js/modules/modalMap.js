@@ -2,6 +2,9 @@ export function modalMap() {
     const modalMap = document.querySelector('.modal-map');
     const modalMapBtns = document.querySelectorAll('.btn--map');
     const mapBtnClose = document.querySelector('.modal-map__btn-close');
+    const main = document.querySelector('.main');
+    const header = document.querySelector('.header');
+    const footer = document.querySelector('.footer');
 
     modalMapBtns.forEach(modalMapBtn => {
         modalMapBtn.addEventListener('click', (e) => {

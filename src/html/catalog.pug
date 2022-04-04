@@ -94,6 +94,7 @@ section.catalog
               a(href="#") Каталог
             li.breadcrumbs__item(id='breadcrumbs-current') 
               a(href="#") Доски
+          button.catalog__filter
         .catalog__sortblock 
           .catalog__sortby
             .select.unselectable(name='sortby') Упорядочить
@@ -125,10 +126,10 @@ section.catalog
                 <path d="M9.99997 15.7002C9.64153 15.7002 9.28314 15.5634 9.00986 15.2902L0.410313 6.6906C-0.13673 6.14356 -0.13673 5.25662 0.410313 4.7098C0.957135 4.16298 1.8439 4.16298 2.39098 4.7098L9.99997 12.3192L17.609 4.71007C18.1561 4.16324 19.0427 4.16324 19.5895 4.71007C20.1368 5.25689 20.1368 6.14382 19.5895 6.69087L10.9901 15.2905C10.7167 15.5637 10.3583 15.7002 9.99997 15.7002Z" fill="#C4C4C4"/>
               </svg>
             .price__inputblock 
-              input(type='text' name='min-price' value='')
+              input(type='text' name='min-price' value='' id='input-0')
               #textnode -
-              input(type='text' name='max-price' value='')
-            .price__rangeslider
+              input(type='text' name='max-price' value='' id='input-1')
+            .price__rangeslider#range-slider
           .params__brand.brand
             .brand__titleblock
               p.brand__title Бренд

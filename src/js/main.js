@@ -3,8 +3,11 @@ import { mainMenu } from './modules/mainMenu.js';
 import { popularGoodsTabs } from './modules/popularGoodsTabs.js';
 import { modalRequest } from './modules/modalRequest.js';
 import { modalQuickView } from './modules/modalQuickView.js';
+import { modalMap } from './modules/modalMap.js';
 import { useSelect } from './modules/select.js';
+import { useRangeSlider } from './modules/rangeSlider.js';
 import MyString from './string.js';
+import './nouislider.min.js';
 
 // Класс для работы со строкой
 const myString = new MyString('Привет');
@@ -24,8 +27,13 @@ modalRequest(); // Модальное окно заявка
 modalQuickView(); // Модальное окно быстрый просмотр товара
 modalMap(); // Модальное окно карта
 useSelect(); // Имплементирует кастомный селект для раздела catalog
+useRangeSlider(); // Имплементирует кастомный range slider для раздела catalog
 
+const filterButton = document.querySelector('.catalog__filter');
+const paramsElement = document.querySelector('.params');
 
-
+filterButton.addEventListener('click', () => {
+    paramsElement.classList.toggle('params--active');
+});
 
 

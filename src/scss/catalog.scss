@@ -52,13 +52,17 @@
     }
   }
 
+  &__filter {
+    display: none;
+  }
+
   &__sortblock {
     display: flex;
+    justify-content: space-between;
+    width: 380px;
   }
 
   &__sortby {
-    margin-right: 30px;
-
     .select {
       position: relative;
       display: flex;
@@ -290,10 +294,60 @@
       &__inputblock {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 20px;
+
         input {
           width: 100px;
           height: 25px;
+          border: 1px solid$color-text-modal-secondary;
+          text-align: right;
         }
+      }
+
+      &__rangeslider {
+        width: 240px;
+        height: 10px;
+        margin-bottom: 30px;
+      }
+
+      .noUi-connect {
+        background-color: $color-primary-main;
+      }
+      
+      .noUi-target {
+        background-color: $color-text-modal-secondary;
+        border: none;
+        border-radius: 100px;
+        box-shadow: none;
+        height: 2px;
+      }
+      
+      .noUi-handle::after,
+      .noUi-handle::before {
+        display: none;
+      }
+      
+      .noUi-handle {
+        box-shadow: none;
+        border-radius: 100%;
+        background-color: #fff;
+        border: 1px solid $color-primary-main;
+      }
+      
+      .noUi-horizontal .noUi-handle {
+        width: 10px;
+        height: 10px;
+        top: -5px;
+        background-color: $color-primary-main;
+        cursor: pointer;
+      }
+      
+      .noUi-horizontal .noUi-handle-upper {
+        right: 0;
+      }
+
+      .noUi-horizontal .noUi-handle-lower {
+        right: -10px;
       }
     }
 
@@ -643,4 +697,158 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 1440px) {
+  .catalog {
+    .params {
+      margin-right: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .catalog {
+    position: relative;
+    .params {
+      position: absolute;
+      top: 150px;
+      transform: translateX(-500px);
+      z-index: 10;
+      background-color: #ffffff;
+      transition: transform 0.3s ease-in;
+
+      &--active {
+        transform: translateX(0px);
+        transition: transform 0.3s ease-in;
+      }
+    }
+
+    .breadcrumbs {
+      margin-bottom: 20px;
+      &__list {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__filter {
+      position: absolute;
+      display: block;
+      width: 35px;
+      height: 35px;
+      background-image: url(../img/filter.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: none;
+    }
+
+    .catalog-goods {
+      &__goods-list {
+        margin-bottom: 25px;
+      }
+  
+      .goods-item {
+        width: 344px;
+        height: 653px;
+
+        &__title {
+          font-size: 20px;
+          line-height: 25px;
+          margin-top: 10px;
+          margin-bottom: 15px;
+        }
+
+        &__price {
+          font-size: 30px;
+          line-height: 38px;
+        }
+        &__btn {
+          width: 304px;
+          font-size: 24px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .catalog {
+    &__controls {
+      flex-wrap: wrap;
+    }
+
+    .breadcrumbs {
+      margin-bottom: 0;
+    }
+
+    &__sortblock {
+      margin-left: auto;
+      flex-wrap: wrap;
+    }
+
+    &__sortby {
+      margin-left: auto;
+    }
+
+    &__sortbycount {
+      margin-left: auto;
+    }
+
+    .catalog-goods {
+      margin: 0 auto;
+      &__goods-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .catalog {
+    &__sortblock {
+      flex-direction: column;
+    }
+
+    .params {
+      top: 175px;
+    }
+
+    &__filter {
+      top: 120px;
+    }
+
+    .catalog-goods {
+      &__goods-list {
+        margin-bottom: 15px;
+      }
+  
+      .goods-item {
+        width: 280px;
+        height: 607px;
+
+        &__title {
+          font-size: 18px;
+          line-height: 23px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+        }
+
+        &__price {
+          font-size: 22px;
+          line-height: 28px;
+        }
+        &__btn {
+          width: 280px;
+          font-size: 22px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+
 }

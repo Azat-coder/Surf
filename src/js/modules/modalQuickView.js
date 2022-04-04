@@ -2,6 +2,9 @@ export function modalQuickView() {
     const modalQuickView = document.querySelector('.modal-quickview');
     const modalQuickViewBtns = document.querySelectorAll('.btn--quickview');
     const quickViewBtnClose = document.querySelector('.modal-quickview__btn-close');
+    const main = document.querySelector('.main');
+    const header = document.querySelector('.header');
+    const footer = document.querySelector('.footer');
 
     modalQuickViewBtns.forEach(modalQuickViewBtn => {
         modalQuickViewBtn.addEventListener('click', () => {
