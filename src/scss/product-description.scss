@@ -1,0 +1,449 @@
+.product-description {
+  &__inner {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+
+  .breadcrumbs {
+    margin-bottom: 30px;
+    &__list {
+      display: flex;
+      align-items: center;
+    }
+
+    &__item {
+      position: relative;
+      margin-right: 30px;
+      ::after {
+        position: absolute;
+        top: 3px;
+        left: -20px;
+        content: "";
+        width: 10px;
+        height: 17px;
+        background: url(../img/arrow-right.svg);
+      }
+
+      a {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: $color-text-modal-secondary;
+      }
+    }
+
+    &__item#breadcrumbs-current {
+      a {
+        font-weight: 700;
+      }
+    }
+
+    &__item-home {
+      ::after {
+        display: none;
+      }
+    }
+  }
+
+  &__infocard {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__imageblock {
+      width: 500px;
+      padding-left: 20px;
+      text-align: center;
+  }
+
+  &__imagecontainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 480px;
+      width: 480px;
+      margin-bottom: 30px;
+
+      img {
+          max-height: 480px;
+          max-width: 480px;
+      }
+  }
+
+  &__price {
+      margin-bottom: 10px;
+      font-family: 'Source Sans Pro';
+      font-size: 36px;
+      line-height: 45px;
+      font-weight: 400;
+      color: $color-text-price-primary;
+  }
+
+  &__lowingprice {
+      font-family: 'Source Sans Pro';
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 400;
+      color: $color-text-modal-secondary;
+  }
+
+  &__infoblock {
+      padding-left: 20px;
+  }
+
+  &__title {
+      margin-bottom: 10px;
+      font-family: 'Source Sans Pro';
+      font-size: 36px;
+      line-height: 45px;
+      font-weight: 700;
+      color: $color-text-primary;
+  }
+
+  &__ratingblock {
+      display: flex;
+  }
+
+  &__rating-area {
+      overflow: hidden;
+      width: 125px;
+      font-size: 24px;
+      margin-right: 25px;
+
+      &:not(:checked) > input {
+          display: none;
+      }
+
+      &:not(:checked) > label {
+          float: right;
+          width: 25px;
+          padding: 0;
+          cursor: pointer;
+          color: $color-text-modal-secondary;
+      }
+
+      &:not(:checked) > label:before {
+          content: '★';
+      }
+
+      > input:checked ~ label {
+          color: $color-primary-main;
+      }
+
+      &:not(:checked) > label:hover,
+      &:not(:checked) > label:hover ~ label {
+          color: $color-primary-main;
+      }
+
+      > input:checked + label:hover,
+      > input:checked + label:hover ~ label,
+      > input:checked ~ label:hover,
+      > input:checked ~ label:hover ~ label,
+      > label:hover ~ input:checked ~ label {
+          color: $color-primary-main;
+      }
+
+      > label:active {
+          position: relative;
+      }
+  }
+
+  &__ratingtext {
+      margin-bottom: 30px;
+      font-family: 'Source Sans Pro';
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $color-text-modal-secondary;
+  }
+
+  &__char-item {
+      display: flex;
+      margin-bottom: 10px;
+      font-family: 'Source Sans Pro';
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 400;
+      color: $color-text-primary;
+  }
+
+  &__characteristics {
+      margin-bottom: 25px;
+  }
+
+  &__charname {
+      width: 250px;
+  }
+
+  &__sizesblock {
+      display: flex;
+      margin-bottom: 80px;
+  }
+
+  &__sizestitle {
+      margin-right: 30px;
+      font-family: 'Source Sans Pro';
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 400;
+      color: $color-text-primary;
+  }
+
+  .sizes {
+      &__radio {
+          display: flex;
+      }
+
+      &__radio input[type=radio] {
+          display: none;
+      }
+
+      &__radio-btn {
+          position: relative;
+          width: 39px;
+          height: 39px;
+
+          label {
+              width: 39px;
+              height: 39px;
+              background-color: #ffffff;
+              position: absolute; 
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              &::before {
+                  content: "6";
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 39px;
+                  height: 39px;
+                  font-family: 'Source Sans Pro';
+                  font-size: 18px;
+                  line-height: 23px;
+                  font-weight: 400;
+                  color: $color-text-modal-secondary;
+                  border: none;
+              }
+          }
+      }
+
+      &__radio-btn-1 label::before {
+          content: "6";
+      }
+
+      &__radio-btn-2 label::before {
+          content: "8";
+      }
+
+      &__radio-btn-3 label::before {
+          content: "10";
+      }
+
+      &__radio-btn-4 label::before {
+          content: "12";
+      }
+
+      &__radio input[type=radio]:checked + label {
+          border: 2px solid $color-primary-main;
+      }
+
+  }
+
+  &__buttonblock {
+      display: flex;
+  }
+
+  &__btn {
+      width: 280px;
+      margin-right: 30px;
+      font-family: 'Source Sans Pro';
+      font-size: 28px;
+      line-height: 35px;
+      font-weight: 700;
+      background-color: $color-primary-main;
+      transition: background-color ease-in-out 0.3s;
+      &:hover,
+      &:active {
+          background-color: $color-primary-light;
+          transition: background-color ease-in-out 0.3s;
+      }
+      &:focus {
+          background-color: $color-primary-light;
+          transition: background-color ease-in-out 0.3s;
+      }
+  }
+
+  &__btninfo {
+      width: 182px;
+      font-family: 'Source Sans Pro';
+      font-size: 18px;
+      line-height: 23px;
+      font-weight: 400;
+      color: $color-text-modal-secondary;
+  }
+
+  &__btn-close {
+      position: relative;
+      left: -2000px;
+  }
+
+  &__btn-close::before,
+  &__btn-close::after {
+      content: "";
+      position: absolute;
+      top: -700px;
+      left: 3187px;
+      width: 33px;
+      height: 3px;
+      background-color: #000000;
+      cursor: pointer;
+  }
+
+  &__btn-close::before {
+      transform: rotate(45deg);
+  }
+
+  &__btn-close::after {
+      transform: rotate(-45deg);
+  }
+
+  &__sizesblock {
+      margin-bottom: 22px;
+  }
+
+  &__categories {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    height: 70px;
+    padding-left: 50px;
+    background-color: #dfdfdf;
+  }
+
+  &__category-item {
+    margin-right: 50px;
+  }
+
+  &__category-link {
+    margin-bottom: 0px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: $color-text-primary;
+    border-bottom-color: #ffffff;
+    transition: border-bottom 0.3s ease-in;
+
+    &--active {
+      position: relative;
+      border-bottom: 3px $color-primary-main solid;
+      margin-bottom: -3px;
+    }
+  }
+
+  .tab-productabout {
+    padding-top: 30px;
+    display: none;
+
+    &__text {
+      margin-bottom: 30px;
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: $color-text-primary;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      color: $color-text-primary;
+    }
+
+    &__feature {
+      padding-left: 10px;
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: $color-text-primary;
+
+      &:before {
+        margin-right: 15px;
+        content:"·";
+        font-size:40px;
+        vertical-align:middle;
+        line-height: 0px;
+      }
+    }
+  }
+
+  .tab-reviews {
+    padding-top: 50px;
+    &__item {
+      margin-bottom: 30px;
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+
+      img {
+        height: 23px;
+        width: 144px;
+      }
+    }
+
+    &__infoblock {
+      display: flex;
+      align-items: center;
+    }
+
+    &__name {
+      margin-right: 10px;
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 45px;
+      color: $color-text-primary;
+    }
+
+    &__datetime {
+      display: flex;
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 45px;
+      color: $color-text-modal-secondary;
+    }
+
+    &__date {
+      margin-right: 10px;
+    }
+
+    &__link {
+      display: flex;
+      p {
+        margin-right: 5px;
+      }
+    }
+  }
+}
