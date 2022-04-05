@@ -76,6 +76,15 @@
   }
 }
 
+.article {
+  .header {
+    .container {
+      background: radial-gradient(97.99% 14110% at 0.63% 100%, #A5A694 0%, #D9C1A5 48.93%, #B0B4A5 96.96%);
+      box-shadow: 0px 2px 2px #C4C4C4;
+    }
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .header {
     .nav {
@@ -197,6 +206,16 @@
       .nav {
         &__list-main {
           background-color:#1A522F;
+        }
+      }
+    }
+  }
+
+  .article {
+    .header {
+      .nav {
+        &__list-main {
+          background-color:#A5A694;
         }
       }
     }

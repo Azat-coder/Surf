@@ -3,11 +3,14 @@
 doctype html 
 html(lang='ru')
   include html/head
-  body.article   
+  body.category  
     include html/header
     main.main
-      include html/article
+      include html/product-description
+      include html/populargoods-common
       include html/instagram-feed
     include html/footer
+    include html/modal-request
+    include html/modal-quickview
     include html/modal-map
     script(src='js/main.min.js')
