@@ -1,10 +1,10 @@
-export function popularGoodsTabs() {
-    const categoryBtns = document.querySelectorAll('.popular-goods__category-link');
-    const categoryTabs = document.querySelectorAll('.popular-goods__tab');
+export function tabs(btnClass, tabClass) {
+    const categoryBtns = document.querySelectorAll(`.${btnClass}`);
+    const categoryTabs = document.querySelectorAll(`.${tabClass}`);
 
     const removeActiveClasses = () => {
         categoryBtns.forEach((btn) => {
-            btn.classList.remove('popular-goods__category-link--active');
+            btn.classList.remove(`${btnClass}--active`);
         });
 
         categoryTabs.forEach((tab) => {
@@ -19,7 +19,7 @@ export function popularGoodsTabs() {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             removeActiveClasses();
-            btn.classList.add('popular-goods__category-link--active');
+            btn.classList.add(`${btnClass}--active`);
             tab.classList.remove('visually-hidden');
         });
     }

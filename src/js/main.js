@@ -1,6 +1,6 @@
 import * as funcs from './modules/functions.js';
 import { mainMenu } from './modules/mainMenu.js';
-import { popularGoodsTabs } from './modules/popularGoodsTabs.js';
+import { tabs } from './modules/tabs.js';
 import { modalRequest } from './modules/modalRequest.js';
 import { modalQuickView } from './modules/modalQuickView.js';
 import { modalMap } from './modules/modalMap.js';
@@ -22,7 +22,8 @@ console.log('myString.toNumber(): ', myString.toNumber());
 
 funcs.isWebp(); // Добавляет класс к html в зависимости от поддержки webp браузером
 mainMenu(); // Главное меню
-popularGoodsTabs(); // Табы в разделе popular-goods
+tabs('popular-goods__category-link', 'popular-goods__tab'); // Табы в разделе popular-goods
+tabs('product-description__category-link', 'product-description_tab'); // Табы в разделе product-description
 modalRequest(); // Модальное окно заявка
 modalQuickView(); // Модальное окно быстрый просмотр товара
 modalMap(); // Модальное окно карта
