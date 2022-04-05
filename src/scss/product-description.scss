@@ -59,23 +59,31 @@
   }
 
   &__imageblock {
-      width: 500px;
-      padding-left: 20px;
-      text-align: center;
+    width: 500px;
+    padding-left: 20px;
+    text-align: center;
   }
 
   &__imagecontainer {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 480px;
-      width: 480px;
-      margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+    width: 480px;
+    margin-bottom: 30px;
 
-      img {
-          max-height: 480px;
-          max-width: 480px;
-      }
+    img {
+      max-height: 480px;
+      max-width: 480px;
+    }
+
+    &:hover {
+      // background-image: url(../img/goods/wetsuit-hover.png);
+      // img {
+      //   display: none;
+      // }
+      cursor: zoom-in
+    }
   }
 
   &__price {
@@ -471,7 +479,7 @@
     &__inner {
       padding-bottom: 0;
     }
-    
+
     &__cardwrapper {
       width: 932px;
     }

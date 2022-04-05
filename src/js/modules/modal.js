@@ -1,23 +1,28 @@
-export function modalMap() {
-    const modalMap = document.querySelector('.modal-map');
-    const modalMapBtns = document.querySelectorAll('.btn--map');
-    const mapBtnClose = document.querySelector('.modal-map__btn-close');
+export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId) {
+    const modal = document.querySelector(`.${modalClass}`);
+    const modalBtns = document.querySelectorAll(`.${modalBtnClass}`);
+    const btnClose = document.querySelector(`.${btnCloseClass}`);
     const main = document.querySelector('.main');
     const header = document.querySelector('.header');
     const footer = document.querySelector('.footer');
 
-    modalMapBtns.forEach(modalMapBtn => {
-        modalMapBtn.addEventListener('click', (e) => {
+    modalBtns.forEach(modalBtn => {
+        modalBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            modalMap.classList.add('modal--active');
+            modal.classList.add('modal--active');
             main.classList.add('visually-hidden');
             header.classList.add('visually-hidden');
             footer.classList.add('visually-hidden');
+
+            if (focusInputId) {
+                const focusInput = document.querySelector(`#${focusInputId}`);
+                focusInput.focus();
+            }     
         });
     });
 
-    mapBtnClose.addEventListener('click', () => {
-        modalMap.classList.remove('modal--active');
+    btnClose.addEventListener('click', () => {
+        modal.classList.remove('modal--active');
         main.classList.remove('visually-hidden');
         header.classList.remove('visually-hidden');
         footer.classList.remove('visually-hidden');
@@ -28,7 +33,7 @@ export function modalMap() {
         if (target.closest('.modal__wrap')) {
             event.stopPropagation();
         } else if (target.closest('.modal')) {
-            modalMap.classList.remove('modal--active');
+            modal.classList.remove('modal--active');
             main.classList.remove('visually-hidden');
             header.classList.remove('visually-hidden');
             footer.classList.remove('visually-hidden');

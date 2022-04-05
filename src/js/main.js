@@ -1,9 +1,7 @@
 import * as funcs from './modules/functions.js';
 import { mainMenu } from './modules/mainMenu.js';
 import { tabs } from './modules/tabs.js';
-import { modalRequest } from './modules/modalRequest.js';
-import { modalQuickView } from './modules/modalQuickView.js';
-import { modalMap } from './modules/modalMap.js';
+import { modal } from './modules/modal.js';
 import { useSelect } from './modules/select.js';
 import { useRangeSlider } from './modules/rangeSlider.js';
 import MyString from './string.js';
@@ -24,17 +22,12 @@ funcs.isWebp(); // Добавляет класс к html в зависимост
 mainMenu(); // Главное меню
 tabs('popular-goods__category-link', 'popular-goods__tab'); // Табы в разделе popular-goods
 tabs('product-description__category-link', 'product-description_tab'); // Табы в разделе product-description
-modalRequest(); // Модальное окно заявка
-modalQuickView(); // Модальное окно быстрый просмотр товара
-modalMap(); // Модальное окно карта
+modal('modal-request', 'btn--request', 'modal__btn-close', 'modal-request__name'); // Модальное окно заявка
+modal('modal-quickview', 'btn--quickview','modal-quickview__btn-close'); // Модальное окно быстрый просмотр товара
+modal('modal-map', 'btn--map', 'modal-map__btn-close'); // Модальное окно карта
 useSelect(); // Имплементирует кастомный селект для раздела catalog
 useRangeSlider(); // Имплементирует кастомный range slider для раздела catalog
-
-const filterButton = document.querySelector('.catalog__filter');
-const paramsElement = document.querySelector('.params');
-
-filterButton.addEventListener('click', () => {
-    paramsElement.classList.toggle('params--active');
-});
+paramsFilterBtn(); // Кнопка настроек для раздела catalog
+useHoverImage(); // Ховер эффект на картинках товаров в разделе product-description
 
 
