@@ -927,7 +927,7 @@ body {
   box-shadow: 0px 2px 2px #80B1CF;
 }
 
-.catalog-category .header .container {
+.catalog-category .header .container, .category .header .container {
   background: radial-gradient(97.99% 14110% at 0.63% 100%, #113921 0%, #2E7145 52.08%, #1A522F 96.96%);
   box-shadow: 0px 2px 2px #113921;
 }

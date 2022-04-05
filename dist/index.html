@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width" initial-scale="1"/>
     <link rel="stylesheet" href="/css/style.min.css"/>
   </head>
-  <body class="catalog-category"> 
+  <body class="category"> 
     <header class="header"> 
       <div class="container">
         <h2 class="visually-hidden">Шапка сайта</h2>
@@ -31,187 +31,20 @@
       </div>
     </header>
     <main class="main">
-      <section class="greetings">
+      <section class="product-description">
         <div class="container">
-          <div class="greetings__inner"> 
-            <h2 class="greetings__title">Серф-тур на камчатке: все самое лучшее за 2 недели</h2>
-            <button class="greetings__btn btn btn--request">Хочу на серфинг</button>
-          </div>
-        </div>
-      </section>
-      <section class="catalog">
-        <div class="container">
-          <div class="catalog__inner">
+          <div class="product-description__inner">
             <h2 class="visually-hidden">Каталог товаров </h2>
-            <div class="catalog__controls"> 
-              <div class="catalog__breadcrumbs breadcrumbs">
+            <div class="product-description__controls"> 
+              <div class="product-description__breadcrumbs breadcrumbs">
                 <ul class="breadcrumbs__list">
                   <li class="breadcrumbs__item breadcrumbs__item-home"><a href="#"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M34.6258 15.3682L18.3522 0.331681C17.8781 -0.11056 17.1219 -0.11056 16.6479 0.331681L0.374847 15.3676C0.135276 15.5889 0 15.8938 0 16.2124C0 16.861 0.549387 17.3867 1.22699 17.3867H3.38957V33.8258C3.38957 34.4743 3.93888 35 4.61657 35H13.2055C13.8832 35 14.4325 34.4743 14.4325 33.8258V24.432H20.5675V33.8258C20.5675 34.4743 21.1168 35 21.7945 35H30.3835C31.0611 35 31.6105 34.4743 31.6105 33.8258V17.3867H33.773C34.1057 17.3867 34.424 17.2574 34.6552 17.0285C35.1262 16.5622 35.113 15.8189 34.6258 15.3682ZM31.6105 16.2124C30.9328 16.2124 30.3835 16.7381 30.3835 17.3867V33.8258H21.7945V24.432C21.7945 23.7835 21.2452 23.2578 20.5675 23.2578H14.4325C13.7548 23.2578 13.2055 23.7835 13.2055 24.432V33.8258H4.61657V17.3867C4.61657 16.7381 4.06726 16.2124 3.38957 16.2124H1.22699L17.5 1.17653L33.7792 16.2124H31.6105Z" fill="#C4C4C4"/>
 </svg></a></li>
                   <li class="breadcrumbs__item"> <a href="#">Каталог</a></li>
-                  <li class="breadcrumbs__item" id="breadcrumbs-current"> <a href="#">Доски</a></li>
+                  <li class="breadcrumbs__item"><a href="#">Доски</a></li>
+                  <li class="breadcrumbs__item" id="breadcrumbs-current"> <a href="#">Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit</a></li>
                 </ul>
-                <button class="catalog__filter"></button>
-              </div>
-              <div class="catalog__sortblock"> 
-                <div class="catalog__sortby">
-                  <div class="select unselectable" name="sortby">Упорядочить<span class="changing-text">по цене</span></div>
-                  <div class="option-list visually-hidden"> 
-                    <div class="option option--colored" value="value1" selected="selected">
-                      <div class="option-text">По цене</div>
-                      <div class="option-image"></div>
-                    </div>
-                    <div class="option" value="value2">
-                      <div class="option-text">По названию</div>
-                      <div class="option-image"></div>
-                    </div>
-                    <div class="option" value="value3">
-                      <div class="option-text">По популярности</div>
-                      <div class="option-image"> </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="catalog__sortbycount">
-                  <div class="select unselectable" name="sortbycount">Показать по<span class="changing-text">10</span></div>
-                  <div class="option-list visually-hidden">
-                    <div class="option" value="value1" selected="selected">10</div>
-                    <div class="option" value="value2">20</div>
-                    <div class="option" value="value3">50</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="catalog__goodsblock"> 
-              <form class="params" action="" method="POST"> 
-                <h3 class="params__title">Параметры</h3>
-                <div class="params__price price">
-                  <div class="price__titleblock"> 
-                    <p class="price__title">Цена</p><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.99997 15.7002C9.64153 15.7002 9.28314 15.5634 9.00986 15.2902L0.410313 6.6906C-0.13673 6.14356 -0.13673 5.25662 0.410313 4.7098C0.957135 4.16298 1.8439 4.16298 2.39098 4.7098L9.99997 12.3192L17.609 4.71007C18.1561 4.16324 19.0427 4.16324 19.5895 4.71007C20.1368 5.25689 20.1368 6.14382 19.5895 6.69087L10.9901 15.2905C10.7167 15.5637 10.3583 15.7002 9.99997 15.7002Z" fill="#C4C4C4"/>
-</svg>
-                  </div>
-                  <div class="price__inputblock"> 
-                    <input type="text" name="min-price" value="" id="input-0"/>
-                    <div id="textnode">-</div>
-                    <input type="text" name="max-price" value="" id="input-1"/>
-                  </div>
-                  <div class="price__rangeslider" id="range-slider"></div>
-                </div>
-                <div class="params__brand brand">
-                  <div class="brand__titleblock">
-                    <p class="brand__title">Бренд</p><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.99997 15.7002C9.64153 15.7002 9.28314 15.5634 9.00986 15.2902L0.410313 6.6906C-0.13673 6.14356 -0.13673 5.25662 0.410313 4.7098C0.957135 4.16298 1.8439 4.16298 2.39098 4.7098L9.99997 12.3192L17.609 4.71007C18.1561 4.16324 19.0427 4.16324 19.5895 4.71007C20.1368 5.25689 20.1368 6.14382 19.5895 6.69087L10.9901 15.2905C10.7167 15.5637 10.3583 15.7002 9.99997 15.7002Z" fill="#C4C4C4"/>
-</svg>
-                  </div>
-                  <ul class="brand__list">
-                    <li class="brand__item">
-                      <input class="visually-hidden brand__item-radio" type="radio" name="brand" value="Vissla" id="brand-Vissla"/>
-                      <label for="brand-Vissla">Vissla</label>
-                    </li>
-                    <li class="brand__item">
-                      <input class="visually-hidden brand__item-radio" type="radio" name="brand" value="BILLABONG" id="brand-BILLABONG"/>
-                      <label for="brand-BILLABONG">BILLABONG</label>
-                    </li>
-                    <li class="brand__item">
-                      <input class="visually-hidden brand__item-radio" type="radio" name="brand" value="QUIKSILVER" id="brand-QUIKSILVER" checked="checked"/>
-                      <label for="brand-QUIKSILVER">QUIKSILVER</label>
-                    </li>
-                  </ul>
-                </div>
-                <div class="params__color color">
-                  <div class="color__titleblock">
-                    <p class="color__title">Цвет</p><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.99997 15.7002C9.64153 15.7002 9.28314 15.5634 9.00986 15.2902L0.410313 6.6906C-0.13673 6.14356 -0.13673 5.25662 0.410313 4.7098C0.957135 4.16298 1.8439 4.16298 2.39098 4.7098L9.99997 12.3192L17.609 4.71007C18.1561 4.16324 19.0427 4.16324 19.5895 4.71007C20.1368 5.25689 20.1368 6.14382 19.5895 6.69087L10.9901 15.2905C10.7167 15.5637 10.3583 15.7002 9.99997 15.7002Z" fill="#C4C4C4"/>
-</svg>
-                  </div>
-                  <ul class="color__list">
-                    <li class="color__item">
-                      <input class="visually-hidden color__item-radio" type="radio" name="color" value="Черный" id="color-Черный" checked="checked"/>
-                      <label for="color-Черный">Черный</label>
-                    </li>
-                    <li class="color__item">
-                      <input class="visually-hidden color__item-radio" type="radio" name="color" value="Синий" id="color-Синий"/>
-                      <label for="color-Синий">Синий</label>
-                    </li>
-                    <li class="color__item">
-                      <input class="visually-hidden color__item-radio" type="radio" name="color" value="Красный" id="color-Красный"/>
-                      <label for="color-Красный">Красный</label>
-                    </li>
-                  </ul>
-                </div>
-                <div class="params__availability availability">
-                  <div class="availability__titleblock">
-                    <p class="availability__title">Наличие</p><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.99997 15.7002C9.64153 15.7002 9.28314 15.5634 9.00986 15.2902L0.410313 6.6906C-0.13673 6.14356 -0.13673 5.25662 0.410313 4.7098C0.957135 4.16298 1.8439 4.16298 2.39098 4.7098L9.99997 12.3192L17.609 4.71007C18.1561 4.16324 19.0427 4.16324 19.5895 4.71007C20.1368 5.25689 20.1368 6.14382 19.5895 6.69087L10.9901 15.2905C10.7167 15.5637 10.3583 15.7002 9.99997 15.7002Z" fill="#C4C4C4"/>
-</svg>
-                  </div>
-                  <ul class="availability__list">
-                    <li class="availability__item">
-                      <input class="visually-hidden availability__item-radio" type="radio" name="availability" value="В наличии" id="availability-В наличии" checked="checked"/>
-                      <label for="availability-В наличии">В наличии </label>
-                    </li>
-                    <li class="availability__item">
-                      <input class="visually-hidden availability__item-radio" type="radio" name="availability" value="Под заказ" id="availability-Под заказ"/>
-                      <label for="availability-Под заказ">Под заказ </label>
-                    </li>
-                  </ul>
-                </div>
-                <button class="params__show btn">Показать</button>
-                <button class="params__clear">Очистить</button>
-              </form>
-              <div class="catalog-goods"> 
-                <ul class="catalog-goods__goods-list">
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_1.png" alt="Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit"/>
-                    <h4 class="goods-item__title">Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit</h4>
-                    <p class="goods-item__price">27 398 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_2.png" alt="Гидрокостюм BILLABONG 3 Furnace Absolute GBS"/>
-                    <h4 class="goods-item__title">Гидрокостюм BILLABONG 3 Furnace Absolute GBS</h4>
-                    <p class="goods-item__price">45 205 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_3.png" alt="Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS"/>
-                    <h4 class="goods-item__title">Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS</h4>
-                    <p class="goods-item__price">15 790 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_4.png" alt="Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit"/>
-                    <h4 class="goods-item__title">Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit</h4>
-                    <p class="goods-item__price">19 865 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_1.png" alt="Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit"/>
-                    <h4 class="goods-item__title">Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit</h4>
-                    <p class="goods-item__price">27 398 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_2.png" alt="Гидрокостюм BILLABONG 3 Furnace Absolute GBS"/>
-                    <h4 class="goods-item__title">Гидрокостюм BILLABONG 3 Furnace Absolute GBS</h4>
-                    <p class="goods-item__price">45 205 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_3.png" alt="Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS"/>
-                    <h4 class="goods-item__title">Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS</h4>
-                    <p class="goods-item__price">15 790 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                  <li class="catalog-goods__goods-item goods-item"> <img src="img/goods/wetsuit_4.png" alt="Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit"/>
-                    <h4 class="goods-item__title">Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit</h4>
-                    <p class="goods-item__price">19 865 руб</p>
-                    <button class="goods-item__btn btn btn--quickview">Купить</button>
-                  </li>
-                </ul>
-                <div class="pagination">
-                  <ul class="pagination__list">
-                    <li id="pagination-current"><a href="#">1</a></li>
-                    <li> <a href="#">2</a></li>
-                    <li> <a href="#">3</a></li>
-                    <li> <a href="#">...</a></li>
-                    <li> <a href="#">9</a></li>
-                  </ul>
-                </div>
               </div>
             </div>
           </div>

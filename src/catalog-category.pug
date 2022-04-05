@@ -1,12 +1,14 @@
 - let pageTitle = 'Сайт о серфинге';
+- let greetingTitle = 'Серф-тур на камчатке: все самое лучшее за 2 недели';
 
 doctype html 
 html(lang='ru')
   include html/head
-  body.category  
+  body.catalog-category  
     include html/header
     main.main
-      include html/product-description
+      include html/greetings
+      include html/catalog
       include html/populargoods-common
       include html/instagram-feed
     include html/footer
