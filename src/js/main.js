@@ -4,6 +4,8 @@ import { tabs } from './modules/tabs.js';
 import { modal } from './modules/modal.js';
 import { useSelect } from './modules/select.js';
 import { useRangeSlider } from './modules/rangeSlider.js';
+import { paramsFilterBtn } from './modules/paramsFilterBtn.js';
+import { useHoverImage } from './modules/hoverImage.js';  
 import MyString from './string.js';
 import './nouislider.min.js';
 
