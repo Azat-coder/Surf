@@ -1,0 +1,15 @@
+.accordion {
+  &__item {
+    cursor: pointer;
+  }
+
+  &__content {
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    &--hidden {
+      height: 0px;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+

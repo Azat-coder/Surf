@@ -6,6 +6,10 @@ export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId) {
     const header = document.querySelector('.header');
     const footer = document.querySelector('.footer');
 
+    if (!modal) {
+        return;
+    }
+
     modalBtns.forEach(modalBtn => {
         modalBtn.addEventListener('click', (e) => {
             e.preventDefault();
