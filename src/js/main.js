@@ -9,6 +9,7 @@ import { useHoverImage } from './modules/hoverImage.js';
 import MyString from './string.js';
 import './nouislider.min.js';
 import { useAccordion } from './modules/accordion.js';
+import { useSubmenuMobile } from './modules/submenuMobile.js';
 
 // Класс для работы со строкой
 const myString = new MyString('Привет');
@@ -33,5 +34,5 @@ useRangeSlider(); // Имплементирует кастомный range slide
 paramsFilterBtn(); // Кнопка настроек для раздела catalog
 useHoverImage(); // Ховер эффект на картинках товаров в разделе product-description
 useAccordion(460); //Аккродеон в разделе article
-
+useSubmenuMobile(); // Мобильное подменю
 
