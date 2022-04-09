@@ -26,6 +26,7 @@ funcs.isWebp(); // Добавляет класс к html в зависимост
 mainMenu(); // Главное меню
 tabs('popular-goods__category-link', 'popular-goods__tab'); // Табы в разделе popular-goods
 tabs('product-description__category-link', 'product-description_tab'); // Табы в разделе product-description
+tabs('tour__category-link', 'tour__tab'); // Табы в разделе tour
 modal('modal-request', 'btn--request', 'modal__btn-close', 'modal-request__name'); // Модальное окно заявка
 modal('modal-quickview', 'btn--quickview','modal-quickview__btn-close'); // Модальное окно быстрый просмотр товара
 modal('modal-map', 'btn--map', 'modal-map__btn-close'); // Модальное окно карта
@@ -33,6 +34,7 @@ useSelect(); // Имплементирует кастомный селект д�
 useRangeSlider(); // Имплементирует кастомный range slider для раздела catalog
 paramsFilterBtn(); // Кнопка настроек для раздела catalog
 useHoverImage(); // Ховер эффект на картинках товаров в разделе product-description
-useAccordion(460); //Аккродеон в разделе article
+useAccordion('article', 460); //Аккордеон в разделе article
+useAccordion('tour'); //Аккордеон в разделе tour
 useSubmenuMobile(); // Мобильное подменю
 

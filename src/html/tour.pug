@@ -1,0 +1,182 @@
+-
+  const reviews = [
+      {
+        name: 'Иван Иванов',
+        date: '10.01.2021', 
+        time: '06:16', 
+        rating: 4,
+        text: 'Хотел сказать огромное спасибо за кемп, сравнить не с чем, но очень понравилось, это считай ничего не сказать. По крайней мере теперь никакого отдыха в отелях и тюленинга на пляжах ближайшие лет 30-40 точно не хочу. Приеду на майские!'
+      },
+      {
+        name: 'Никита Федоров',
+        date: '30.12.2020', 
+        time: '13:14', 
+        rating: 5,
+        text: 'Собрались в сёрф лагерь, выбрали по отзывам сие заведение. И не зря! Что главное в современном мире? Правильно - отношение к людям. И здесь оно на высоте! Это проявляется как в процессе обучения, так и во всех сопутствующих мероприятиях, таких как перекусы утренние, обеденные, вечерние, передвижения до пляжа, другие активности. Кстати, практически вся еда - домашнего приготовления, классическая марокканская. Свежие фрукты с рынка на завтрак и в составе перекуса на пляже всегда очень вовремя. Инструкторы - хотят тебя научить кататься или поднять твой уровень, если уже умеешь, и искренне радуются твоим успехам. А чего стоит возможность наблюдать закат над океаном с террасы! Правильно инструкторы говорят: сёрф - это ощущения. Так вот как раз ребята из этого кемпа помогают усилить эти ощущения от волн и сёрфа! Рекомендую!'
+      },
+    ]
+
+section.tour
+  .container
+    .tour__inner
+      .tour__review.review 
+        .review__imageblock 
+          .review__image-main 
+            img(src="@img/marocco/marocco_main.png", alt="alt")
+          .review__image-small 
+            img(src="@img/marocco/marocco_small1.png", alt="alt")
+            img(src="@img/marocco/marocco_small2.png", alt="alt")
+            img(src="@img/marocco/marocco_small3.png", alt="alt")
+        .review__infoblock 
+          h2.review__title Серф и йога кемп в Марокко
+          .tour__ratingblock 
+            .tour__rating-area
+                img(src='@img/ratings/rating-4.png', alt='Рейтинг')
+            .tour__ratingtext 5 (64 отзыва ) 
+                a.tour__rating-link(href="#") Написать отзыв
+          .tour__characteristics
+                    .tour__char-item 
+                        p.tour__charname Температура воды:
+                        p.tour__charvalue Прохладно, нужен гидрик
+                    .tour__char-item
+                        p.tour__charname Страна:
+                        p.tour__charvalue Марокко
+                    .tour__char-item
+                        p.tour__charname Регион:
+                        p.tour__charvalue Агадир
+                    .tour__char-item
+                        p.tour__charname Уровень:
+                        p.tour__charvalue Любой уровень
+          .tour__buttonblock 
+                    button.tour__btn.btn(type="submit") Хочу на серфинг
+                    p.tour__btninfo * для уточнения цены оставьте заявку
+      .tour__categories
+        .tour__category-item
+          a.tour__category-link.tour__category-link--active(href='', id='', class='') Описание
+        .tour__category-item
+          a.tour__category-link(href='', id='', class='') Параметры
+        .tour__category-item
+          a.tour__category-link(href='', id='', class='') Карта
+        .tour__category-item
+          a.tour__category-link(href='', id='', class='') Отзывы
+      .tour__tab.tab.tab-description
+        .tab__category.accordion
+          .accordion__item
+            .tab__category-title
+              h3 Сезон
+              .tab__category-icon
+          .accordion__content
+            p.tab__category-text В Марокко заниматься серфингом можно круглый год, но начинать обучение лучше с марта по май и с октября по ноябрь: в это время не так жарко днем и не холодно ночью, а размер волн подходит для начального и среднего уровней.
+            p.tab__category-text Самые жаркие месяцы с июня по сентябрь: воздух нагревается до 35˚С, вода в океане — до 21˚С. Зимой температура воздуха днем 21-24˚С, вода в океане 16-17˚С. В декабре и январе приходят волны покрупнее из-за частых штормов на Атлантике, поэтому этот период подойдет опытным серферам.
+            picture
+              source(media='(max-width: 1440px)', srcset='@img/marocco/marocco-season1.png')
+              img.tab__image(src='@img/marocco/marocco-season1.png', alt='')
+        .tab__category.accordion.accordion--closed
+          .accordion__item
+            .tab__category-title
+              h3 Место
+              .tab__category-icon
+          .accordion__content
+            p.tab__category-text Рыбацкий поселок Тамрахт, где будем жить и учиться, расположен в южной части Атлантического побережья Марокко, в 30 минутах езды от Агадира.
+            .tab__imageblock 
+              img(src="@img/marocco/marocco_place1.png", alt="alt")
+              img(src="@img/marocco/marocco_place2.png", alt="alt")
+            p.tab__category-text Кемп расположен в спокойном районе в 15 минутах пешком до океана и серф-спота. В пешей доступности местные кафешки, супермаркеты и аптеки, прилавки со свежими фруктами и марокканскими сладостями. За развлечениям, алкоголем, ночной жизнью и шопингом лучше ехать в Агадир.
+        .tab__category.accordion.accordion--closed
+          .accordion__item
+            .tab__category-title 
+              h3 Программа лагеря
+              .tab__category-icon
+          .accordion__content
+            p.tab__category-text Готовься заниматься серфингом 6 дней в неделю по 4 часа в день. Остальное время можно посвятить экскурсиям в Райскую долину и разные города Марокко, катанию на верблюдах, пикники на пляже. Все это можно организовать на месте по желанию.
+            img.tab__image(src='@img/marocco/marocco_program1.png', alt='')
+            p.tab__category-text Серфинга в программе много, восстановить мышцы после уроков можно в местном хаммаме, который посоветует хозяин кемпа. Главное разбавить процедуру расслабляющим массажем. Хорошая терапия для восстановления тела и духа — закатная йога на террасе серф-кемпа.
+            img.tab__image(src='@img/marocco/marocco_program2.png', alt='')
+        .tab__category.accordion.accordion--closed
+          .accordion__item
+            .tab__category-title
+              h3 В программу лагеря включено
+              .tab__category-icon
+          .accordion__content
+            ul.tab__category-programlist
+              li.tab__category-programitem Трансфер из/в аэропорт Агадира;
+              li.tab__category-programitem Проживание в выбранном номере;
+              li.tab__category-programitem 7 завтраков, 6 обедов (ланч бокс) и 5 мароканских ужинов в неделю;
+              li.tab__category-programitem BBQ каждую пятницу;
+              li.tab__category-programitem Wi-Fi, X-box, ковры для йоги в свободном доступе;
+              li.tab__category-programitem Трансфер до серф-спотов и обратно;
+              li.tab__category-programitem Обучение серфингу – 6 уроков в неделю по 4 часа (2 сессии по 2 часа) на английском языке;
+              li.tab__category-programitem Йога на закате: 6 уроков в неделю по 1-1.5 часа (в пакете “серф и йога”);
+              li.tab__category-programitem Все оборудование на время проживания: серф-борды, лиши, гидрокостюмы;
+        .tab__category.accordion.accordion--closed
+          .accordion__item
+            .tab__category-title 
+              h3 Обучение серфингу
+              .tab__category-icon
+          .accordion__content
+            p.tab__category-text Занятия серфингом проводятся шесть дней в неделю на пляжах Тамрахт и Тагазут, в небольших группах до 6 человек на одного инструктора. Перед каждым уроком — теория и разминка на пляже. Урок длится 4 часа с перерывом на ланч.
+            p.tab__category-text Занятия серфингом проводятся шесть дней в неделю на пляжах Тамрахт и Тагазут, в небольших группах до 6 человек на одного инструктора. Перед каждым уроком — теория и разминка на пляже. Урок длится 4 часа с перерывом на ланч.
+            .tab__imageblock 
+              img(src="@img/marocco/marocco_education1.png", alt="alt")
+              img(src="@img/marocco/marocco_education2.png", alt="alt")
+      .tour__tab.tab.tab-params.visually-hidden
+        .tour__params-item 
+            p.tour__paramsname Температура воды:
+            p.tour__paramsvalue Прохладно, нужен гидрик
+        .tour__params-item
+            p.tour__paramsname Страна:
+            p.tour__paramsvalue Марокко
+        .tour__params-item
+            p.tour__paramsname Регион:
+            p.tour__paramsvalue Агадир
+        .tour__params-item
+            p.tour__paramsname Уровень:
+            p.tour__paramsvalue Любой уровень
+        .tour__params-item 
+            p.tour__paramsname Сезон:
+            p.tour__paramsvalue Январь, Февраль, Март, Апрель, Май, Сентябрь, Октябрь, Ноябрь, Декабрь
+        .tour__params-item
+            p.tour__paramsname Тип одежды:
+            p.tour__paramsvalue Гидрокостюм 3/2 мм
+        .tour__params-item
+            p.tour__paramsname Опыт серфинга инструторов:
+            p.tour__paramsvalue Более 15 лет
+        .tour__params-item
+            p.tour__paramsname Сертификация инструкторов:
+            p.tour__paramsvalue FRMS
+        .tour__params-item
+            p.tour__paramsname Уровень катания:
+            p.tour__paramsvalue Любой уровень
+        .tour__params-item
+            p.tour__paramsname Длительность урока:
+            p.tour__paramsvalue 4 часа (2 урок + 2 сами)
+        .tour__params-item
+            p.tour__paramsname Тип жилья:
+            p.tour__paramsvalue Вилла
+        .tour__params-item
+            p.tour__paramsname Формат номера:
+            p.tour__paramsvalue Номер на 6 человек, Двухместный номер, Отдельная спальня
+        .tour__params-item
+            p.tour__paramsname Wi-Fi:
+            p.tour__paramsvalue Есть
+        .tour__params-item
+            p.tour__paramsname Питание:
+            p.tour__paramsvalue Завтрак + 6 обедов и ужинов
+        .tour__params-item
+            p.tour__paramsname Экскурсии в программе:
+            p.tour__paramsvalue За доплату
+      .tour__tab.tab-map.visually-hidden
+        img(src="../img/map.png", alt="Мы на карте")
+      .tour__tab.tab-reviews.visually-hidden
+        ul.tab-reviews__list
+          each item in reviews
+            li.tab-reviews__item 
+              .tab-reviews__header
+                .tab-reviews__infoblock
+                  p.tab-reviews__name #{item.name}
+                  .tab-reviews__datetime
+                    p.tab-reviews__date #{item.date}
+                    p.tab-reviews__time #{item.time}
+                img.tab-reviews__rating(src=`../img/ratings/rating-${item.rating}.png`, alt='Текст отзыва')
+              .tab-reviews__body 
+                p.tab-reviews__text #{item.text}
