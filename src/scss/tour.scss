@@ -399,6 +399,11 @@
         display: none;
       }
     }
+
+    .tab-map {
+      width: 892px;
+      overflow: hidden;
+    }
   }
 }
 
@@ -511,6 +516,11 @@
         display: none;
       }
     }
+
+    .tab-map {
+      width: 688px;
+      overflow: hidden;
+    }
   }
 }
 
@@ -591,6 +601,11 @@
       &__link {
         display: none;
       }
+    }
+
+    .tab-map {
+      width: auto;
+      overflow: hidden;
     }
   }
 }
