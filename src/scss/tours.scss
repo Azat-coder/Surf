@@ -37,9 +37,12 @@
 
   .tour-item {
     position: relative;
+    cursor: pointer;
 
     img {
       width: 380px;
+      filter: blur(2px);
+      transition: all ease-in 0.3s;
     }
 
     &__infoblock {
@@ -71,6 +74,14 @@
       text-align: right;
       text-transform: uppercase;
       color: $color-text-secondary;
+    }
+
+    &:hover {
+      img {
+        filter: blur(0px);
+        transform: scale(1.01);
+        transition: all ease-in 0.3s;
+      }
     }
   }
 }

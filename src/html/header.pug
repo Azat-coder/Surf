@@ -2,7 +2,7 @@
   const navItems = [
     {
       name: 'Каталог',
-      href: '/catalog.html'
+      href: 'catalog.html'
     },
     {
       name: 'О нас',
@@ -14,7 +14,7 @@
     },
     {
       name: 'Туры',
-      href: '/catalog',
+      href: '#',
       subcategories: [
         {
           name: 'Марокко',
@@ -44,9 +44,10 @@ header.header
   .container
     h2.visually-hidden Шапка сайта
     .header__logo.logo
-      picture 
-        source(media="(max-width: 768px)", srcset="@img/surf-logo-small.svg")  
-        img.logo__image(src="@img/surf-logo.svg", alt="Наш логотип")
+      a(href="/")
+        picture 
+          source(media="(max-width: 768px)", srcset="@img/surf-logo-small.svg")  
+          img.logo__image(src="@img/surf-logo.svg", alt="Наш логотип")
     nav.header__nav.nav
       ul.nav__list.nav__list-main
         each navItem in navItems
