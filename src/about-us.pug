@@ -1,15 +1,15 @@
 - let pageTitle = 'Сайт о серфинге';
-- let greetingTitle = 'Серф-тур в мириссе: все самое лучшее за 2 недели';
+- let greetingTitle = 'Серф-кемп В куте: все самое лучшее за 2 недели';
 
 doctype html 
 html(lang='ru')
   include html/head
-  body.blog   
+  body.about-us   
     include html/header
     main.main
       include html/greetings
-      include html/blog-section
-      include html/instagram-feed
+      include html/about-us
+      include html/populargoods-common
     include html/footer
     include html/modal-map
     script(src='js/main.min.js')
