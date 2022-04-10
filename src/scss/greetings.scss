@@ -178,16 +178,17 @@
 @media screen and (max-width: 768px) {
   .greetings {
     background-size: auto 100%;
+
     &__inner {
-      width: auto;
-      max-width: 400px;
-
+      width: 280px;
+      padding-top: 225px;
     }  
-    &__title {  
-      font-size: 40px;
-      line-height: 50px; 
 
+    &__title {  
+      font-size: 28px;
+      line-height: 35px; 
     }
+    
     &__btn {
       width: 280px;
       font-size: 22px;
@@ -198,7 +199,7 @@
   .catalog {
     .greetings {
       &__inner {
-        width: 340px;
+        width: 280px;
       }
     }
   }
@@ -206,7 +207,7 @@
   .catalog-category {
     .greetings {
       &__inner {
-        width: 340px;
+        width: 280px;
       }
     }
   }
@@ -214,7 +215,7 @@
   .about-us {
     .greetings {
       &__inner {
-        width: 340px;
+        width: 280px;
       }
     }
   }
@@ -222,7 +223,7 @@
   .blog {
     .greetings {
       &__inner {
-        width: 340px;
+        width: 320px;
         padding-top: 370px;
       }
 
@@ -244,11 +245,6 @@
   .greetings {
     background-image: url("../img/backgrounds/greetings-bg4.png");
     background-size: auto;
-
-    &__inner {
-      width: 280px;
-      padding-top: 225px;
-    }  
   }
 
   .catalog {
