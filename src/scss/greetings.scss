@@ -46,6 +46,13 @@
   }
 }
 
+.about-us {
+  .greetings {
+    height: 560px;
+    background-image: url("../img/backgrounds/aboutus-greetings-bg1.png");
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .greetings {
     background-image: url("../img/backgrounds/greetings-bg2.png");
@@ -73,6 +80,12 @@
   .catalog-category {
     .greetings {
       background-image: url("../img/backgrounds/catalog-category-greetings-bg2.png");
+    }
+  }
+
+  .about-us {
+    .greetings {
+      background-image: url("../img/backgrounds/aboutus-greetings-bg2.png");
     }
   }
 }
@@ -110,6 +123,12 @@
       &__inner {
         width: 492px;
       }
+    }
+  }
+
+  .about-us {
+    .greetings {
+      background-image: url("../img/backgrounds/aboutus-greetings-bg3.png");
     }
   }
 }
@@ -185,6 +204,12 @@
       &__inner {
         width: 220px;
       }
+    }
+  }
+
+  .about-us {
+    .greetings {
+      background-image: url("../img/backgrounds/aboutus-greetings-bg4.png");
     }
   }
 }

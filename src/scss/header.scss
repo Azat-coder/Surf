@@ -149,6 +149,15 @@
   }
 }
 
+.about-us {
+  .header {
+    .container {
+      background: radial-gradient(97.99% 14110% at 0.63% 100%, #B0DBEE 0%, #BBE5FB 48.93%, #C2E9F8 96.96%);
+      box-shadow: 0px 2px 2px #A2D1EB;
+    }
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .header {
     .nav {
@@ -349,6 +358,16 @@
       .nav {
         &__list-main {
           background-color:#A5A694;
+        }
+      }
+    }
+  }
+
+  .about-us {
+    .header {
+      .nav {
+        &__list-main {
+          background-color:#BBE5FB;
         }
       }
     }

@@ -1,7 +1,11 @@
 export function useAccordion (sectionClass, mobileWidth=false) {
     const initializeAccordion = () => {
         const section = document.querySelector(`.${sectionClass}`);
-        const accordions = section.querySelectorAll('.accordion');
+        const accordions = section?.querySelectorAll('.accordion');
+
+        if (!section || !accordions) { 
+            return;
+        }
 
         accordions.forEach( acc => {
             const accItem = acc.querySelector('.accordion__item');

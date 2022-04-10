@@ -1,0 +1,215 @@
+.about-us {
+  &__inner {
+    padding-top: 50px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: $color-text-primary;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: $color-text-primary;
+  }
+
+  &__map {
+    padding-top: 20px;
+  }
+
+  &__addresses {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__address {
+    position: relative;
+    width: 535px;
+
+    &::before {
+      position: absolute;
+      top: 15px;
+      width: 50px;
+      height: 50px;
+      content: '';
+      background-image: url('../img/location.svg');
+    }
+  }
+
+  &__address-text {
+    padding-left: 70px;
+    margin-bottom: 5px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: $color-text-primary;
+  }
+
+  &__address-tel {
+    padding-left: 70px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #00B4E6;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .about-us {
+    &__title {
+      margin-bottom: 25px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__text {
+      margin-bottom: 25px;
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &__map {
+      width: 892px;
+      height: 371px;
+      overflow: hidden;
+    }
+
+    &__address {
+      width: 425px;
+    }
+
+    &__address-text {
+      font-size: 26px;
+      line-height: 33px;
+    }
+  
+    &__address-tel {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-us {
+    &__title {
+      margin-bottom: 20px;
+      font-size: 28px;
+      line-height: 35px;
+    }
+
+    &__text {
+      margin-bottom: 25px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    &__map {
+      position: relative;
+      left: -40px;
+      width: 768px;
+      height: 320px;
+      overflow: hidden;
+    }
+
+    &__addresses {
+      padding-bottom: 20px;
+    }
+
+    &__address {
+      width: 340px;
+
+      &::before {
+        position: absolute;
+        top: 10px;
+        width: 35px;
+        height: 35px;
+        content: '';
+        background-image: url('../img/location.svg');
+        background-size: cover;
+      }
+    }
+
+    &__address-text {
+      padding-left: 40px;
+      font-size: 24px;
+      line-height: 30px;
+      text-transform: capitalize;
+    }
+  
+    &__address-tel {
+      padding-left: 40px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-us {
+    &__inner {
+      padding-top: 30px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &__text {
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    &__map {
+      display: none;
+    }
+
+    &__addresses {
+      flex-wrap: wrap;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+
+    &__address {
+      width: 280px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+    &__address-text {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  
+    &__address-tel {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+}
