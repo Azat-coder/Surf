@@ -25,7 +25,8 @@ section.blog-section
       ul.blog-section__list
         each item in blogItems
           li.blog-section__item.blog-section-item
-            img(src=item.image, alt=item.alt)
+            .blog-section-item__image-container
+              img(src=item.image, alt=item.alt)
             .blog-section-item__textblock 
               h3.blog-section-item__title #{item.title}
               .blog-section__ratingblock 
