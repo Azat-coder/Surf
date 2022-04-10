@@ -27,22 +27,26 @@
     {
       title: 'Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit',
       price: '27 398 руб',
-      image: 'wetsuit_1.png'
+      image: 'wetsuit_1.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм BILLABONG 3 Furnace Absolute GBS',
       price: '45 205 руб',
-      image: 'wetsuit_2.png'
+      image: 'wetsuit_2.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS',
       price: '15 790 руб',
-      image: 'wetsuit_3.png'
+      image: 'wetsuit_3.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit',
       price: '19 865 руб',
-      image: 'wetsuit_4.png'
+      image: 'wetsuit_4.png',
+      href: 'category.html'
     },
   ]
 
@@ -50,22 +54,26 @@
     {
       title: 'Гидрокостюм BILLABONG 3 Furnace Absolute GBS',
       price: '45 205 руб',
-      image: 'wetsuit_2.png'
+      image: 'wetsuit_2.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit',
       price: '27 398 руб',
-      image: 'wetsuit_1.png'
+      image: 'wetsuit_1.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS',
       price: '15 790 руб',
-      image: 'wetsuit_3.png'
+      image: 'wetsuit_3.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit',
       price: '19 865 руб',
-      image: 'wetsuit_4.png'
+      image: 'wetsuit_4.png',
+      href: 'category.html'
     },
   ]
 
@@ -73,22 +81,26 @@
     {
       title: 'Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS',
       price: '15 790 руб',
-      image: 'wetsuit_3.png'
+      image: 'wetsuit_3.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit',
       price: '19 865 руб',
-      image: 'wetsuit_4.png'
+      image: 'wetsuit_4.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit',
       price: '27 398 руб',
-      image: 'wetsuit_1.png'
+      image: 'wetsuit_1.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм BILLABONG 3 Furnace Absolute GBS',
       price: '45 205 руб',
-      image: 'wetsuit_2.png'
+      image: 'wetsuit_2.png',
+      href: 'category.html'
     }
   ]
 
@@ -96,22 +108,26 @@
     {
       title: 'Гидрокостюм BILLABONG 3 Furnace Absolute GBS',
       price: '45 205 руб',
-      image: 'wetsuit_2.png'
+      image: 'wetsuit_2.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS',
       price: '15 790 руб',
-      image: 'wetsuit_3.png'
+      image: 'wetsuit_3.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit',
       price: '27 398 руб',
-      image: 'wetsuit_1.png'
+      image: 'wetsuit_1.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit',
       price: '19 865 руб',
-      image: 'wetsuit_4.png'
+      image: 'wetsuit_4.png',
+      href: 'category.html'
     },
   ]
 
@@ -119,22 +135,26 @@
     {
       title: 'Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit',
       price: '27 398 руб',
-      image: 'wetsuit_1.png'
+      image: 'wetsuit_1.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм BILLABONG 3 Furnace Absolute GBS',
       price: '45 205 руб',
-      image: 'wetsuit_2.png'
+      image: 'wetsuit_2.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS',
       price: '15 790 руб',
-      image: 'wetsuit_3.png'
+      image: 'wetsuit_3.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit',
       price: '19 865 руб',
-      image: 'wetsuit_4.png'
+      image: 'wetsuit_4.png',
+      href: 'category.html'
     },
   ]
 
@@ -149,44 +169,49 @@ section.popular-goods
     .popular-goods__tab.tab-wetsuits
       ul.popular-goods__goods-list
         each item in wetsuits 
-          li.popular-goods__goods-item.goods-item 
-            img(src=`@img/goods/${item.image}`, alt=item.title)
-            h4.goods-item__title #{item.title}
-            p.goods-item__price #{item.price}
-            button.goods-item__btn.btn.btn--quickview Купить
+          li.popular-goods__goods-item.goods-item
+            a(href=item.href).goods-item 
+              img(src=`@img/goods/${item.image}`, alt=item.title)
+              h4.goods-item__title #{item.title}
+              p.goods-item__price #{item.price}
+              button.goods-item__btn.btn.btn--quickview Купить
 
     .popular-goods__tab.tab-surfboards.visually-hidden
       ul.popular-goods__goods-list
         each item in surfboards 
-          li.popular-goods__goods-item.goods-item 
-            img(src=`@img/goods/${item.image}`, alt=item.title)
-            h4.goods-item__title #{item.title}
-            p.goods-item__price #{item.price}
-            button.goods-item__btn.btn.btn--quickview Купить
+          li.popular-goods__goods-item.goods-item
+            a(href=item.href).goods-item 
+              img(src=`@img/goods/${item.image}`, alt=item.title)
+              h4.goods-item__title #{item.title}
+              p.goods-item__price #{item.price}
+              button.goods-item__btn.btn.btn--quickview Купить
 
     .popular-goods__tab.tab-wakesurfs.visually-hidden
       ul.popular-goods__goods-list
         each item in wakesurfs 
-          li.popular-goods__goods-item.goods-item 
-            img(src=`@img/goods/${item.image}`, alt=item.title)
-            h4.goods-item__title #{item.title}
-            p.goods-item__price #{item.price}
-            button.goods-item__btn.btn.btn--quickview Купить
+          li.popular-goods__goods-item
+            a(href=item.href).goods-item
+              img(src=`@img/goods/${item.image}`, alt=item.title)
+              h4.goods-item__title #{item.title}
+              p.goods-item__price #{item.price}
+              button.goods-item__btn.btn.btn--quickview Купить
 
     .popular-goods__tab.tab-cases.visually-hidden
       ul.popular-goods__goods-list
         each item in cases 
-          li.popular-goods__goods-item.goods-item 
-            img(src=`@img/goods/${item.image}`, alt=item.title)
-            h4.goods-item__title #{item.title}
-            p.goods-item__price #{item.price}
-            button.goods-item__btn.btn.btn--quickview Купить
+          li.popular-goods__goods-item.goods-item
+            a(href=item.href).goods-item 
+              img(src=`@img/goods/${item.image}`, alt=item.title)
+              h4.goods-item__title #{item.title}
+              p.goods-item__price #{item.price}
+              button.goods-item__btn.btn.btn--quickview Купить
 
     .popular-goods__tab.tab-fins.visually-hidden
       ul.popular-goods__goods-list
         each item in fins 
-          li.popular-goods__goods-item.goods-item 
-            img(src=`@img/goods/${item.image}`, alt=item.title)
-            h4.goods-item__title #{item.title}
-            p.goods-item__price #{item.price}
-            button.goods-item__btn.btn.btn--quickview Купить
+          li.popular-goods__goods-item.goods-item
+            a(href=item.href).goods-item 
+              img(src=`@img/goods/${item.image}`, alt=item.title)
+              h4.goods-item__title #{item.title}
+              p.goods-item__price #{item.price}
+              button.goods-item__btn.btn.btn--quickview Купить

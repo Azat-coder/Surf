@@ -48,6 +48,7 @@
     align-items: center;
     width: 300px;
     height: 668px;
+    transition: all ease-in 0.3s;
 
     img {
       margin-top: 20px;
@@ -93,6 +94,12 @@
         transition: background-color ease-in-out 0.3s;
       }
     }
+
+    &:hover {
+      transform: scale(1.01) translateY(1px) translateX(-1px);
+      background-color: $color-text-auxiliary;
+      transition: all ease-in 0.3s;
+    }
   }
 }
 
@@ -104,6 +111,7 @@
     }
     .goods-item {
       &__title {
+        min-height: 85px;
         font-size: 22px;
         line-height: 28px;
       }
@@ -134,6 +142,7 @@
     .goods-item {
       height: auto;
       &__title {
+        min-height: 0;
         font-size: 20px;
         line-height: 25px;
       }

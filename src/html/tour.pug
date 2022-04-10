@@ -48,7 +48,7 @@ section.tour
                         p.tour__charname Уровень:
                         p.tour__charvalue Любой уровень
           .tour__buttonblock 
-                    button.tour__btn.btn(type="submit") Хочу на серфинг
+                    button.tour__btn.btn.btn--request Хочу на серфинг
                     p.tour__btninfo * для уточнения цены оставьте заявку
       .tour__categories
         .tour__category-item
@@ -166,7 +166,7 @@ section.tour
             p.tour__paramsname Экскурсии в программе:
             p.tour__paramsvalue За доплату
       .tour__tab.tab-map.visually-hidden
-        img(src="../img/map.png", alt="Мы на карте")
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ecd84c0f9b92608e8aa5376b9ab812908d7d852c851380d51d00dfb6093485a&amp;width=1200&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
       .tour__tab.tab-reviews.visually-hidden
         ul.tab-reviews__list
           each item in reviews

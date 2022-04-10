@@ -46,13 +46,15 @@
       &:active {
         color: $color-primary-main;
       }
-      &:focus {
+
+      &--active {
         color: $color-primary-main;
       }
     }
 
     .submenu {
       position: absolute;
+      z-index: 1;
       top: 55px;
       left: -15px;
       width: 220px;
@@ -263,7 +265,6 @@
         line-height: 27px;
         text-transform: capitalize;
         color: $color-text-primary;
-
         transition: color ease-in-out 0.3s;
   
         &:hover,

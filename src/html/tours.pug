@@ -1,3 +1,25 @@
+- 
+  const tours = [
+    {
+      category: 'Cерфинг и путешествия',
+      title: 'Серф-кемп Бали',
+      image: '@img/tours/bali.png',
+      href: 'tour.html'
+    },
+    {
+      category: 'Cерфинг и путешествия',
+      title: 'Серф-тур на Камчатке',
+      image: '@img/tours/kamchatka.png',
+      href: 'tour.html'
+    },
+    {
+      category: 'Cерфинг и путешествия',
+      title: 'Серф-тур на Шри Ланку',
+      image: '@img/tours/shri.png',
+      href: 'tour.html'
+    },
+  ]
+
 section.tours
   .container
     .tours__inner 
@@ -5,18 +27,10 @@ section.tours
         h2.tours__title Туры
         a.tours__tourslink Подробнее о турах
       ul.tours__list 
-        li.tours__item.tour-item
-          img(src="@img/tours/bali.png", alt="alt")
-          .tour-item__infoblock 
-            p.tour-item__category Cерфинг и путешествия
-            h4.tour-item__title Серф-кемп Бали
-        li.tours__item.tour-item
-          img(src="@img/tours/kamchatka.png", alt="alt")
-          .tour-item__infoblock  
-            p.tour-item__category Cерфинг и путешествия
-            h4.tour-item__title Серф-тур на Камчатке
-        li.tours__item.tour-item
-          img(src="@img/tours/shri.png", alt="alt")
-          .tour-item__infoblock  
-            p.tour-item__category Cерфинг и путешествия
-            h4.tour-item__title Серф-тур на Шри Ланку
+        each item in tours
+          li.tour-item
+            a(href=item.href)
+              img(src=item.image, alt=item.title)
+              .tour-item__infoblock 
+                p.tour-item__category #{item.category}
+                h4.tour-item__title #{item.title}

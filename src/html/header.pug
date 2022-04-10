@@ -18,23 +18,23 @@
       subcategories: [
         {
           name: 'Марокко',
-          href: '/tour.html'
+          href: 'tour.html'
         },
         {
           name: 'Бали',
-          href: '/'
+          href: 'tour.html'
         },
         {
           name: 'Куте',
-          href: '/'
+          href: 'tour.html'
         },
         {
           name: 'Камчатка',
-          href: '/'
+          href: 'tour.html'
         },
         {
           name: 'Мирисс',
-          href: '/'
+          href: 'tour.html'
         }
       ]
     }]
@@ -52,7 +52,7 @@ header.header
       ul.nav__list.nav__list-main
         each navItem in navItems
           li.nav__item 
-            a.nav__link(href=navItem.href) #{navItem.name}
+            a.nav__link(href=navItem.href, class=activePage === navItem.name ? 'nav__link--active' : '') #{navItem.name}
               if navItem.subcategories
                 nav.submenu
                   ul.submenu__list

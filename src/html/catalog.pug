@@ -3,42 +3,50 @@
     {
       title: 'Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit',
       price: '27 398 руб',
-      image: 'wetsuit_1.png'
+      image: 'wetsuit_1.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм BILLABONG 3 Furnace Absolute GBS',
       price: '45 205 руб',
-      image: 'wetsuit_2.png'
+      image: 'wetsuit_2.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS',
       price: '15 790 руб',
-      image: 'wetsuit_3.png'
+      image: 'wetsuit_3.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit',
       price: '19 865 руб',
-      image: 'wetsuit_4.png'
+      image: 'wetsuit_4.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit',
       price: '27 398 руб',
-      image: 'wetsuit_1.png'
+      image: 'wetsuit_1.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм BILLABONG 3 Furnace Absolute GBS',
       price: '45 205 руб',
-      image: 'wetsuit_2.png'
+      image: 'wetsuit_2.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas 2 mm Spring Suit SS',
       price: '15 790 руб',
-      image: 'wetsuit_3.png'
+      image: 'wetsuit_3.png',
+      href: 'category.html'
     },
     {
       title: 'Гидрокостюм VISSLA 7 Seas Gadoo 2/2 LS Spring Suit',
       price: '19 865 руб',
-      image: 'wetsuit_4.png'
+      image: 'wetsuit_4.png',
+      href: 'category.html'
     }
   ]
 
@@ -181,11 +189,12 @@ section.catalog
         .catalog-goods 
           ul.catalog-goods__goods-list
             each item in goods  
-              li.catalog-goods__goods-item.goods-item 
-                img(src=`@img/goods/${item.image}`, alt=item.title)
-                h4.goods-item__title #{item.title}
-                p.goods-item__price #{item.price}
-                button.goods-item__btn.btn.btn--quickview Купить
+              li
+                a.goods-item(href=item.href) 
+                  img(src=`@img/goods/${item.image}`, alt=item.title)
+                  h4.goods-item__title #{item.title}
+                  p.goods-item__price #{item.price}
+                  button.goods-item__btn.btn.btn--quickview Купить
           .pagination
             ul.pagination__list
               li(id='pagination-current')
