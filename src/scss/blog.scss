@@ -65,12 +65,14 @@
 
 @media screen and (max-width: 1440px) {
   .blog {
-    .blog-item {
-      width: 892px;
-
-      &:nth-child(2) {
+    &__list {
+      li:nth-child(2) {
         display: none;
       }
+    }
+
+    .blog-item {
+      width: 892px;
 
       &__title {
         margin-bottom: 15px;
@@ -123,6 +125,7 @@
 @media screen and (max-width: 768px) {
   .blog {
     .blog-item {
+      width: auto;
       flex-wrap: wrap;
     }
   }

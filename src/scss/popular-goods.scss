@@ -143,8 +143,10 @@
       height: auto;
       &__title {
         min-height: 0;
+        max-height: 50px;
         font-size: 20px;
         line-height: 25px;
+        overflow: hidden;
       }
       &__price {
         font-size: 30px;
@@ -164,8 +166,9 @@
 @media screen and (max-width: 768px) {
   .popular-goods {
     &__tab {
-      width: 320px;
+      width: 280px;
       margin: 0 auto;
+      padding: 0;
     }
     &__title {
       font-size: 22px;
@@ -178,6 +181,7 @@
       padding: 0 9px;
     }
     .goods-item {
+      width: 280px;
       height: auto;
       &:nth-child(2) {
         display: none;

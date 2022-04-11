@@ -189,8 +189,8 @@ section.popular-goods
     .popular-goods__tab.tab-wakesurfs.visually-hidden
       ul.popular-goods__goods-list
         each item in wakesurfs 
-          li.popular-goods__goods-item
-            a(href=item.href).goods-item
+          li.popular-goods__goods-item.goods-item
+            a(href=item.href).goods-item.goods-item
               img(src=`@img/goods/${item.image}`, alt=item.title)
               h4.goods-item__title #{item.title}
               p.goods-item__price #{item.price}
