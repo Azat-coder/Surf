@@ -1,7 +1,6 @@
 // базовые классы и селекторы
 const ITEMS_SELECTOR = '.slider__items';
 const ITEM_SELECTOR = '.slider__item';
-const ITEM_CLASS_ACTIVE = 'slider__item_active';
 const NEXT_BTN_SELECTOR = '.slider__control-next';
 const PREV_BTN_SELECTOR = '.slider__control-prev';
 const CONTROL_CLASS_SHOW = 'visually-hidden';
@@ -32,7 +31,9 @@ class Slider {
         this._options = {
             transition: true,
             transition_duration: 0.3,
+            containerClass: '.container',
         };
+        this._container = document.querySelector(this._options.containerClass);
         // изменяем конфигурацию слайдера в соответствии с переданными настройками
         for (var key in options) {
             if (this._options.hasOwnProperty(key)) {
@@ -68,7 +69,7 @@ class Slider {
 
     // добавление индикаторов
     _addIndicators() {
-        const itemsInViewCount = Math.round(this._items.clientWidth / this._itemList[0].clientWidth);
+        const itemsInViewCount = Math.round(this._container.clientWidth / this._itemList[0].clientWidth);
 
         if(itemsInViewCount >= this._itemList.length) {
             return;
@@ -79,17 +80,20 @@ class Slider {
         }
         const wrapper = document.createElement(INDICATOR_WRAPPER_ELEMENT);
         wrapper.className = INDICATOR_WRAPPER_CLASS;
+
         for (let i = 0; i < this._itemList.length; i++) {
             const item = document.createElement(INDICATOR_ITEM_ELEMENT);
             item.className = INDICATOR_ITEM_CLASS;
             item.dataset.slideTo = i;
             wrapper.appendChild(item);
         }
+
         this._selector.appendChild(wrapper);
     }
 
     _setIndicators() {
         const indicators = this._selector.querySelectorAll('.' + INDICATOR_ITEM_CLASS);
+
         if (indicators.length) {
             for (let i = 0; i < indicators.length; i++) {
                 const item = indicators[i];
@@ -122,7 +126,7 @@ class Slider {
     }
 
     _checkBtnsVisibility() {
-        const itemsInViewCount = Math.round(this._items.clientWidth / this._itemList[0].clientWidth);
+        const itemsInViewCount = Math.round(this._container.clientWidth / this._itemList[0].clientWidth);
         
         if(itemsInViewCount + this._currentIndex >= this._itemList.length) {
             this._btnNext.classList.add(CONTROL_CLASS_SHOW);
