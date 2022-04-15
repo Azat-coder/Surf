@@ -40,18 +40,13 @@ class Slider {
                 this._options[key] = options[key];
             }
         }
-        // добавляем к слайдам data-атрибуты
-        for (let i = 0; i < this._itemList.length; i++) {
-            this._itemList[i].dataset.order = i;
-            this._itemList[i].dataset.index = i;
-        }
         // скрываем в начальном состоянии кнопку назад
         this._checkBtnsVisibility();
         // назначаем обработчики
         this._addEventListener();
-        // Добавляем индикаторы
+        // добавляем индикаторы
         this._addIndicators();
-        // Устанавливаем активный класс индикатора
+        // устанавливаем активный класс индикатора
         this._setIndicators();
     }
 

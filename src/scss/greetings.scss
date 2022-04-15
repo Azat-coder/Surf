@@ -1,10 +1,17 @@
 .greetings {
   height: 590px;
-  background-image: url("../img/backgrounds/greetings-bg1.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+  &__background {
+    position: absolute;
+    width: 100%;
+    height: 590px;
+    background-image: url("../img/backgrounds/greetings-bg1.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: -1;
+  }
 
   &__inner {
     margin-left: auto;
@@ -27,7 +34,20 @@
 .catalog {
   .greetings {
     height: 500px;
-    background-image: url("../img/backgrounds/catalog-greetings-bg1.png");
+
+    &:hover {
+      .greetings__background {
+        filter: blur(0px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        transition: all 0.3s ease-in;
+      }
+    }
+
+    &__background {
+      height: 500px;
+      background-image: url("../img/backgrounds/catalog-greetings-bg1.png");
+      filter: blur(2px);
+      transition: all 0.3s ease-in;
+    }
 
     &__inner {
       width: 550px;
@@ -38,7 +58,11 @@
 .catalog-category {
   .greetings {
     height: 500px;
-    background-image: url("../img/backgrounds/catalog-category-greetings-bg1.png");
+
+    &__background {
+      height: 500px;
+      background-image: url("../img/backgrounds/catalog-category-greetings-bg1.png");
+    }
 
     &__inner {
       width: 550px;
@@ -49,14 +73,38 @@
 .about-us {
   .greetings {
     height: 560px;
-    background-image: url("../img/backgrounds/aboutus-greetings-bg1.png");
+    &:hover {
+      .greetings__background {
+        filter: blur(0px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        transition: all 0.3s ease-in;
+      }
+    }
+
+    &__background {
+      height: 560px;
+      background-image: url("../img/backgrounds/aboutus-greetings-bg1.png");
+      filter: blur(2px);
+      transition: all 0.3s ease-in;
+    }
   }
 }
 
 .blog {
   .greetings {
     height: 650px;
-    background-image: url("../img/backgrounds/blogsection-greetings-bg1.png");
+    &:hover {
+      .greetings__background {
+        filter: blur(0px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        transition: all 0.3s ease-in;
+      }
+    }
+
+    &__background {
+      height: 650px;
+      background-image: url("../img/backgrounds/blogsection-greetings-bg1.png");
+      filter: blur(2px);
+      transition: all 0.3s ease-in;
+    }
 
     &__inner {
       width: 535px;
@@ -67,7 +115,10 @@
 
 @media screen and (max-width: 1440px) {
   .greetings {
-    background-image: url("../img/backgrounds/greetings-bg2.png");
+    &__background {
+      background-image: url("../img/backgrounds/greetings-bg2.png");
+    }
+
     &__inner {
       margin-left: 0;
       margin-right: auto;
@@ -85,25 +136,33 @@
 
   .catalog {
     .greetings {
-      background-image: url("../img/backgrounds/catalog-greetings-bg2.png");
+      &__background {
+        background-image: url("../img/backgrounds/catalog-greetings-bg2.png");
+      }
     }
   }
 
   .catalog-category {
     .greetings {
-      background-image: url("../img/backgrounds/catalog-category-greetings-bg2.png");
+      &__background {
+        background-image: url("../img/backgrounds/catalog-category-greetings-bg2.png");
+      }
     }
   }
 
   .about-us {
     .greetings {
-      background-image: url("../img/backgrounds/aboutus-greetings-bg2.png");
+      &__background {
+        background-image: url("../img/backgrounds/aboutus-greetings-bg2.png");
+      }
     }
   }
 
   .blog {
     .greetings {
-      background-image: url("../img/backgrounds/blogsection-greetings-bg2.png");
+      &__background {
+        background-image: url("../img/backgrounds/blogsection-greetings-bg2.png");
+      }
 
       &__inner {
         margin-left: auto;
@@ -117,7 +176,9 @@
 
 @media screen and (max-width: 992px) {
   .greetings {
-    background-image: url("../img/backgrounds/greetings-bg3.png");
+    &__background {
+      background-image: url("../img/backgrounds/greetings-bg3.png");
+    }
     &__inner {
       width: 400px;
       padding-top: 175px;
@@ -138,7 +199,9 @@
 
   .catalog {
     .greetings {
-      background-image: url("../img/backgrounds/catalog-greetings-bg3.png");
+      &__background {
+        background-image: url("../img/backgrounds/catalog-greetings-bg3.png");
+      }
 
       &__inner {
         width: 492px;
@@ -148,7 +211,9 @@
 
   .catalog-category {
     .greetings {
-      background-image: url("../img/backgrounds/catalog-category-greetings-bg3.png");
+      &__background {
+        background-image: url("../img/backgrounds/catalog-category-greetings-bg3.png");
+      }
 
       &__inner {
         width: 492px;
@@ -158,13 +223,17 @@
 
   .about-us {
     .greetings {
-      background-image: url("../img/backgrounds/aboutus-greetings-bg3.png");
+      &__background {
+        background-image: url("../img/backgrounds/aboutus-greetings-bg3.png");
+      }
     }
   }
 
   .blog {
     .greetings {
-      background-image: url("../img/backgrounds/blogsection-greetings-bg3.png");
+      &__background {
+        background-image: url("../img/backgrounds/blogsection-greetings-bg3.png");
+      }
 
       &__inner {
         padding-top: 300px;
@@ -177,7 +246,9 @@
 
 @media screen and (max-width: 768px) {
   .greetings {
-    background-size: auto 100%;
+    &__background {
+      background-size: auto 100%;
+    }
 
     &__inner {
       width: 280px;
@@ -243,8 +314,8 @@
 
 @media screen and (max-width: 320px) {
   .greetings {
-    background-image: url("../img/backgrounds/greetings-bg4.png");
-    background-size: auto;
+      background-image: url("../img/backgrounds/greetings-bg4.png");
+      background-size: auto;
   }
 
   .catalog {

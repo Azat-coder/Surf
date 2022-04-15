@@ -94,6 +94,10 @@ body {
   overflow: hidden;
 }
 
+.hidden {
+  opacity: 0;
+}
+
 .unselectable {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */

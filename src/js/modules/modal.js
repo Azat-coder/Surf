@@ -5,6 +5,7 @@ export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId) {
     const main = document.querySelector('.main');
     const header = document.querySelector('.header');
     const footer = document.querySelector('.footer');
+    const hiddenClass = 'hidden';
 
     if (!modal) {
         return;
@@ -14,9 +15,9 @@ export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId) {
         modalBtn.addEventListener('click', (e) => {
             e.preventDefault();
             modal.classList.add('modal--active');
-            main.classList.add('visually-hidden');
-            header.classList.add('visually-hidden');
-            footer.classList.add('visually-hidden');
+            main.classList.add(hiddenClass);
+            header.classList.add(hiddenClass);
+            footer.classList.add(hiddenClass);
 
             if (focusInputId) {
                 const focusInput = document.querySelector(`#${focusInputId}`);
@@ -27,9 +28,9 @@ export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId) {
 
     btnClose.addEventListener('click', () => {
         modal.classList.remove('modal--active');
-        main.classList.remove('visually-hidden');
-        header.classList.remove('visually-hidden');
-        footer.classList.remove('visually-hidden');
+        main.classList.remove(hiddenClass);
+        header.classList.remove(hiddenClass);
+        footer.classList.remove(hiddenClass);
     });
 
     document.addEventListener('click', event => {
@@ -38,9 +39,9 @@ export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId) {
             event.stopPropagation();
         } else if (target.closest('.modal')) {
             modal.classList.remove('modal--active');
-            main.classList.remove('visually-hidden');
-            header.classList.remove('visually-hidden');
-            footer.classList.remove('visually-hidden');
+            main.classList.remove(hiddenClass);
+            header.classList.remove(hiddenClass);
+            footer.classList.remove(hiddenClass);
         }
     });
 }
