@@ -48,7 +48,7 @@ useSubmenuMobile(); // Мобильное подменю
 // console.log(admin.getInfo());
 // console.log(guest.getInfo());
 
-if(document.querySelector('#catalog') || document.querySelector('#about-us')) {
+if(document.querySelector('#catalog') || document.querySelector('#about-us') || document.querySelector('#catalog-category')) {
     new Slider('.populargoods-common__inner', {});
 }
 

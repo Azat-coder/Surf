@@ -59,7 +59,7 @@
   &__sortblock {
     display: flex;
     justify-content: space-between;
-    width: 380px;
+    // width: 380px;
   }
 
   &__sortby {
@@ -181,7 +181,7 @@
   }
 
   &__sortbycount {
-
+    margin-left: 30px;
     .select {
       position: relative;
       display: flex;
@@ -802,7 +802,7 @@
     }
 
     &__sortbycount {
-      margin-left: auto;
+      margin-left: 20px;
     }
 
     .catalog-goods {
@@ -819,6 +819,10 @@
   .catalog {
     &__sortblock {
       flex-direction: column;
+    }
+
+    &__sortbycount {
+      margin-left: auto;
     }
 
     .params {
