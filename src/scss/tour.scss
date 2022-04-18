@@ -9,8 +9,8 @@
     margin-bottom: 50px;
 
     &__imageblock {
-      margin-right: 50px;
       width: 400px;
+      margin-right: 50px;
     }
 
     &__image-main {
@@ -42,9 +42,9 @@
   &__rating-area {
     display: flex;
     align-items: center;
-    overflow: hidden;
     width: 125px;
     margin-right: 25px;
+    overflow: hidden;
   }
 
   &__ratingtext {
@@ -58,7 +58,7 @@
   }
   
   &__characteristics {
-      margin-bottom: 60px;
+    margin-bottom: 60px;
   }
 
   &__char-item {
@@ -72,7 +72,7 @@
   }
 
   &__charname {
-      width: 250px;
+    width: 250px;
   }
 
   &__buttonblock {
@@ -80,16 +80,16 @@
   }
 
   &__btn {
-      margin-right: 30px;
+    margin-right: 30px;
   }
 
   &__btninfo {
-      width: 182px;
-      font-family: 'Source Sans Pro';
-      font-size: 18px;
-      line-height: 23px;
-      font-weight: 400;
-      color: $color-text-modal-secondary;
+    width: 182px;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color: $color-text-modal-secondary;
   }
 
   &__categories {
@@ -200,11 +200,12 @@
   }
 
   &__paramsname {
-      width: 390px;
+    width: 390px;
   }
 
   .tab-reviews {
     padding-top: 50px;
+
     &__item {
       margin-bottom: 30px;
     }
@@ -267,6 +268,7 @@
       font-size: 24px;
       line-height: 30px;
       color: $color-text-primary;
+
       p {
         margin-right: 5px;
       }
@@ -324,9 +326,9 @@
     }
   
     &__btn {
+      width: 350px;
       margin-right: 0px;
       margin-bottom: 10px;
-      width: 350px;
       font-size: 32px;
       line-height: 40px;
     }
@@ -557,6 +559,7 @@
 
     &__params-item {
       flex-direction: column;
+
       &:first-child {
         padding-top: 30px;
       }
@@ -574,6 +577,7 @@
 
     .tab-reviews {
       padding-top: 40px;
+
       &__header {
         flex-wrap: wrap;
         margin-bottom: 5px;
@@ -655,8 +659,8 @@
     }
 
     &__btn {
-      margin-bottom: 5px;
       width: 280px;
+      margin-bottom: 5px;
       font-size: 22px;
       line-height: 28px;
     }
@@ -689,11 +693,12 @@
       }
 
       &__imageblock {
-        margin-bottom: 15px;
         flex-wrap: wrap;
+        margin-bottom: 15px;
 
         img {
           width: auto;
+          
           &:first-child {
             margin-bottom: 15px;
           }

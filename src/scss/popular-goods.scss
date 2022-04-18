@@ -58,9 +58,9 @@
     }
 
     &__title {
+      margin-bottom: 15px;
       padding-left: 25px;
       padding-right: 25px;
-      margin-bottom: 15px;
       font-family: 'Source Sans Pro';
       font-style: normal;
       font-weight: 400;
@@ -88,11 +88,13 @@
       line-height: 35px;
       background-color: $color-primary-main;
       transition: background-color ease-in-out 0.3s;
+
       &:hover,
       &:active {
         background-color: $color-primary-light;
         transition: background-color ease-in-out 0.3s;
       }
+
       &:focus {
         background-color: $color-primary-light;
         transition: background-color ease-in-out 0.3s;
@@ -113,7 +115,6 @@
 
 @media screen and (max-width: 1440px) {
   .popular-goods {
-    
     &__category-link {
       font-size: 20px;
       line-height: 25px;
@@ -148,8 +149,9 @@
       line-height: 23px;
     }
     .goods-item {
-      height: 647px;
       width: 327px;
+      height: 647px;
+
       &__title {
         min-height: 0;
         max-height: 50px;
@@ -214,11 +216,13 @@
       padding: 0;
       font-size: 16px;
       line-height: 20px;
+
       &:last-child {
         margin-left: 18px;
         margin-right: auto;
       }
     }
+    
     .goods-item {
       &__title {
         font-size: 18px;

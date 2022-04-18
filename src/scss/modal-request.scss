@@ -1,260 +1,262 @@
 .modal-request {
-    &__wrapper {
-        width: 850px;
-        height: 540px;
-        background-color: #ffffff;
-        position: fixed;
-        top: 225px;
-        display: flex;
-        flex-direction: column;
+  &__wrapper {
+    position: fixed;
+    top: 225px;
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+    height: 540px;
+    background-color: #ffffff;
+  }
+
+  &__title {
+    width: 588px;
+    margin-bottom: 40px;
+    padding-top: 60px;
+    font-family: 'Source Sans Pro';
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-self: center;
+  }
+
+  &__form {
+    width: 632px;
+    margin: 0 auto;
+    text-align: right;
+
+    label {
+      margin-right: 37px;
+      font-family: 'Source Sans Pro';
+      font-size: 36px;
+      line-height: 45px;
+      font-weight: 400;
+      color: #000000;
     }
 
-    &__title {
-        padding-top: 60px;
-        width: 588px;
-        font-family: 'Source Sans Pro';
-        font-size: 36px;
-        line-height: 45px;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 700;
-        margin-bottom: 40px;
-        align-self: center;
+    input {
+      width: 425px;
+      margin-right: 20px;
+      margin-bottom: 30px;
+      font-size: 36px;
+      color: #000000;
+      border: none;
+      border-bottom: 2px solid #000000;
+      outline: none;
+
+      &:focus {
+        border-bottom-color: $color-primary-main;
+        outline: none;
+      }
+    }
+  }
+
+  &__tel-container {
+    margin-bottom: 30px;
+  }
+
+  &__btn-block {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  &__btn-info {
+    width: 222px;
+    font-size: 18px;
+    line-height: 23px;
+    color: $color-text-modal-secondary;
+  }
+
+  &__btn {
+    width: 380px;
+    height: 60px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    background-color: $color-primary-main;
+    transition: background-color ease-in-out 0.3s;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary-light;
+      transition: background-color ease-in-out 0.3s;
     }
 
-    &__form {
-        width: 632px;
-        margin: 0 auto;
-        text-align: right;
+    &:focus {
+      background-color: $color-primary-light;
+      transition: background-color ease-in-out 0.3s;
+    }
+  }
 
-        label {
-            font-family: 'Source Sans Pro';
-            font-size: 36px;
-            line-height: 45px;
-            font-weight: 400;
-            margin-right: 37px;
-            color: #000000;
-        }
+  &__btn-close {
+    position: relative;
+    left: -2000px;
+  }
 
-        input {
-            width: 425px;
-            font-size: 36px;
-            margin-right: 20px;
-            border: none;
-            border-bottom: 2px solid #000000;
-            outline: none;
-            margin-bottom: 30px;
-            color: #000000;
+  &__btn-close::before,
+  &__btn-close::after {
+    position: absolute;
+    top: -515px;
+    left: 2860px;
+    width: 33px;
+    height: 3px;
+    background-color: #000000;
+    cursor: pointer;
+    content: '';
+  }
 
-            &:focus {
-                outline: none;
-                border-bottom-color: $color-primary-main;
-            }
-        }
-    }
+  &__btn-close::before {
+    transform: rotate(45deg);
+  }
 
-    &__tel-container {
-        margin-bottom: 30px;
-    }
-
-    &__btn-block {
-        display: flex;
-        justify-content: space-between;
-        text-align: left;
-    }
-
-    &__btn-info {
-        width: 222px;
-        font-size: 18px;
-        line-height: 23px;
-        color: $color-text-modal-secondary;
-    }
-
-    &__btn {
-        width: 380px;
-        height: 60px;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 45px;
-        background-color: $color-primary-main;
-        transition: background-color ease-in-out 0.3s;
-        &:hover,
-        &:active {
-            background-color: $color-primary-light;
-            transition: background-color ease-in-out 0.3s;
-        }
-        &:focus {
-            background-color: $color-primary-light;
-            transition: background-color ease-in-out 0.3s;
-        }
-    }
-
-    &__btn-close {
-        position: relative;
-        left: -2000px;
-    }
-    
-    &__btn-close::before,
-    &__btn-close::after {
-        content: "";
-        position: absolute;
-        top: -515px;
-        left: 2860px;
-        width: 33px;
-        height: 3px;
-        background-color: #000000;
-        cursor: pointer;
-    }
-    
-    &__btn-close::before {
-        transform: rotate(45deg);
-    }
-    
-    &__btn-close::after {
-        transform: rotate(-45deg);
-    }
+  &__btn-close::after {
+    transform: rotate(-45deg);
+  }
 }
 
 @media screen and (max-width: 1440px) {
-    .modal-request {
-        &__wrapper {
-            width: 700px;
-            height: 509px;
-            top: 268px;
-        }
-
-        &__title {
-            font-size: 32px;
-            line-height: 40px;
-            margin-bottom: 30px;
-            align-self: center;
-        }
-
-        &__form {
-            width: 592px;
-
-            label {
-                font-size: 32px;
-                line-height: 40px;
-                margin-right: 46px;
-                color: #000000;
-            }
-
-            input {
-                width: 380px;
-                font-size: 32px;
-            }
-        }
-
-        &__btn {
-            width: 350px;
-        }
-
-        &__btn-close::before,
-        &__btn-close::after {
-            top: -480px;
-            left: 2710px;
-        }
+  .modal-request {
+    &__wrapper {
+      top: 268px;
+      width: 700px;
+      height: 509px;
     }
+
+    &__title {
+      align-self: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__form {
+      width: 592px;
+
+      label {
+        margin-right: 46px;
+        font-size: 32px;
+        line-height: 40px;
+        color: #000000;
+      }
+
+      input {
+        width: 380px;
+        font-size: 32px;
+      }
+    }
+
+    &__btn {
+      width: 350px;
+    }
+
+    &__btn-close::before,
+    &__btn-close::after {
+      top: -480px;
+      left: 2710px;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
-    .modal-request {
-        &__wrapper {
-            width: 600px;
-            height: 564px;
-        }
-
-        &__form {
-            width: 456px;
-
-            label {
-                font-size: 30px;
-                line-height: 38px;
-                margin-right: 34px;
-            }
-
-            input {
-                width: 300px;
-                font-size: 30px;
-                margin-right: 0;
-            }
-        }
-
-        &__btn-block {
-            flex-direction: column-reverse;
-        }
-
-        &__btn {
-            width: 400px;
-            align-self: center;
-            margin-bottom: 20px;
-        }
-
-        &__btn-info {
-            width: 400px;
-            align-self: center;
-        }
-
-        &__btn-close::before,
-        &__btn-close::after {
-            top: -530px;
-            left: 2605px;
-        }
+  .modal-request {
+    &__wrapper {
+      width: 600px;
+      height: 564px;
     }
+
+    &__form {
+      width: 456px;
+
+      label {
+        margin-right: 34px;
+        font-size: 30px;
+        line-height: 38px;
+      }
+
+      input {
+        width: 300px;
+        margin-right: 0;
+        font-size: 30px;
+      }
+    }
+
+    &__btn-block {
+      flex-direction: column-reverse;
+    }
+
+    &__btn {
+      align-self: center;
+      width: 400px;
+      margin-bottom: 20px;
+    }
+
+    &__btn-info {
+      align-self: center;
+      width: 400px;
+    }
+
+    &__btn-close::before,
+    &__btn-close::after {
+      top: -530px;
+      left: 2605px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .modal-request {
-        &__wrapper {
-            width: 320px;
-            height: 487px;
-            top: 50px;
-        }
-
-        &__title {
-            width: 255px;
-            font-size: 22px;
-            line-height: 28px;
-            margin-bottom: 20px;
-        }
-
-        &__form {
-            width: 280px;
-
-            label {
-                font-size: 22px;
-                line-height: 28px;
-                margin-right: 24px;
-            }
-
-            input {
-                width: 160px;
-                margin-bottom: 10px;
-                font-size: 22px;
-            }
-        }
-
-        &__tel-container {
-            margin-bottom: 20px;
-        }
-
-        &__btn {
-            width: 280px;
-            margin-bottom: 15px;
-            font-size: 22px;
-            line-height: 28px;
-        }
-
-        &__btn-info {
-            width: 280px;
-            text-align: center;
-        }
-
-        &__btn-close::before,
-        &__btn-close::after {
-            top: -415px;
-            left: 2278px;
-        }
+  .modal-request {
+    &__wrapper {
+      top: 50px;
+      width: 320px;
+      height: 487px;
     }
+
+    &__title {
+      width: 255px;
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &__form {
+      width: 280px;
+
+      label {
+        margin-right: 24px;
+        font-size: 22px;
+        line-height: 28px;
+      }
+
+      input {
+        width: 160px;
+        margin-bottom: 10px;
+        font-size: 22px;
+      }
+    }
+
+    &__tel-container {
+      margin-bottom: 20px;
+    }
+
+    &__btn {
+      width: 280px;
+      margin-bottom: 15px;
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &__btn-info {
+      width: 280px;
+      text-align: center;
+    }
+
+    &__btn-close::before,
+    &__btn-close::after {
+      top: -415px;
+      left: 2278px;
+    }
+  }
 }

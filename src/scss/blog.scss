@@ -3,6 +3,7 @@
     padding-top: 50px;
     padding-bottom: 30px;
   }
+
   &__title {
     margin-bottom: 30px;
     font-family: 'Source Sans Pro';
@@ -13,6 +14,7 @@
     text-transform: uppercase;
     color: $color-text-primary;
   }
+
   &__list {
     display: flex;
     margin-bottom: 20px;
@@ -31,8 +33,8 @@
     }
 
     &__title {
-      padding-top: 10px;
       margin-bottom: 10px;
+      padding-top: 10px;
       font-family: 'Source Sans Pro';
       font-style: normal;
       font-weight: 700;
@@ -80,9 +82,11 @@
       &__text {
         font-size: 18px;
         line-height: 24px;
+
         &--largescreens {
           display: none;
         }
+
         &--smallscreens {
           display: block;
         }
@@ -94,9 +98,9 @@
 @media screen and (max-width: 992px) {
   .blog {
     &__title {
+      margin-bottom: 20px;
       font-size: 28px;
       line-height: 35px;
-      margin-bottom: 20px;
     }
 
     .blog-item {
@@ -110,9 +114,11 @@
       &__text {
         font-size: 18px;
         line-height: 24px;
+
         &--largescreens {
           display: none;
         }
+
         &--smallscreens {
           display: block;
         }
@@ -140,11 +146,12 @@
       font-size: 22px;
       line-height: 28px;
     }
+
     .blog-item {
       flex-direction: column;
       align-items: center;
-      padding-right: 0;
       width: 280px;
+      padding-right: 0;
 
       &__title {
         text-align: center;

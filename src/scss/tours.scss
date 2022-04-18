@@ -90,6 +90,7 @@
     &__inner {
       padding-bottom: 30px;
     }
+
     .tour-item {
       &:nth-child(3) {
         display: none;
@@ -103,7 +104,6 @@
         margin-right: 70px;
       }
     }
-    
   }
 }
 
@@ -118,7 +118,6 @@
         margin-right: 10px;
       }
     }
-    
   }
 }
 
@@ -155,6 +154,7 @@
         }
       }
     }
+    
     .tour-item {
       img {
         width: 280px;

@@ -6,6 +6,7 @@
 
   .breadcrumbs {
     margin-bottom: 30px;
+
     &__list {
       display: flex;
       align-items: center;
@@ -14,14 +15,15 @@
     &__item {
       position: relative;
       margin-right: 30px;
+
       ::after {
         position: absolute;
         top: 3px;
         right: -18px;
-        content: "";
         width: 10px;
         height: 17px;
         background: url(../img/arrow-right.svg);
+        content: '';
       }
 
       a {
@@ -54,8 +56,8 @@
 
   &__infocard {
     display: flex;
-    padding-bottom: 30px;
     margin-bottom: 20px;
+    padding-bottom: 30px;
   }
 
   &__imageblock {
@@ -83,248 +85,250 @@
   }
 
   &__price {
-      margin-bottom: 10px;
-      font-family: 'Source Sans Pro';
-      font-size: 36px;
-      line-height: 45px;
-      font-weight: 400;
-      color: $color-text-price-primary;
+    margin-bottom: 10px;
+    font-family: 'Source Sans Pro';
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 400;
+    color: $color-text-price-primary;
   }
 
   &__lowingprice {
-      font-family: 'Source Sans Pro';
-      font-size: 24px;
-      line-height: 30px;
-      font-weight: 400;
-      color: $color-text-modal-secondary;
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $color-text-modal-secondary;
   }
 
   &__infoblock {
-      padding-left: 20px;
+    padding-left: 20px;
   }
 
   &__title {
-      margin-bottom: 10px;
-      font-family: 'Source Sans Pro';
-      font-size: 36px;
-      line-height: 45px;
-      font-weight: 700;
-      color: $color-text-primary;
+    margin-bottom: 10px;
+    font-family: 'Source Sans Pro';
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+    color: $color-text-primary;
   }
 
   &__ratingblock {
-      display: flex;
+    display: flex;
   }
 
   &__rating-area {
-      overflow: hidden;
-      width: 125px;
-      font-size: 24px;
-      margin-right: 25px;
+    width: 125px;
+    font-size: 24px;
+    margin-right: 25px;
+    overflow: hidden;
 
-      &:not(:checked) > input {
-          display: none;
-      }
+    &:not(:checked) > input {
+      display: none;
+    }
 
-      &:not(:checked) > label {
-          float: right;
-          width: 25px;
-          padding: 0;
-          cursor: pointer;
-          color: $color-text-modal-secondary;
-      }
+    &:not(:checked) > label {
+      float: right;
+      width: 25px;
+      padding: 0;
+      cursor: pointer;
+      color: $color-text-modal-secondary;
+    }
 
-      &:not(:checked) > label:before {
-          content: '★';
-      }
+    &:not(:checked) > label:before {
+      content: '★';
+    }
 
-      > input:checked ~ label {
-          color: $color-primary-main;
-      }
+    > input:checked ~ label {
+      color: $color-primary-main;
+    }
 
-      &:not(:checked) > label:hover,
-      &:not(:checked) > label:hover ~ label {
-          color: $color-primary-main;
-      }
+    &:not(:checked) > label:hover,
+    &:not(:checked) > label:hover ~ label {
+      color: $color-primary-main;
+    }
 
-      > input:checked + label:hover,
-      > input:checked + label:hover ~ label,
-      > input:checked ~ label:hover,
-      > input:checked ~ label:hover ~ label,
-      > label:hover ~ input:checked ~ label {
-          color: $color-primary-main;
-      }
+    > input:checked + label:hover,
+    > input:checked + label:hover ~ label,
+    > input:checked ~ label:hover,
+    > input:checked ~ label:hover ~ label,
+    > label:hover ~ input:checked ~ label {
+      color: $color-primary-main;
+    }
 
-      > label:active {
-          position: relative;
-      }
+    > label:active {
+      position: relative;
+    }
   }
 
   &__ratingtext {
-      margin-bottom: 30px;
-      font-family: 'Source Sans Pro';
-      font-size: 24px;
-      line-height: 30px;
-      font-weight: 400;
-      text-transform: uppercase;
-      color: $color-text-modal-secondary;
+    margin-bottom: 30px;
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-text-modal-secondary;
   }
 
   &__char-item {
-      display: flex;
-      margin-bottom: 10px;
-      font-family: 'Source Sans Pro';
-      font-size: 24px;
-      line-height: 30px;
-      font-weight: 400;
-      color: $color-text-primary;
+    display: flex;
+    margin-bottom: 10px;
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $color-text-primary;
   }
 
   &__characteristics {
-      margin-bottom: 25px;
+    margin-bottom: 25px;
   }
 
   &__charname {
-      width: 250px;
+    width: 250px;
   }
 
   &__sizesblock {
-      display: flex;
-      margin-bottom: 80px;
+    display: flex;
+    margin-bottom: 80px;
   }
 
   &__sizestitle {
-      margin-right: 30px;
-      font-family: 'Source Sans Pro';
-      font-size: 24px;
-      line-height: 30px;
-      font-weight: 400;
-      color: $color-text-primary;
+    margin-right: 30px;
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $color-text-primary;
   }
 
   .sizes {
-      &__radio {
+    &__radio {
+      display: flex;
+    }
+
+    &__radio input[type=radio] {
+      display: none;
+    }
+
+    &__radio-btn {
+      position: relative;
+      width: 39px;
+      height: 39px;
+
+      label {
+        position: absolute; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 39px;
+        height: 39px;
+        background-color: #ffffff;
+        cursor: pointer;
+
+        &::before {
           display: flex;
-      }
-
-      &__radio input[type=radio] {
-          display: none;
-      }
-
-      &__radio-btn {
-          position: relative;
+          justify-content: center;
+          align-items: center;
           width: 39px;
           height: 39px;
-
-          label {
-              width: 39px;
-              height: 39px;
-              background-color: #ffffff;
-              position: absolute; 
-              cursor: pointer;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-
-              &::before {
-                  content: "6";
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  width: 39px;
-                  height: 39px;
-                  font-family: 'Source Sans Pro';
-                  font-size: 18px;
-                  line-height: 23px;
-                  font-weight: 400;
-                  color: $color-text-modal-secondary;
-                  border: none;
-              }
-          }
-      }
-
-      &__radio-btn-1 label::before {
+          font-family: 'Source Sans Pro';
+          font-size: 18px;
+          line-height: 23px;
+          font-weight: 400;
+          color: $color-text-modal-secondary;
+          border: none;
           content: "6";
+        }
       }
+    }
 
-      &__radio-btn-2 label::before {
-          content: "8";
-      }
+    &__radio-btn-1 label::before {
+      content: "6";
+    }
 
-      &__radio-btn-3 label::before {
-          content: "10";
-      }
+    &__radio-btn-2 label::before {
+      content: "8";
+    }
 
-      &__radio-btn-4 label::before {
-          content: "12";
-      }
+    &__radio-btn-3 label::before {
+      content: "10";
+    }
 
-      &__radio input[type=radio]:checked + label {
-          border: 2px solid $color-primary-main;
-      }
+    &__radio-btn-4 label::before {
+      content: "12";
+    }
+
+    &__radio input[type=radio]:checked + label {
+      border: 2px solid $color-primary-main;
+    }
 
   }
 
   &__buttonblock {
-      display: flex;
+    display: flex;
   }
 
   &__btn {
-      width: 280px;
-      margin-right: 30px;
-      font-family: 'Source Sans Pro';
-      font-size: 28px;
-      line-height: 35px;
-      font-weight: 700;
-      background-color: $color-primary-main;
+    width: 280px;
+    margin-right: 30px;
+    font-family: 'Source Sans Pro';
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 700;
+    background-color: $color-primary-main;
+    transition: background-color ease-in-out 0.3s;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary-light;
       transition: background-color ease-in-out 0.3s;
-      &:hover,
-      &:active {
-          background-color: $color-primary-light;
-          transition: background-color ease-in-out 0.3s;
-      }
-      &:focus {
-          background-color: $color-primary-light;
-          transition: background-color ease-in-out 0.3s;
-      }
+    }
+
+    &:focus {
+      background-color: $color-primary-light;
+      transition: background-color ease-in-out 0.3s;
+    }
   }
 
   &__btninfo {
-      width: 182px;
-      font-family: 'Source Sans Pro';
-      font-size: 18px;
-      line-height: 23px;
-      font-weight: 400;
-      color: $color-text-modal-secondary;
+    width: 182px;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color: $color-text-modal-secondary;
   }
 
   &__btn-close {
-      position: relative;
-      left: -2000px;
+    position: relative;
+    left: -2000px;
   }
 
   &__btn-close::before,
   &__btn-close::after {
-      content: "";
-      position: absolute;
-      top: -700px;
-      left: 3187px;
-      width: 33px;
-      height: 3px;
-      background-color: #000000;
-      cursor: pointer;
+    position: absolute;
+    top: -700px;
+    left: 3187px;
+    width: 33px;
+    height: 3px;
+    background-color: #000000;
+    cursor: pointer;
+    content: '';
   }
 
   &__btn-close::before {
-      transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 
   &__btn-close::after {
-      transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
 
   &__sizesblock {
-      margin-bottom: 22px;
+    margin-bottom: 22px;
   }
 
   &__categories {
@@ -352,8 +356,8 @@
 
     &--active {
       position: relative;
-      border-bottom: 3px $color-primary-main solid;
       margin-bottom: -3px;
+      border-bottom: 3px $color-primary-main solid;
     }
   }
 
@@ -391,16 +395,17 @@
 
       &:before {
         margin-right: 15px;
-        content:"·";
         font-size:40px;
-        vertical-align:middle;
         line-height: 0px;
+        vertical-align:middle;
+        content:"·";
       }
     }
   }
 
   .tab-reviews {
     padding-top: 50px;
+
     &__item {
       margin-bottom: 30px;
     }
@@ -463,6 +468,7 @@
       font-size: 24px;
       line-height: 30px;
       color: $color-text-primary;
+
       p {
         margin-right: 5px;
       }
@@ -490,46 +496,46 @@
     }
 
     &__imagecontainer {
-        height: 400px;
-        width: 400px;
-        margin-bottom: 25px;
+      width: 400px;
+      height: 400px;
+      margin-bottom: 25px;
 
-        img {
-            max-height: 400px;
-            max-width: 400px;
-        }
+      img {
+        max-width: 400px;
+        max-height: 400px;
+      }
     }
 
     &__price {
-        font-size: 32px;
-        line-height: 40px;
+      font-size: 32px;
+      line-height: 40px;
     }
 
     &__lowingprice {
-        font-size: 22px;
-        line-height: 28px;
+      font-size: 22px;
+      line-height: 28px;
     }
 
     &__title {
-        font-size: 32px;
-        line-height: 40px;
+      font-size: 32px;
+      line-height: 40px;
     }
 
     &__ratingtext {
-        margin-bottom: 25px;
-        font-size: 22px;
-        line-height: 28px;
+      margin-bottom: 25px;
+      font-size: 22px;
+      line-height: 28px;
     }
 
     &__char-item {
-        font-size: 22px;
-        line-height: 28px;
+      font-size: 22px;
+      line-height: 28px;
     }
 
     &__btn {
-        margin-right: 10px;
-        font-size: 26px;
-        line-height: 33px;
+      margin-right: 10px;
+      font-size: 26px;
+      line-height: 33px;
     }
 
     .tab-productabout { 
@@ -581,8 +587,8 @@
     }
 
     &__infocard {
-      padding-bottom: 40px;
       margin-bottom: 0px;
+      padding-bottom: 40px;
     }
 
     &__cardwrapper {
@@ -594,82 +600,81 @@
     }
 
     &__imagecontainer {
-      height: 300px;
       width: 300px;
+      height: 300px;
       margin-bottom: 20px;
 
       img {
-          max-height: 300px;
-          max-width: 300px;
+        max-width: 300px;
+        max-height: 300px;
       }
     }
 
     &__price {
-        font-size: 30px;
-        line-height: 38px;
+      font-size: 30px;
+      line-height: 38px;
     }
 
     &__lowingprice {
-        font-size: 20px;
-        line-height: 25px;
+      font-size: 20px;
+      line-height: 25px;
     }
 
     &__title {
-        width: 378px;
-        font-size: 30px;
-        line-height: 38px;
+      width: 378px;
+      font-size: 30px;
+      line-height: 38px;
     }
 
     &__ratingblock {
-        flex-direction: column;
+      flex-direction: column;
     }
 
     &__rating-area {
-        margin-bottom: 10px;
+      margin-bottom: 10px;
     }
 
     &__ratingtext {
-        margin-bottom: 10px;
-        font-size: 20px;
-        line-height: 25px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      line-height: 25px;
     }
 
     &__characteristics {
-        margin-bottom: 10px;
+      margin-bottom: 10px;
     }
 
     &__char-item {
-        font-size: 20px;
-        line-height: 25px;
+      font-size: 20px;
+      line-height: 25px;
     }
 
     &__sizesblock {
-        margin-bottom: 10px;
+      margin-bottom: 10px;
     }
 
     &__sizestitle {
-        margin-right: 46px;
-        font-size: 20px;
-        line-height: 25px;
+      margin-right: 46px;
+      font-size: 20px;
+      line-height: 25px;
     }
 
     &__buttonblock {
-        flex-direction: column;
+      flex-direction: column;
     }
 
     &__btninfo {
-        width: 312px;
+      width: 312px;
     }
 
     &__btn {
-        margin-bottom: 10px;
+      margin-bottom: 10px;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .product-description {
-
     .breadcrumbs {
       &__list {
         flex-wrap: wrap;
@@ -691,8 +696,8 @@
     }
 
     &__imagecontainer {
-      height: 280px;
       width: 280px;
+      height: 280px;
       margin-bottom: 15px;
 
       img {
@@ -702,56 +707,56 @@
     }
 
     &__price {
-        font-size: 22px;
-        line-height: 28px;
+      font-size: 22px;
+      line-height: 28px;
     }
 
     &__lowingprice {
-        font-size: 18px;
-        line-height: 23px;
-        margin-bottom: 20px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 23px;
     }
 
     &__title {
-        width: 280px;
-        font-size: 22px;
-        line-height: 28px;
+      width: 280px;
+      font-size: 22px;
+      line-height: 28px;
     }
 
     &__ratingtext {
-        font-size: 18px;
-        line-height: 23px;
+      font-size: 18px;
+      line-height: 23px;
     }
 
     &__char-item {
-        font-size: 18px;
-        line-height: 23px;
+      font-size: 18px;
+      line-height: 23px;
     }
 
     &__characteristics {
-        margin-bottom: 10px;
+      margin-bottom: 10px;
     }
 
     &__charname {
-        width: 145px;
+      width: 145px;
     }
 
     &__sizesblock {
-        margin-bottom: 15px;
+      margin-bottom: 15px;
     }
 
     &__sizestitle {
-        margin-right: 46px;
-        font-size: 20px;
-        line-height: 25px;
+      margin-right: 46px;
+      font-size: 20px;
+      line-height: 25px;
     }
 
     &__buttonblock {
-        flex-direction: column;
+      flex-direction: column;
     }
 
     &__btninfo {
-        width: 280px;
+      width: 280px;
     };
 
     &__categories {
@@ -760,6 +765,7 @@
 
     &__category-item {
       margin-right: 107px;
+
       &:last-child {
         margin-right: 0;
       }
@@ -789,6 +795,7 @@
 
     .tab-reviews {
       padding-top: 40px;
+
       &__header {
         flex-wrap: wrap;
         margin-bottom: 5px;
@@ -818,7 +825,4 @@
       }
     }
   }
-}
-
-@media screen and (max-width: 320px) {
 }

@@ -1,5 +1,6 @@
 .populargoods-common {
   position: relative;
+
   &__inner {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -34,10 +35,9 @@
     transition: all ease-in 0.2s;
 
     &:hover {
-      // height: 598px;
-      // margin-bottom: -180px;
       border-color: #DCE5E5;
       transition: all ease-in 0.2s;
+
       img {
         max-height: 180px;
         transition: all ease-in 0.2s;
@@ -52,9 +52,9 @@
     }
 
     &__title {
+      margin-bottom: 15px;
       padding-left: 25px;
       padding-right: 25px;
-      margin-bottom: 15px;
       font-family: 'Source Sans Pro';
       font-style: normal;
       font-weight: 400;
@@ -67,7 +67,6 @@
     &__price {
       position: relative;
       z-index: 1;
-      opacity: 0;
       margin-bottom: 15px;
       font-family: 'Source Sans Pro';
       font-style: normal;
@@ -76,16 +75,17 @@
       line-height: 45px;
       text-transform: uppercase;
       color: $color-text-price-primary;
+      opacity: 0;
     }
 
     &__btn {
-      opacity: 0;
       width: 280px;
       height: 60px;
       font-size: 28px;
       line-height: 35px;
       background-color: $color-primary-main;
       transition: background-color ease-in-out 0.3s;
+      opacity: 0;
 
       &:hover,
       &:active {
@@ -101,6 +101,7 @@
 
     &:hover {
       z-index: 1;
+
       .goods-item {     
         &__price {
           opacity: 1;
@@ -114,6 +115,7 @@
       }
     }
   }
+
   .slider__control {
     top: 40%;
   }
@@ -157,6 +159,7 @@
         // margin-bottom: -180px;
         border-color: #DCE5E5;
         transition: all ease-in 0.2s;
+
         img {
           max-height: 290px;
           transition: all ease-in 0.2s;
@@ -184,10 +187,12 @@
         font-size: 20px;
         line-height: 25px;
       }
+
       &__price {
         font-size: 30px;
         line-height: 38px;
       }
+
       &__btn {
         font-size: 24px;
         line-height: 30px;
@@ -208,8 +213,8 @@
     }
 
     &__goods-list {
-      padding-left: 0px;
       margin: 0 auto;
+      padding-left: 0px;
     }
     
     .goods-item {
