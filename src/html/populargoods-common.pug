@@ -28,12 +28,15 @@
 
 section.populargoods-common
   .container
-    h2.populargoods-common__title Популярные товары
-    ul.populargoods-common__goods-list
-      each item in wetsuits 
-        li
-          a.goods-item(href=item.href)
-            img(src=`@img/goods/${item.image}`, alt=item.title)
-            h4.goods-item__title #{item.title}
-            p.goods-item__price #{item.price}
-            button.goods-item__btn.btn.btn--quickview Купить
+    .populargoods-common__inner.slider
+      h2.populargoods-common__title Популярные товары
+      ul.populargoods-common__goods-list.slider__items
+        each item in wetsuits 
+          li
+            a.goods-item.slider__item(href=item.href)
+              img(src=`@img/goods/${item.image}`, alt=item.title)
+              h4.goods-item__title #{item.title}
+              p.goods-item__price #{item.price}
+              button.goods-item__btn.btn.btn--quickview Купить
+      a.slider__control.slider__control-prev(href="#" role="button" data-slide="prev")
+      a.slider__control.slider__control-next(href="#" role="button" data-slide="next")

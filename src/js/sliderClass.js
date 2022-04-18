@@ -17,7 +17,7 @@ class Slider {
         // .slider__items
         this._items = this._selector.querySelector(ITEMS_SELECTOR);
         // .slider__item
-        this._itemList = this._selector.querySelectorAll(ITEM_SELECTOR);
+        this._itemList = this._items.querySelectorAll(ITEM_SELECTOR);
         // Кнопки управления
         this._btnNext = this._selector.querySelector(NEXT_BTN_SELECTOR);
         this._btnPrev = this._selector.querySelector(PREV_BTN_SELECTOR);

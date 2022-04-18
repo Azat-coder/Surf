@@ -1,7 +1,9 @@
 .populargoods-common {
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  &__inner {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
 
   &__title {
     margin-bottom: 30px;
@@ -21,6 +23,7 @@
 
   .goods-item {
     position: relative;
+    z-index: 1000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,6 +110,16 @@
       }
     }
   }
+  .slider__control {
+    top: 40%;
+  }
+}
+
+.populargoods-common .slider {
+  &:hover {
+    // overflow-y: visible;
+  }
+  
 }
 
 @media screen and (max-width: 1440px) {
@@ -114,12 +127,6 @@
     &__title {
       font-size: 28px;
       line-height: 35px;
-    }
-
-    li {
-      &:nth-child(4) {
-        display: none;
-      }
     }
 
     .goods-item {
@@ -153,12 +160,6 @@
 
 @media screen and (max-width: 992px) {
   .populargoods-common {
-    li {
-      &:nth-child(3) {
-        display: none;
-      }
-    }
-
     .goods-item {
       height: 520px;
 
@@ -185,12 +186,6 @@
 
 @media screen and (max-width: 768px) {
   .populargoods-common {
-    li {
-      &:nth-child(2) {
-        display: none;
-      }
-    }
-
     &__goods-list {
       flex-direction: column;
       align-items: center;

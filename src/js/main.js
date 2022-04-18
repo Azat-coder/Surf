@@ -48,8 +48,15 @@ useSubmenuMobile(); // Мобильное подменю
 // console.log(admin.getInfo());
 // console.log(guest.getInfo());
 
-new Slider('.tab-wetsuits', {});
-new Slider('.tab-surfboards', { transition_duration: 1.5 });
-new Slider('.tab-wakesurfs', {});
-new Slider('.tab-cases', {});
-new Slider('.tab-fins', {});
+if(document.querySelector('#catalog') || document.querySelector('#about-us')) {
+    new Slider('.populargoods-common__inner', {});
+}
+
+if(document.querySelector('#main')) {
+    new Slider('.tab-wetsuits', {});
+    new Slider('.tab-surfboards', { transition_duration: 1.5 });
+    new Slider('.tab-wakesurfs', {});
+    new Slider('.tab-cases', {});
+    new Slider('.tab-fins', {});
+    new Slider('.blog__inner', {});
+}

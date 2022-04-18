@@ -12,9 +12,11 @@
     background-size: cover;
     border-radius: 50%;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
-      background-color: grey;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 0.2s ease-in-out;
     }
   }
 
