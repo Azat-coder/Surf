@@ -103,13 +103,18 @@
 
   .question {
     &__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin-bottom: 30px;
-      font-family: 'Source Sans Pro';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 35px;
-      color: $color-text-primary;
+      h3 {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+        color: $color-text-primary;
+      }
     }
 
     &__text {
@@ -124,6 +129,20 @@
       &--last {
         margin-bottom: 0;
       }
+    }
+
+    &__icon {
+      display: none;
+      width: 30px;
+      min-width: 30px;
+      height: 30px;
+      background-image: url('../img/arrow-upbig.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .accordion__item--closed .question__icon {
+      background-image: url('../img/arrow-downbig.svg');
     }
   }
 }
@@ -147,8 +166,10 @@
 
     .question {
       &__title {
-        font-size: 26px;
-        line-height: 33px;
+        h3 {
+          font-size: 26px;
+          line-height: 33px;
+        }
       }
       &__text {
         font-size: 22px;
@@ -193,8 +214,10 @@
     .question {
       &__title {
         margin-bottom: 25px;
-        font-size: 24px;
-        line-height: 30px;
+        h3 {
+          font-size: 24px;
+          line-height: 30px;
+        }
       }
 
       &__text {
@@ -215,6 +238,12 @@
     .breadcrumbs {
       &__list {
         flex-wrap: wrap;
+      }
+    }
+
+    .question {
+      &__icon {
+        display: block;
       }
     }
 
@@ -266,8 +295,10 @@
     .question {
       &__title {
         margin-bottom: 10px;
-        font-size: 22px;
-        line-height: 28px;
+        h3 {
+          font-size: 22px;
+          line-height: 28px;
+        }
       }
 
       &__text {
