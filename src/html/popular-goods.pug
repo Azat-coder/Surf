@@ -169,7 +169,7 @@ section.popular-goods
     .popular-goods__tab.tab-wetsuits.slider
       ul.popular-goods__goods-list.slider__items
         each item in wetsuits 
-          li.popular-goods__goods-item.goods-item.slider__item
+          li.popular-goods__goods-item.goods-item.slider__item.no-highlighted
             a(href=item.href).goods-item 
               img(src=`@img/goods/${item.image}`, alt=item.title)
               h4.goods-item__title #{item.title}
@@ -181,7 +181,7 @@ section.popular-goods
     .popular-goods__tab.tab-surfboards.visually-hidden.slider
       ul.popular-goods__goods-list.slider__items
         each item in surfboards 
-          li.popular-goods__goods-item.goods-item.slider__item
+          li.popular-goods__goods-item.goods-item.slider__item.no-highlighted
             a(href=item.href).goods-item 
               img(src=`@img/goods/${item.image}`, alt=item.title)
               h4.goods-item__title #{item.title}
@@ -193,7 +193,7 @@ section.popular-goods
     .popular-goods__tab.tab-wakesurfs.visually-hidden.slider
       ul.popular-goods__goods-list.slider__items
         each item in wakesurfs 
-          li.popular-goods__goods-item.goods-item.slider__item
+          li.popular-goods__goods-item.goods-item.slider__item.no-highlighted
             a(href=item.href).goods-item.goods-item
               img(src=`@img/goods/${item.image}`, alt=item.title)
               h4.goods-item__title #{item.title}
@@ -205,7 +205,7 @@ section.popular-goods
     .popular-goods__tab.tab-cases.visually-hidden.slider
       ul.popular-goods__goods-list.slider__items
         each item in cases 
-          li.popular-goods__goods-item.goods-item.slider__item
+          li.popular-goods__goods-item.goods-item.slider__item.no-highlighted
             a(href=item.href).goods-item 
               img(src=`@img/goods/${item.image}`, alt=item.title)
               h4.goods-item__title #{item.title}
@@ -217,7 +217,7 @@ section.popular-goods
     .popular-goods__tab.tab-fins.visually-hidden.slider
       ul.popular-goods__goods-list.slider__items
         each item in fins 
-          li.popular-goods__goods-item.goods-item.slider__item
+          li.popular-goods__goods-item.goods-item.slider__item.no-highlighted
             a(href=item.href).goods-item 
               img(src=`@img/goods/${item.image}`, alt=item.title)
               h4.goods-item__title #{item.title}
