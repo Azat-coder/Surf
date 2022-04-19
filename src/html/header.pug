@@ -47,7 +47,7 @@ header.header
       a(href="/")
         picture 
           source(media="(max-width: 768px)", srcset="@img/surf-logo-small.svg")  
-          img.logo__image(src="@img/surf-logo.svg", alt="Наш логотип")
+          img.unselectable.logo__image(src="@img/surf-logo.svg", alt="Наш логотип")
     nav.header__nav.nav
       ul.nav__list.nav__list-main
         each navItem in navItems
