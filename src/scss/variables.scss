@@ -1,0 +1,26 @@
+$color-primary-main: #E9D15C;
+$color-primary-light: #FFF51F;
+$color-bg-primary: #73D1FC;
+$color-bg-secondary: #3A3B3D;
+$color-bg-modal: #E5E5E5;
+$color-text-primary: #000000;
+$color-text-secondary: #FFFFFF;
+$color-text-auxiliary: #E5E5E5;
+$color-text-modal-secondary: #C4C4C4;
+$color-text-price-primary: #FF0000;
+
+%ss-r {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+%ss-b {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+}

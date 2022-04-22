@@ -1,0 +1,40 @@
+-
+  const goodsCategories = [
+    { 
+      name: 'Костюмы',
+      link: '#',
+      img: 'category-suit.png'
+    }, 
+    { 
+      name: 'Доски',
+      link: 'catalog-category.html',
+      img: 'category-board.png'
+    },
+    { 
+      name: 'Вейксерф',
+      link: '#',
+      img: 'category-wakesurf.png'
+    },
+    { 
+      name: 'Чехлы',
+      link: '#',
+      img: 'category-case.png'
+    },
+    { 
+      name: 'Фины',
+      link: '#',
+      img: 'category-fins.png'
+    }
+  ]
+
+section.categories
+  .container
+    .categories__inner 
+      h2.categories__title Категории
+      ul.categories__container 
+        each cat in goodsCategories
+          li.category 
+            a.category__link(href=cat.link) #{cat.name}
+              img.category__image(src=`@img/categories/${cat.img}`, alt="")
+
+      

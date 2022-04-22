@@ -1,0 +1,55 @@
+@import 'normalize.scss';
+@import 'variables.scss';
+@import 'global.scss';
+@import 'nouislider.scss';
+@import 'accordion.scss';
+@import 'fonts.scss';
+@import 'header.scss';
+@import 'greetings.scss';
+@import 'popular-goods.scss';
+@import 'promo.scss';
+@import 'blog.scss';
+@import 'partners.scss';
+@import 'tours.scss';
+@import 'categories.scss';
+@import 'populargoods-common.scss';
+@import 'instagram-feed.scss';
+@import 'catalog.scss';
+@import 'product-description.scss';
+@import 'article.scss';
+@import 'tour.scss';
+@import 'about-us.scss';
+@import 'blog-section.scss';
+@import 'footer.scss';
+@import 'modal.scss';
+@import 'modal-request.scss';
+@import 'modal-quickview.scss';
+@import 'modal-map.scss';
+@import 'slider.scss';
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+
+  @media screen and (max-width: 1440px) {
+    width: 992px;
+    padding: 0 50px;
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 768px;
+    padding: 0 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: auto;
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 320px;
+    padding: 0 20px;
+  }
+}
+

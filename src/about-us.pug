@@ -1,0 +1,17 @@
+- let greetingTitle = 'Серф-кемп В куте: все самое лучшее за 2 недели';
+- let activePage = 'О нас'
+
+doctype html 
+html(lang='ru')
+  include html/head
+  body.about-us#about-us   
+    include html/header
+    main.main
+      include html/greetings
+      include html/about-us
+      include html/populargoods-common
+    include html/footer
+    include html/modal-request
+    include html/modal-quickview
+    include html/modal-map
+    script(src='js/main.min.js')

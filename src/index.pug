@@ -1,11 +1,19 @@
-html 
-  head 
-    link(rel='stylesheet', href='/css/style.min.css')
-  body 
+- let greetingTitle = 'Серф-тур на бали: все самое лучшее за 2 недели';
+
+doctype html 
+html(lang='ru')
+  include html/head
+  body#main
     include html/header
-    main.page 
-      h16.df__rt Привет
-      p.ff__rt Параграф
-      img(src="@img/lena.jpg")
+    main.main
+      include html/greetings
+      include html/popular-goods
+      include html/promo
+      include html/blog
+      include html/partners
+      include html/tours
     include html/footer
+    include html/modal-request
+    include html/modal-quickview
+    include html/modal-map
     script(src='js/main.min.js')

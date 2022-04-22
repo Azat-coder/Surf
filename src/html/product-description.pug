@@ -1,0 +1,138 @@
+- 
+  const featureList = [
+    'Мужской гидрокостюм',
+    'Застежка на молнии на спине',
+    'Подкладка-утеплитель с углеродными нитями на груди и на спине, защищающая от ветра',
+    'Внешний материал: джерси Superflux для износостойкости',
+    'Термошелк на руках и голенях для увеличения тепла и гибкости',
+    'Суперлегкая эластичная пена для максимизации тепла',
+    'Состав: 80% неопрена, 20% нейлона'
+  ]
+
+  const reviews = [
+    {
+      name: 'Иван Иванов',
+      date: '10.01.2021', 
+      time: '06:16', 
+      rating: 4,
+      text: 'Хотел сказать огромное спасибо за кемп, сравнить не с чем, но очень понравилось, это считай ничего не сказать. По крайней мере теперь никакого отдыха в отелях и тюленинга на пляжах ближайшие лет 30-40 точно не хочу. Приеду на майские!'
+    },
+    {
+      name: 'Никита Федоров',
+      date: '30.12.2020', 
+      time: '13:14', 
+      rating: 5,
+      text: 'Собрались в сёрф лагерь, выбрали по отзывам сие заведение. И не зря! Что главное в современном мире? Правильно - отношение к людям. И здесь оно на высоте! Это проявляется как в процессе обучения, так и во всех сопутствующих мероприятиях, таких как перекусы утренние, обеденные, вечерние, передвижения до пляжа, другие активности. Кстати, практически вся еда - домашнего приготовления, классическая марокканская. Свежие фрукты с рынка на завтрак и в составе перекуса на пляже всегда очень вовремя. Инструкторы - хотят тебя научить кататься или поднять твой уровень, если уже умеешь, и искренне радуются твоим успехам. А чего стоит возможность наблюдать закат над океаном с террасы! Правильно инструкторы говорят: сёрф - это ощущения. Так вот как раз ребята из этого кемпа помогают усилить эти ощущения от волн и сёрфа! Рекомендую!'
+    },
+  ]
+
+section.product-description
+  .container
+    .product-description__inner
+      h2.visually-hidden Каталог товаров 
+      .product-description__controls 
+        .product-description__breadcrumbs.breadcrumbs
+          ul.breadcrumbs__list
+            li.breadcrumbs__item.breadcrumbs__item-home
+              a(href="#")
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M34.6258 15.3682L18.3522 0.331681C17.8781 -0.11056 17.1219 -0.11056 16.6479 0.331681L0.374847 15.3676C0.135276 15.5889 0 15.8938 0 16.2124C0 16.861 0.549387 17.3867 1.22699 17.3867H3.38957V33.8258C3.38957 34.4743 3.93888 35 4.61657 35H13.2055C13.8832 35 14.4325 34.4743 14.4325 33.8258V24.432H20.5675V33.8258C20.5675 34.4743 21.1168 35 21.7945 35H30.3835C31.0611 35 31.6105 34.4743 31.6105 33.8258V17.3867H33.773C34.1057 17.3867 34.424 17.2574 34.6552 17.0285C35.1262 16.5622 35.113 15.8189 34.6258 15.3682ZM31.6105 16.2124C30.9328 16.2124 30.3835 16.7381 30.3835 17.3867V33.8258H21.7945V24.432C21.7945 23.7835 21.2452 23.2578 20.5675 23.2578H14.4325C13.7548 23.2578 13.2055 23.7835 13.2055 24.432V33.8258H4.61657V17.3867C4.61657 16.7381 4.06726 16.2124 3.38957 16.2124H1.22699L17.5 1.17653L33.7792 16.2124H31.6105Z" fill="#C4C4C4"/>
+                </svg>
+            li.breadcrumbs__item 
+              a(href="#") Каталог
+            li.breadcrumbs__item
+              a(href="#") Доски
+            li.breadcrumbs__item(id='breadcrumbs-current') 
+              a(href="#") Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit
+      .product-description__cardwrapper        
+        .product-description__infocard
+          .product-description__imageblock
+              .product-description__imagecontainer 
+                  img(src="@img/goods/wetsuit_1.png", 
+                      alt="alt", 
+                      loading="lazy", 
+                      importance="high")
+              p.product-description__price 27 398 руб
+              p.product-description__lowingprice Нашли дешевле? Снизим цену!
+          .product-description__infoblock 
+              .product-description__title Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit
+              .product-description__ratingblock 
+                  .product-description__rating-area
+                      input(type="radio", id="star-5", name="rating", value="5")
+                      label(for="star-5", title="Оценка «5»")
+                      input(type="radio", id="star-4", name="rating", value="4" checked)
+                      label(for="star-4", title="Оценка «4»")   
+                      input(type="radio", id="star-3", name="rating", value="3")
+                      label(for="star-3", title="Оценка «3»") 
+                      input(type="radio", id="star-2", name="rating", value="2")
+                      label(for="star-2", title="Оценка «2»")  
+                      input(type="radio", id="star-1", name="rating", value="1")
+                      label(for="star-1", title="Оценка «1»")
+                  .product-description__ratingtext 5 (13 отзывов ) 
+                      a.product-description__rating-link(href="#") Написать отзыв
+              .product-description__characteristics
+                  .product-description__char-item 
+                      p.product-description__charname Бренд:
+                      p.product-description__charvalue VISSLA
+                  .product-description__char-item
+                      p.product-description__charname Толщина, мм:
+                      p.product-description__charvalue 3/2
+                  .product-description__char-item
+                      p.product-description__charname Температура воды:
+                      p.product-description__charvalue 13-18°
+                  .product-description__char-item
+                      p.product-description__charname Молния:
+                      p.product-description__charvalue На спине
+                  .product-description__char-item
+                      p.product-description__charname Длина:
+                      p.product-description__charvalue Полный
+                  .product-description__char-item
+                      p.product-description__charname Пол:
+                      p.product-description__charvalue Мужской
+              .product-description__sizesblock 
+                  .product-description__sizestitle Размеры
+                  .product-description__sizes.sizes
+                      .sizes__radio
+                          .sizes__radio-btn.sizes__radio-btn-1
+                              input(id="radio-1", name="radio", type="radio", class="sizes__input", value="6", checked)
+                              label(for="radio-1")
+                          .sizes__radio-btn.sizes__radio-btn-2
+                              input(id="radio-2", name="radio", type="radio", class="sizes__input", value="8")
+                              label(for="radio-2")
+                          .sizes__radio-btn.sizes__radio-btn-3
+                              input(id="radio-3" name="radio" type="radio" class="sizes__input" value="10")
+                              label(for="radio-3")
+                          .sizes__radio-btn.sizes__radio-btn-4
+                              input(id="radio-4" name="radio" type="radio" class="sizes__input" value="12")
+                              label(for="radio-4")
+              .product-description__buttonblock 
+                  button.product-description__btn.btn(type="submit") Купить
+                  p.product-description__btninfo * для уточнения цены оставьте заявку
+      .product-description__categories
+        .product-description__category-item
+          a.product-description__category-link.product-description__category-link--active(href='', id='', class='') О товаре
+        .product-description__category-item
+          a.product-description__category-link(href='', id='', class='') Отзывы
+      .product-description_tab.tab-productabout
+        p.tab-productabout__text Прочный технологичный гидрокостюм Furnace Absolute GBS выполнен из материалов, которые быстро сохнут, обеспечивая Вам максимальное удобство в довольно холодной воде. Стратегически расположенные швы предотвратят натирание и не подведут Вас благодаря используемым при склейке технологиям. Особенностью модели являются подкладка-утеплитель с углеродными нитями и вставки из термошелка на руках и голенях для максимизации тепла. Передовые технологии на страже Вашего комфорта.
+        h3.tab-productabout__title Особенности:
+        ul.tab-productabout__feature-list
+          each item in featureList
+            li.tab-productabout__feature #{item}
+      .product-description_tab.tab-reviews.visually-hidden
+        ul.tab-reviews__list
+          each item in reviews
+            li.tab-reviews__item 
+              .tab-reviews__header
+                .tab-reviews__infoblock
+                  p.tab-reviews__name #{item.name}
+                  .tab-reviews__datetime
+                    p.tab-reviews__date #{item.date}
+                    p.tab-reviews__time #{item.time}
+                img.tab-reviews__rating(src=`../img/ratings/rating-${item.rating}.png`, alt='Текст отзыва')
+              .tab-reviews__body 
+                p.tab-reviews__text #{item.text}
+        .tab-reviews__link
+          p 
+            a(href='#') https://disqus.com/  
+          p - чтобы оставлять комменты

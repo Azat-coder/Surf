@@ -1,1 +1,65 @@
-footer Это футер ppppp 
+//- - const navItems = ['Каталог', 'О нас', 'Блог', 'Туры']
+//- - const productNavItems = ['Гидрокостюм', 'Доски', 'Вейксерф', 'Чехлы', 'Фины для серфа']
+
+footer.footer
+  .container
+    h2.visually-hidden Подвал сайта
+    .footer__logo 
+      img.footer__logo-image(src="@img/surf-logo-small.svg", alt="Наш логотип")
+      p.footer__logo-text 
+        span.footer__logo-title Surf
+        span.footer__logo-subtitle  - Интернет-магазин 
+        |  по продаже спортинвентаря для серфинга и серф-туров с обучением  
+      .footer__logo-copyright Let's surf! © 2020
+    .footer__nav.nav
+      ul.nav__list
+        li.nav__item 
+          a.nav__link(href='') Каталог
+        li.nav__item 
+          a.nav__link(href='') О нас
+        li.nav__item 
+          a.nav__link(href='') Блог
+        li.nav__item 
+          a.nav__link(href='') Туры
+    .footer__product-nav.product-nav
+      ul.product-nav__list
+        //- each product in productNavItems
+        //-   li.product-nav__item 
+        //-     a.product-nav__link(href='') #{product}
+        li.product-nav__item 
+          a.product-nav__link(href='') Гидрокостюм
+        li.product-nav__item 
+          a.product-nav__link(href='') Доски
+        li.product-nav__item 
+          a.product-nav__link(href='') Вейксерф
+        li.product-nav__item 
+          a.product-nav__link(href='') Чехлы
+        li.product-nav__item 
+          a.product-nav__link(href='') Фины для серфа
+    .footer__contacts
+      .footer__contacts-top 
+        h3.footer__contacts-title Адрес
+        p.footer__contacts-address Россия, Москва, Московский международный деловой центр Москва-Сити, офис 606, 24 этаж 
+        a.footer__contacts-maplink.btn--map(href="") На карте
+      .footer__contacts-bottom
+        ul.footer__contacts-sociallist
+          li.footer__contacts-sociallink 
+            a(href="") 
+              img(src="@img/social/instagram.svg", alt="Instagram")
+          li.footer__contacts-sociallink 
+            a(href="") 
+              img(src="@img/social/vk.svg", alt="VKontakte")
+          li.footer__contacts-sociallink 
+            a(href="") 
+              img(src="@img/social/telegram.svg", alt="Telegram")
+        ul.footer__contacts-paymentlist
+          li.footer__contacts-paymentlink 
+            a(href="") 
+              img(src="@img/payment/mastercard.svg", alt="Mastercard")
+          li.footer__contacts-paymentlink 
+            a(href="") 
+              img(src="@img/payment/visa.svg", alt="Visa")
+          li.footer__contacts-paymentlink 
+            a(href="") 
+              img(src="@img/payment/mir.svg", alt="Mir")
+            

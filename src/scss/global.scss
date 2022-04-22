@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+table {
+	border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+:focus {
+  outline: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; 
+}
+
+button {
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; 
+}
+
+body {
+  @extend %ss-r;
+  font-size: 20px;
+  color: $color-text-primary;
+  min-width: 320px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+}
+
+.no-highlighted {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; 
+}
+
+.btn {
+  width: 400px;
+  height: 60px; 
+  background: $color-primary-light;
+  border-radius: 3px;
+  color: $color-text-primary;
+  @extend %ss-b;
+  border: none;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover,
+.btn:focus {
+  background: $color-primary-main;
+  transition: all 0.3s ease-in;
+}
+
+.btn:active {
+  background: $color-primary-main;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  outline: none;
+  transition: all 0.3s ease-in;
+}

@@ -1,0 +1,18 @@
+- let greetingTitle = 'Серф-тур на камчатке: все самое лучшее за 2 недели';
+- let activePage = 'Каталог'
+
+doctype html 
+html(lang='ru')
+  include html/head
+  body.catalog-category#catalog-category  
+    include html/header
+    main.main
+      include html/greetings
+      include html/catalog
+      include html/populargoods-common
+      include html/instagram-feed
+    include html/footer
+    include html/modal-request
+    include html/modal-quickview
+    include html/modal-map
+    script(src='js/main.min.js')

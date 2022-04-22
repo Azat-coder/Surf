@@ -1,0 +1,67 @@
+.modal.modal-quickview
+    .modal__wrap.modal-quickview__wrapper
+        h2.visually-hidden Быстрый просмотр товара 
+        form.modal-quickview__form(action="", method="POST")
+            .modal-quickview__imageblock
+                .modal-quickview__imagecontainer 
+                    img(src="@img/goods/wetsuit_1.png", 
+                        alt="alt", 
+                        loading="lazy", 
+                        importance="high")
+                p.modal-quickview__price 27 398 руб
+                p.modal-quickview__lowingprice Нашли дешевле? Снизим цену!
+            .modal-quickview__infoblock 
+                .modal-quickview__title Гидрокостюм VISSLA 7 Seas Gadoo 3/2 Full Suit
+                .modal-quickview__ratingblock 
+                    .modal-quickview__rating-area
+                        input(type="radio", id="star-5", name="rating", value="5")
+                        label(for="star-5", title="Оценка «5»")
+                        input(type="radio", id="star-4", name="rating", value="4" checked)
+                        label(for="star-4", title="Оценка «4»")   
+                        input(type="radio", id="star-3", name="rating", value="3")
+                        label(for="star-3", title="Оценка «3»") 
+                        input(type="radio", id="star-2", name="rating", value="2")
+                        label(for="star-2", title="Оценка «2»")  
+                        input(type="radio", id="star-1", name="rating", value="1")
+                        label(for="star-1", title="Оценка «1»")
+                    .modal-quickview__ratingtext 5 (13 отзывов ) 
+                        a.modal-quickview__rating-link(href="#") Написать отзыв
+                .modal-quickview__characteristics
+                    .modal-quickview__char-item 
+                        p.modal-quickview__charname Бренд:
+                        p.modal-quickview__charvalue VISSLA
+                    .modal-quickview__char-item
+                        p.modal-quickview__charname Толщина, мм:
+                        p.modal-quickview__charvalue 3/2
+                    .modal-quickview__char-item
+                        p.modal-quickview__charname Температура воды:
+                        p.modal-quickview__charvalue 13-18°
+                    .modal-quickview__char-item
+                        p.modal-quickview__charname Молния:
+                        p.modal-quickview__charvalue На спине
+                    .modal-quickview__char-item
+                        p.modal-quickview__charname Длина:
+                        p.modal-quickview__charvalue Полный
+                    .modal-quickview__char-item
+                        p.modal-quickview__charname Пол:
+                        p.modal-quickview__charvalue Мужской
+                .modal-quickview__sizesblock 
+                    .modal-quickview__sizestitle Размеры
+                    .modal-quickview__sizes.sizes
+                        .sizes__radio
+                            .sizes__radio-btn.sizes__radio-btn-1
+                                input(id="radio-1", name="radio", type="radio", class="sizes__input", value="6", checked)
+                                label(for="radio-1")
+                            .sizes__radio-btn.sizes__radio-btn-2
+                                input(id="radio-2", name="radio", type="radio", class="sizes__input", value="8")
+                                label(for="radio-2")
+                            .sizes__radio-btn.sizes__radio-btn-3
+                                input(id="radio-3" name="radio" type="radio" class="sizes__input" value="10")
+                                label(for="radio-3")
+                            .sizes__radio-btn.sizes__radio-btn-4
+                                input(id="radio-4" name="radio" type="radio" class="sizes__input" value="12")
+                                label(for="radio-4")
+                .modal-quickview__buttonblock 
+                    button.modal-quickview__btn.btn(type="submit") Купить
+                    p.modal-quickview__btninfo * для уточнения цены оставьте заявку
+        button.modal-quickview__btn-close

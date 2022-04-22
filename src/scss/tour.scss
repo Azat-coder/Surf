@@ -1,0 +1,721 @@
+.tour {
+  &__inner {
+    padding-top: 75px;
+    padding-bottom: 50px;
+  }
+
+  .review {
+    display: flex;
+    margin-bottom: 50px;
+
+    &__imageblock {
+      width: 400px;
+      margin-right: 50px;
+    }
+
+    &__image-main {
+      margin-bottom: 20px;
+    }
+
+    &__image-small {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 45px;
+      color: $color-text-primary;
+    }
+  }
+
+  &__ratingblock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__rating-area {
+    display: flex;
+    align-items: center;
+    width: 125px;
+    margin-right: 25px;
+    overflow: hidden;
+  }
+
+  &__ratingtext {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    font-variant: small-caps;
+    color: $color-text-modal-secondary;
+  }
+  
+  &__characteristics {
+    margin-bottom: 60px;
+  }
+
+  &__char-item {
+    display: flex;
+    margin-bottom: 10px;
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $color-text-primary;
+  }
+
+  &__charname {
+    width: 250px;
+  }
+
+  &__buttonblock {
+    display: flex;
+  }
+
+  &__btn {
+    margin-right: 30px;
+  }
+
+  &__btninfo {
+    width: 182px;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color: $color-text-modal-secondary;
+  }
+
+  &__categories {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding-left: 50px;
+    background-color: #dfdfdf;
+  }
+
+  &__category-item {
+    margin-right: 50px;
+  }
+
+  &__category-link {
+    margin-bottom: 0px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: $color-text-primary;
+    border-bottom-color: #dfdfdf;
+    transition: border-bottom 0.3s ease-in;
+
+    &--active {
+      position: relative;
+      border-bottom: 3px $color-primary-main solid;
+      margin-bottom: -3px;
+    }
+  }
+
+  .tab {
+    &__category {
+      padding-top: 25px;
+    }
+
+    &__category-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 45px;
+      color: $color-text-primary;
+
+      h3 {
+        margin-right: 50px;
+      }
+    }
+
+    &__category-icon {
+      width: 30px;
+      height: 30px;
+      background-image: url('../img/arrow-upbig.svg');
+      background-size: contain;
+    }
+
+    &__category-text {
+      margin-bottom: 30px;
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: $color-text-primary;
+    }
+
+    &__imageblock {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    &__image {
+      margin-bottom: 30px;
+    }
+
+    &__category-programitem {
+      margin-bottom: 15px;
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: $color-text-primary;
+    }
+  }
+
+  .accordion__item--closed .tab__category-icon {
+    background-image: url('../img/arrow-downbig.svg');
+  }
+
+  &__params-item {
+    display: flex;
+    margin-bottom: 10px;
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $color-text-primary;
+
+    &:first-child {
+      padding-top: 50px;
+    }
+  }
+
+  &__paramsname {
+    width: 390px;
+  }
+
+  .tab-reviews {
+    padding-top: 50px;
+
+    &__item {
+      margin-bottom: 30px;
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+
+      img {
+        height: 23px;
+        width: 144px;
+      }
+    }
+
+    &__infoblock {
+      display: flex;
+      align-items: center;
+    }
+
+    &__name {
+      margin-right: 10px;
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 45px;
+      color: $color-text-primary;
+    }
+
+    &__datetime {
+      display: flex;
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 45px;
+      color: $color-text-modal-secondary;
+    }
+
+    &__date {
+      margin-right: 10px;
+    }
+
+    &__text {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: $color-text-primary;
+    }
+
+    &__link {
+      display: flex;
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: $color-text-primary;
+
+      p {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .tab-map {
+    padding-top: 50px;
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .tour {
+    .review { 
+      &__imageblock {
+        margin-right: 30px;
+      }
+  
+      &__title {
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+  
+    &__ratingblock {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    &__rating-area {
+      margin-bottom: 10px;
+    }
+    
+    &__characteristics {
+      width: 400px;
+      margin-bottom: 15px;
+    }
+  
+    &__char-item {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  
+    &__charname {
+      width: 213px;
+    }
+
+    &__charvalue {
+      width: 185px;
+    }
+  
+    &__buttonblock {
+      flex-direction: column;
+    }
+  
+    &__btn {
+      width: 350px;
+      margin-right: 0px;
+      margin-bottom: 10px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  
+    &__btninfo {
+      width: 315px;
+    }
+
+    .tab {
+      &__category-title {
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      &__category-text {
+        font-size: 22px;
+        line-height: 28px;
+      }
+
+      &__imageblock {
+        margin-bottom: 25px;
+
+        img {
+          width: 425px;
+        }
+      }
+  
+      &__image {
+        margin-bottom: 25px;
+      }
+  
+      &__category-programitem {
+        margin-bottom: 15px;
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+
+    &__params-item {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  
+    &__paramsname {
+      width: 300px;
+      padding-right: 20px;
+    }
+
+    &__paramsvalue {
+      max-width: 590px;
+    }
+
+    .tab-reviews {
+      &__name {
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      &__datetime {
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      &__text {
+        font-size: 22px;
+        line-height: 28px;
+      }
+
+      &__link {
+        display: none;
+      }
+    }
+
+    .tab-map {
+      position: relative;
+      width: 892px;
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .tour {
+    &__inner {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .review {
+      &__imageblock {
+        width: 300px;
+      }
+
+      &__image-small {
+        img {
+          width: 90px;
+        }
+      }
+
+      &__title {
+        font-size: 28px;
+        line-height: 35px;
+      }
+    }
+  
+    &__ratingtext {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    
+    &__characteristics {
+      width: 348px;
+      margin-bottom: 10px;
+    }
+  
+    &__char-item {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  
+    &__charname {
+      width: 163px;
+    }
+
+    .tab {
+      &__category-title {
+        margin-bottom: 20px;
+        font-size: 28px;
+        line-height: 35px;
+      }
+
+      &__category-text {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      &__imageblock {
+        margin-bottom: 20px;
+
+        img {
+          width: 330px;
+        }
+      }
+  
+      &__image {
+        margin-bottom: 20px;
+      }
+  
+      &__category-programitem {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+
+    &__params-item {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  
+    &__paramsname {
+      width: 230px;
+      padding-right: 20px;
+    }
+
+    &__paramsvalue {
+      max-width: 455px;
+    }
+
+    .tab-reviews {
+      &__name {
+        font-size: 28px;
+        line-height: 35px;
+      }
+
+      &__datetime {
+        font-size: 28px;
+        line-height: 35px;
+      }
+
+      &__text {
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      &__link {
+        display: none;
+      }
+    }
+
+    .tab-map {
+      width: 688px;
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tour {
+    .review {
+      flex-direction: column;
+      align-items: center;
+
+      &__imageblock {
+        width: auto;
+        margin-bottom: 15px;
+        margin-right: 0;
+      }
+
+      &__image-small {
+        img {
+          width: auto;
+        }
+      }
+    }
+
+    &__categories {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: 96px;
+      padding-left: 50px;
+      background-color: #dfdfdf;
+    }
+  
+    &__category-item {
+      width: 100px;
+    }
+
+    &__params-item {
+      flex-direction: column;
+
+      &:first-child {
+        padding-top: 30px;
+      }
+    }
+  
+    &__paramsname {
+      width: auto;
+      padding-right: 20px;
+      background-color: $color-text-modal-secondary;
+    }
+
+    &__paramsvalue {
+      max-width: none;
+    }
+
+    .tab-reviews {
+      padding-top: 40px;
+
+      &__header {
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+      }
+
+      &__infoblock {
+        flex-wrap: wrap;
+      }
+
+      &__name {
+        font-size: 22px;
+        line-height: 28px;
+      }
+
+      &__datetime {
+        font-size: 22px;
+        line-height: 28px;
+      }
+
+      &__text {
+        font-size: 18px;
+        line-height: 23px;
+      }
+
+      &__link {
+        display: none;
+      }
+    }
+
+    .tab-map {
+      width: auto;
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .tour {
+    &__inner {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .review {
+      &__imageblock {
+        width: 280px;
+        margin-bottom: 15px;
+      }
+
+      &__image-small {
+        img {
+          width: 90px;
+        }
+      }
+
+      &__title {
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+
+    &__ratingtext {
+      font-size: 18px;
+      line-height: 23px;
+    }
+    
+    &__characteristics {
+      width: 280px;
+      margin-bottom: 15px;
+    }
+  
+    &__char-item {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  
+    &__charname {
+      width: 120px;
+    }
+
+    &__btn {
+      width: 280px;
+      margin-bottom: 5px;
+      font-size: 22px;
+      line-height: 28px;
+    }
+  
+    &__btninfo {
+      width: 280px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__categories {
+      padding-left: 20px;
+    }
+  
+    &__category-item {
+      width: 100px;
+      margin-right: 20px;
+    }
+
+    .tab {
+      &__category-title {
+        justify-content: space-between;
+        font-size: 22px;
+        line-height: 28px;
+      }
+
+      &__category-text {
+        font-size: 18px;
+        line-height: 23px;
+      }
+
+      &__imageblock {
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+
+        img {
+          width: auto;
+          
+          &:first-child {
+            margin-bottom: 15px;
+          }
+        }
+      }
+  
+      &__image {
+        margin-bottom: 15px;
+      }
+  
+      &__category-programitem {
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+  }
+}

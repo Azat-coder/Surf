@@ -1,0 +1,14 @@
+- let activePage = 'Туры'
+
+doctype html 
+html(lang='ru')
+  include html/head
+  body.tour   
+    include html/header
+    main.main
+      include html/tour
+      include html/instagram-feed
+    include html/footer
+    include html/modal-request
+    include html/modal-map
+    script(src='js/main.min.js')

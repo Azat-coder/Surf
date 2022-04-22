@@ -1,0 +1,270 @@
+.footer {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $color-bg-secondary;
+  }
+
+  &__logo {
+    width: 300px;
+    min-width: 300px;
+    height: 328px;
+    padding: 20px;
+  }
+
+  &__logo-image {
+    margin-bottom: 15px;
+  }
+
+  &__logo-title {
+    font-family: 'Alegreya SC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: $color-primary-main;
+  }
+
+  &__logo-subtitle {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: $color-primary-main;
+  }
+
+  &__logo-text {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: $color-primary-main;
+    margin-bottom: 25px;
+  }
+
+  &__logo-copyright {
+    font-family: 'Alegreya SC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: $color-text-secondary;
+  }
+
+  .nav {
+    width: 300px;
+    height: 328px;
+    padding: 20px;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      margin-bottom: 35px;
+      transition: all ease-in-out 0.3s;
+
+      &:hover,
+      &:active {
+        transform: scale(1.1) translateY(3px);
+      }
+
+      &:focus {
+        transform: scale(1.1) translateY(3px);
+      }
+    }
+
+    &__link {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: $color-text-secondary;
+      transition: all ease-in-out 0.3s;
+
+      &:hover,
+      &:focus {
+        color: $color-primary-main;
+      }
+      
+      &:active {
+        color: $color-primary-main;
+      }
+    }
+  }
+
+  .product-nav {
+    width: 292px;
+    height: 328px;
+    padding: 20px;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item {
+      margin-bottom: 35px;
+      transition: all ease-in-out 0.3s;
+
+      &:hover,
+      &:active {
+        transform: scale(1.1) translateY(3px);
+      }
+
+      &:focus {
+        transform: scale(1.1) translateY(3px);
+      }
+    }
+
+    &__link {
+      font-family: 'Source Sans Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: $color-text-secondary;
+      transition: all ease-in-out 0.3s;
+
+      &:hover,
+      &:focus {
+        color: $color-primary-main;
+      }
+      
+      &:active {
+        color: $color-primary-main;
+      }
+    }
+  }
+
+  &__contacts {
+    width: 300px;
+    height: 328px;
+    padding: 20px;
+  }
+
+  &__contacts-top {
+    margin-bottom: 30px;
+  }
+
+  &__contacts-title {
+    margin-bottom: 10px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: $color-text-secondary;
+  }
+
+  &__contacts-address {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: $color-text-secondary;
+  }
+
+  &__contacts-maplink {
+    position: relative;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: $color-text-secondary;
+    text-transform: uppercase;
+    border-bottom: 2px solid $color-text-secondary;
+  }
+
+  &__contacts-sociallist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    img {
+      transition: transform ease-in-out 0.3s;
+
+      &:hover,
+      &:active {
+        transform: scale(1.2);
+      }
+
+      &:focus {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__contacts-paymentlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      transition: transform ease-in-out 0.3s;
+
+      &:hover,
+      &:active {
+        transform: scale(1.2);
+      }
+
+      &:focus {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .footer {
+    .container {
+      flex-wrap: wrap;
+    }
+
+    &__contacts {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    &__contacts {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    .product-nav {
+      width: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    background-color: $color-bg-secondary;
+    
+    .container {
+      width: 320px;
+    }
+
+    .nav {
+      height: 273px;
+    }
+  }
+}
