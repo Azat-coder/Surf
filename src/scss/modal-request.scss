@@ -1,7 +1,6 @@
 .modal-request {
   &__wrapper {
     position: fixed;
-    top: 225px;
     display: flex;
     flex-direction: column;
     width: 850px;
@@ -126,7 +125,6 @@
 @media screen and (max-width: 1440px) {
   .modal-request {
     &__wrapper {
-      top: 268px;
       width: 700px;
       height: 509px;
     }
@@ -203,7 +201,6 @@
 @media screen and (max-width: 768px) {
   .modal-request {
     &__wrapper {
-      top: 50px;
       width: 320px;
       height: 487px;
     }
