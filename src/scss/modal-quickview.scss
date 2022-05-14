@@ -253,18 +253,24 @@
 
   &__btn-close {
     position: relative;
-    left: -2000px;
+    top: -700px;
+    left: 1180px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
   
   &__btn-close::before,
   &__btn-close::after {
     position: absolute;
-    top: -700px;
-    left: 3187px;
+    top: 14px;
+    left: -1px;
     width: 33px;
     height: 3px;
     background-color: #000000;
-    cursor: pointer;
     content: '';
   }
   
@@ -335,10 +341,9 @@
       line-height: 33px;
     }
 
-    &__btn-close::before,
-    &__btn-close::after {
-      top: -618px;
-      left: 2882px;
+    &__btn-close {
+      top: -619px;
+      left: 889px;
     }
   }
 }
@@ -425,10 +430,8 @@
       margin-bottom: 10px;
     }
 
-    &__btn-close::before,
-    &__btn-close::after {
-      top: -618px;
-      left: 2882px;
+    &__btn-close {
+      left: 684px;
     }
   }
 }
@@ -515,10 +518,9 @@
       width: 280px;
     }
 
-    &__btn-close::before,
-    &__btn-close::after {
-      top: -1009px;
-      left: 2271px;
+    &__btn-close {
+      top: -1015px;
+      left: 268px;
     }
   }
 }

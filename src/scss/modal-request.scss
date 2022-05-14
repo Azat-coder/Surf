@@ -92,19 +92,25 @@
   }
 
   &__btn-close {
-    position: relative;
-    left: -2000px;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
 
   &__btn-close::before,
   &__btn-close::after {
     position: absolute;
-    top: -515px;
-    left: 2860px;
+    top: 14px;
+    left: -1px;
     width: 33px;
     height: 3px;
     background-color: #000000;
-    cursor: pointer;
     content: '';
   }
 
@@ -151,12 +157,6 @@
     &__btn {
       width: 350px;
     }
-
-    &__btn-close::before,
-    &__btn-close::after {
-      top: -480px;
-      left: 2710px;
-    }
   }
 }
 
@@ -196,12 +196,6 @@
     &__btn-info {
       align-self: center;
       width: 400px;
-    }
-
-    &__btn-close::before,
-    &__btn-close::after {
-      top: -530px;
-      left: 2605px;
     }
   }
 }
@@ -253,10 +247,9 @@
       text-align: center;
     }
 
-    &__btn-close::before,
-    &__btn-close::after {
-      top: -415px;
-      left: 2278px;
+    &__btn-close {
+      top: 10px;
+      right: 10px;
     }
   }
 }

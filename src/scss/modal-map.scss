@@ -1,7 +1,6 @@
 .modal-map {
   &__wrapper {
     position: fixed;
-    top: 199px;
     display: flex;
     width: 1240px;
     height: 700px;
@@ -11,19 +10,25 @@
   }
 
   &__btn-close {
-    position: relative;
-    left: -2000px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
 
   &__btn-close::before,
   &__btn-close::after {
     position: absolute;
-    top: -315px;
-    left: 2580px;
+    top: 14px;
+    left: -1px;
     width: 33px;
     height: 3px;
     background-color: #000000;
-    cursor: pointer;
     content: '';
   }
 
@@ -41,11 +46,6 @@
     &__wrapper {
       width: 932px;
     }
-
-    &__btn-close::before,
-    &__btn-close::after {
-      left: 2425px;
-    }
   }
 }
 
@@ -53,11 +53,6 @@
   .modal-map {
     &__wrapper {
       width: 728px;
-    }
-
-    &__btn-close::before,
-    &__btn-close::after {
-      left: 2325px;
     }
   }
 }
@@ -67,12 +62,6 @@
     &__wrapper {
       top: 50px;
       width: 320px;
-    }
-
-    &__btn-close::before,
-    &__btn-close::after {
-      left: 2120px;
-      top: -325px;
     }
   }
 }
