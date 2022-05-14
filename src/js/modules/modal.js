@@ -44,4 +44,13 @@ export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId) {
             footer.classList.remove(hiddenClass);
         }
     });
+
+    document.addEventListener('keyup', e => {
+        if (e.keyCode === 27) {
+            modal.classList.remove('modal--active');
+            main.classList.remove(hiddenClass);
+            header.classList.remove(hiddenClass);
+            footer.classList.remove(hiddenClass);
+        }
+    });
 }
