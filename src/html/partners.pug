@@ -1,14 +1,23 @@
+- 
+  const images = [
+    '686',
+    'seafolly',
+    'burton',
+    'devil',
+    'nb',
+    'sorel',
+    'roxy',
+    'vonzipper',
+    'baker',
+    'vans',
+  ]
+
 section.partners
   .container
     .partners__inner
       h2.visually-hidden Наши партнеры
-      img(src="@img/partners/item1.png", alt="alt")
-      img(src="@img/partners/item2.png", alt="alt")
-      img(src="@img/partners/item3.png", alt="alt")
-      img(src="@img/partners/item4.png", alt="alt")
-      img(src="@img/partners/item5.png", alt="alt")
-      img(src="@img/partners/item6.png", alt="alt")
-      img(src="@img/partners/item7.png", alt="alt")
-      img(src="@img/partners/item8.png", alt="alt")
-      img(src="@img/partners/item9.png", alt="alt")
-      img(src="@img/partners/item10.png", alt="alt")
+      ul.partners__list 
+        each item in images
+          li 
+            img(src=`@img/partners/${item}.png`, width='240px' height='204px', alt=`${item}`)
+      
