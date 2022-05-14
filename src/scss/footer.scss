@@ -1,11 +1,11 @@
 .footer {
+  background-color: $color-bg-secondary;
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: $color-bg-secondary;
   }
 
   &__logo {
