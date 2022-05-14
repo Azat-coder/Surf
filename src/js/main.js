@@ -6,11 +6,11 @@ import { useSelect } from './modules/select.js';
 import { useRangeSlider } from './modules/rangeSlider.js';
 import { paramsFilterBtn } from './modules/paramsFilterBtn.js';
 import { useHoverImage } from './modules/hoverImage.js';  
-import MyString from './string.js';
+// import MyString from './string.js';
 import './nouislider.min.js';
 import { useAccordion } from './modules/accordion.js';
 import { useSubmenuMobile } from './modules/submenuMobile.js';
-import * as classes from './user.js';
+// import * as classes from './user.js';
 import { Slider } from './sliderClass.js';
 
 // Класс для работы со строкой
@@ -48,15 +48,15 @@ useSubmenuMobile(); // Мобильное подменю
 // console.log(admin.getInfo());
 // console.log(guest.getInfo());
 
-// if(document.querySelector('#catalog') || document.querySelector('#about-us') || document.querySelector('#catalog-category')) {
-//     new Slider('.populargoods-common__inner', {});
-// }
+if(document.querySelector('#catalog') || document.querySelector('#about-us') || document.querySelector('#catalog-category')) {
+    new Slider('.populargoods-common__inner', {});
+}
 
-// if(document.querySelector('#main')) {
-//     new Slider('.tab-wetsuits', {});
-//     new Slider('.tab-surfboards', { transition_duration: 1.5 });
-//     new Slider('.tab-wakesurfs', {});
-//     new Slider('.tab-cases', {});
-//     new Slider('.tab-fins', {});
-//     new Slider('.blog__inner', {});
-// }
+if(document.querySelector('#main')) {
+    new Slider('.tab-wetsuits', {});
+    new Slider('.tab-surfboards', { transition_duration: 1.5 });
+    new Slider('.tab-wakesurfs', {});
+    new Slider('.tab-cases', {});
+    new Slider('.tab-fins', {});
+    new Slider('.blog__inner', {});
+}
