@@ -24,9 +24,11 @@
 
 section.instagram-feed
   .container 
-    .instagram-feed__inner 
-      h2.instagram-feed__title Instagram feed: 
-        span.instagram-feed__hashtag #surf
-      .instagram-feed__images-container
-        each item in instagramPhotos 
-          img(src=`@img/instagram/${item.img}`, alt=item.alt)
+    .instagram-feed__inner
+      a(href='#') 
+        h2.instagram-feed__title Instagram feed: 
+          span.instagram-feed__hashtag #surf
+      ul.instagram-feed__list
+        each item in instagramPhotos
+          li.instagram-feed__item 
+            img(src=`@img/instagram/${item.img}`, alt=item.alt)
