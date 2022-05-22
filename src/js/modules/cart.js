@@ -104,9 +104,7 @@ export function cart() {
             deleteBtns.forEach(deleteBtn => {
                 deleteBtn.addEventListener('click', (e) => {
                     const productCard = e.currentTarget.closest('.cart-item');
-                    const productTitle = productCard.querySelector('.cart-item__title').textContent;
-                    console.log(currentProducts);
-    
+                    const productTitle = productCard.querySelector('.cart-item__title').textContent;   
                     const deleteElem = () => {
                         for (let i = 0; i < currentProducts.length; i++) {
                             if (currentProducts[i].title === productTitle) {
@@ -114,12 +112,8 @@ export function cart() {
                                 return;
                             }
                         }
-                    };
-                    
-                    deleteElem();
-    
-                    console.log(currentProducts, 'after');
-    
+                    };                   
+                    deleteElem();    
                     localStorage.setItem('currentProducts', JSON.stringify(currentProducts));
     
                     if (currentProducts.length === 0) {
@@ -129,8 +123,7 @@ export function cart() {
                     }
     
                     localStorage.setItem('productCount', --currentProductCount);
-                    productCountItem.innerHTML = currentProductCount;
-    
+                    productCountItem.innerHTML = currentProductCount;    
                     countFinalPrice();
                     deleteFunc();
                 });

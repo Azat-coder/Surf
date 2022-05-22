@@ -13,6 +13,7 @@ import { useSubmenuMobile } from './modules/submenuMobile.js';
 // import * as classes from './user.js';
 import { Slider } from './sliderClass.js';
 import { cart } from './modules/cart.js';
+import { formValidate } from './modules/formValidate.js';
 
 // Класс для работы со строкой
 // const myString = new MyString('Привет');
@@ -41,6 +42,7 @@ useAccordion('article', 768); //Аккордеон в разделе article
 useAccordion('tour'); //Аккордеон в разделе tour
 useSubmenuMobile(); // Мобильное подменю
 cart();  // Корзина товаров
+formValidate();
 
 // Классы для пользователей
 // const user = new classes.User('Azat', new Date(2022, 1, 1));

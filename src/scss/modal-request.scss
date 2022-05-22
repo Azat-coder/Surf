@@ -50,9 +50,26 @@
         outline: none;
       }
     }
+
+    .modal-input--error {
+      border: 1px solid red;
+      color: red;
+    }
+
+    .modal-input__error-text {
+      position: absolute;
+      left: 200px;
+      bottom: 5px;
+      color: red;
+    }
+  }
+
+  &__name-container {
+    position: relative;
   }
 
   &__tel-container {
+    position: relative;
     margin-bottom: 30px;
   }
 
