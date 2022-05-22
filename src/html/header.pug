@@ -38,7 +38,6 @@
         }
       ]
     }]
-- const controls = ['login','cart']
 
 header.header 
   .container
@@ -60,10 +59,13 @@ header.header
                       li.submenu__item  
                         a.submenu__link(href=category.href) #{category.name}
     ul.header__controls.controls 
-      each control in controls 
         li.control 
-          a.control__link(href=`/${control}`)
-            img(src=`img/${control}.svg`, alt=`${control} button`) 
+          a.control__link(href=`/login`)
+            img(src=`img/login.svg`, alt=`login button`)
+        li.control 
+          a.control__link.control__link-cart(href=`/cart.html`)
+            img(src=`img/cart.svg`, alt=`cart button`) 
+            span.control__link-cartnumber 0 
     button.header__hamburger.hamburger
     nav.submenu-mobile
       each navItem in navItems

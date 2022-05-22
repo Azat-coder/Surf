@@ -12,6 +12,7 @@ import { useAccordion } from './modules/accordion.js';
 import { useSubmenuMobile } from './modules/submenuMobile.js';
 // import * as classes from './user.js';
 import { Slider } from './sliderClass.js';
+import { cart } from './modules/cart.js';
 
 // Класс для работы со строкой
 // const myString = new MyString('Привет');
@@ -39,6 +40,7 @@ useHoverImage(); // Ховер эффект на картинках товаро
 useAccordion('article', 768); //Аккордеон в разделе article
 useAccordion('tour'); //Аккордеон в разделе tour
 useSubmenuMobile(); // Мобильное подменю
+cart();  // Корзина товаров
 
 // Классы для пользователей
 // const user = new classes.User('Azat', new Date(2022, 1, 1));

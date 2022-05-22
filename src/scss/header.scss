@@ -133,6 +133,26 @@
   }
 }
 
+.control__link-cart {
+  position: relative;
+  display: block;
+}
+
+.control__link-cartnumber {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  right: -10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #ffffff;
+}
+
 .catalog {
   .header {
     background: radial-gradient(97.99% 14110% at 0.63% 100%, #A5CADC 0%, #B9D6E6 48.93%, #80B1CF 96.96%);
