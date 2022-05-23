@@ -2,6 +2,10 @@
   padding-top: 50px;
   padding-bottom: 35px;
 
+  .container {
+    max-width: 1428px;
+  }
+
   &__title {
     margin-bottom: 30px;
     font-family: 'Source Sans Pro';
