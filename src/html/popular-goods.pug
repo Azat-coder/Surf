@@ -194,7 +194,7 @@ section.popular-goods
       ul.popular-goods__goods-list.slider__items
         each item in wetsuits 
           li.popular-goods__goods-item.goods-item.slider__item.no-highlighted
-            a.goods-item(href=category.html) 
+            a.goods-item(href=item.href) 
               img(src=`@img/goods/${item.image}`, alt=item.title)
               h4.goods-item__title #{item.title}
               p.goods-item__price #{item.price}
