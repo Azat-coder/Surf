@@ -40,6 +40,6 @@ if(document.querySelector('#main')) {
     new Slider('.tab-surfboards', { transition_duration: 1.5 });
     new Slider('.tab-wakesurfs', {});
     new Slider('.tab-cases', {});
-    new Slider('.tab-fins', {});
+    new Slider('.tab-fins', { loop: true });
     new Slider('.blog__inner', {});
 }

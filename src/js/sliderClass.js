@@ -32,6 +32,7 @@ class Slider {
             transition: true,
             transition_duration: 0.3,
             containerClass: '.container',
+            loop: false,
         };
         this._container = document.querySelector(this._options.containerClass);
         // изменяем конфигурацию слайдера в соответствии с переданными настройками
@@ -66,7 +67,7 @@ class Slider {
     _addIndicators() {
         const itemsInViewCount = Math.round(this._container.clientWidth / this._itemList[0].clientWidth);
 
-        if(itemsInViewCount >= this._itemList.length) {
+        if (itemsInViewCount >= this._itemList.length) {
             return;
         }
 
@@ -104,6 +105,10 @@ class Slider {
     }
     
     _move() {
+        if (this._options.loop) {
+            this._moveElementsForLoop();
+        }
+
         const itemWidth = this._itemList[0].clientWidth;      
         const step = this._direction === 'next' ? -itemWidth : itemWidth;
         const transform = this._transform + step;
@@ -121,6 +126,10 @@ class Slider {
     }
 
     _checkBtnsVisibility() {
+        if (this._options.loop) {
+            return;
+        }
+
         const itemsInViewCount = Math.round(this._container.clientWidth / this._itemList[0].clientWidth);
         
         if(itemsInViewCount + this._currentIndex >= this._itemList.length) {
@@ -134,6 +143,20 @@ class Slider {
         } else {
             this._btnPrev.classList.remove(CONTROL_CLASS_SHOW);
         }
+    }
+
+    _moveElementsForLoop() { 
+        if (this._direction === 'next') {
+            const firstElem = this._items.firstElementChild;
+            this._items.append(firstElem);
+            const itemWidth = this._itemList[0].clientWidth;
+            this._transform = this._transform + itemWidth;
+        } else {
+            const lastElem = this._items.lastElementChild;
+            this._items.prepend(lastElem);
+            const itemWidth = this._itemList[0].clientWidth;
+            this._transform = this._transform - itemWidth;
+        }            
     }
 
     _addEventListener() {
