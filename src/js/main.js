@@ -12,6 +12,7 @@ import { useSubmenuMobile } from './modules/submenuMobile.js';
 import { Slider } from './sliderClass.js';
 import { cart } from './modules/cart.js';
 import { formValidate } from './modules/formValidate.js';
+import { reviewImages } from './modules/reviewImages.js';
 
 funcs.isWebp(); // Добавляет класс к html в зависимости от поддержки webp браузером
 mainMenu(); // Главное меню
@@ -30,6 +31,8 @@ useAccordion('tour'); //Аккордеон в разделе tour
 useSubmenuMobile(); // Мобильное подменю
 cart();  // Корзина товаров
 formValidate(); // Валидация формы заявки
+reviewImages(); // Переключение изображений в секции tour
+
 
 if(document.querySelector('#catalog') || document.querySelector('#about-us') || document.querySelector('#catalog-category') || document.querySelector('#category')) {
     new Slider('.populargoods-common__inner', {});
