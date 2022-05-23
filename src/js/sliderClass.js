@@ -33,6 +33,7 @@ class Slider {
             transition_duration: 0.3,
             containerClass: '.container',
             loop: false,
+            autoplay: false,
         };
         this._container = document.querySelector(this._options.containerClass);
         // изменяем конфигурацию слайдера в соответствии с переданными настройками
@@ -49,6 +50,7 @@ class Slider {
         this._addIndicators();
         // устанавливаем активный класс индикатора
         this._setIndicators();
+        this._autoplay();
     }
 
     // перейти к следующему слайду
@@ -157,6 +159,15 @@ class Slider {
             const itemWidth = this._itemList[0].clientWidth;
             this._transform = this._transform - itemWidth;
         }            
+    }
+
+    _autoplay() {
+        if (this._options.autoplay) {
+            this._options.loop = true;
+            setInterval(() => {
+                this.next();
+            }, 1000);
+        }
     }
 
     _addEventListener() {
