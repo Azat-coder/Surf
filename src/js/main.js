@@ -21,7 +21,7 @@ tabs('product-description__category-link', 'product-description_tab'); // Таб
 tabs('tour__category-link', 'tour__tab'); // Табы в разделе tour
 modal('modal-request', 'btn--request', 'modal__btn-close', 'modal-request__name'); // Модальное окно заявка
 modal('modal-quickview', 'btn--quickview','modal-quickview__btn-close'); // Модальное окно быстрый просмотр товара
-modal('modal-map', 'btn--map', 'modal-map__btn-close'); // Модальное окно карта
+modal('modal-map', 'btn--map', 'modal-map__btn-close', false, true); // Модальное окно карта
 useSelect(); // Имплементирует кастомный селект для раздела catalog
 useRangeSlider(); // Имплементирует кастомный range slider для раздела catalog
 paramsFilterBtn(); // Кнопка настроек для раздела catalog

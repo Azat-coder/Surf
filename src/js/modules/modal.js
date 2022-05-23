@@ -1,4 +1,4 @@
-export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId) {
+export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId, useSpinner) {
     const modal = document.querySelector(`.${modalClass}`);
     const modalBtns = document.querySelectorAll(`.${modalBtnClass}`);
     const btnClose = document.querySelector(`.${btnCloseClass}`);
@@ -6,7 +6,11 @@ export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId) {
     const header = document.querySelector('.header');
     const footer = document.querySelector('.footer');
     const hiddenClass = 'hidden';
-    const spinner = modal.querySelector('.spinner');
+    let spinner = null;
+
+    if (useSpinner) {
+        spinner = modal.querySelector('.spinner');
+    }
 
     if (!modal) {
         return;
@@ -36,7 +40,10 @@ export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId) {
         main.classList.remove(hiddenClass);
         header.classList.remove(hiddenClass);
         footer.classList.remove(hiddenClass);
-        spinner.classList.remove('visually-hidden');
+
+        if (spinner) {
+            spinner.classList.remove('visually-hidden');
+        }
     });
 
     document.addEventListener('click', event => {
@@ -48,7 +55,10 @@ export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId) {
             main.classList.remove(hiddenClass);
             header.classList.remove(hiddenClass);
             footer.classList.remove(hiddenClass);
-            spinner.classList.remove('visually-hidden');
+            
+            if (spinner) {
+                spinner.classList.remove('visually-hidden');
+            }
         }
     });
 
@@ -58,7 +68,10 @@ export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId) {
             main.classList.remove(hiddenClass);
             header.classList.remove(hiddenClass);
             footer.classList.remove(hiddenClass);
-            spinner.classList.remove('visually-hidden');
+            
+            if (spinner) {
+                spinner.classList.remove('visually-hidden');
+            }
         }
     });
 }
