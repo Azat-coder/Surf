@@ -72,31 +72,33 @@ export function cart() {
             
         countFinalPrice();
     
-        productBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            currentProductCount++;
-            localStorage.setItem('productCount', currentProductCount);
-            productCountItem.innerHTML = currentProductCount;
-    
-            const productBlock = e.currentTarget.closest('.modal-quickview__form');
-            const productTitle = productBlock.querySelector('.modal-quickview__title').textContent;
-            const productPrice = getProductPrice(productBlock.querySelector('.modal-quickview__price').textContent);
-            const productImage = productBlock.querySelector('.modal-quickview__imagecontainer').children[0].getAttribute('src');
-    
-            let products = JSON.parse(localStorage.getItem('currentProducts'));
-            products.push({
-                title: productTitle,
-                price: productPrice,
-                imgsrc: productImage,
+        if (productBtn) {
+            productBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                currentProductCount++;
+                localStorage.setItem('productCount', currentProductCount);
+                productCountItem.innerHTML = currentProductCount;
+        
+                const productBlock = e.currentTarget.closest('.modal-quickview__form');
+                const productTitle = productBlock.querySelector('.modal-quickview__title').textContent;
+                const productPrice = getProductPrice(productBlock.querySelector('.modal-quickview__price').textContent);
+                const productImage = productBlock.querySelector('.modal-quickview__imagecontainer').children[0].getAttribute('src');
+        
+                let products = JSON.parse(localStorage.getItem('currentProducts'));
+                products.push({
+                    title: productTitle,
+                    price: productPrice,
+                    imgsrc: productImage,
+                });
+        
+                localStorage.setItem('currentProducts', JSON.stringify(products));
+                const modal = e.currentTarget.closest('.modal');
+                modal.classList.remove('modal--active');
+                main.classList.remove(hiddenClass);
+                header.classList.remove(hiddenClass);
+                footer.classList.remove(hiddenClass);
             });
-    
-            localStorage.setItem('currentProducts', JSON.stringify(products));
-            const modal = e.currentTarget.closest('.modal');
-            modal.classList.remove('modal--active');
-            main.classList.remove(hiddenClass);
-            header.classList.remove(hiddenClass);
-            footer.classList.remove(hiddenClass);
-        });
+        }
 
         const deleteFunc = () => {
             const deleteBtns = document.querySelectorAll('.cart-item__del-btn');

@@ -31,7 +31,7 @@ useSubmenuMobile(); // Мобильное подменю
 cart();  // Корзина товаров
 formValidate(); // Валидация формы заявки
 
-if(document.querySelector('#catalog') || document.querySelector('#about-us') || document.querySelector('#catalog-category')) {
+if(document.querySelector('#catalog') || document.querySelector('#about-us') || document.querySelector('#catalog-category') || document.querySelector('#category')) {
     new Slider('.populargoods-common__inner', {});
 }
 
