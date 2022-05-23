@@ -172,8 +172,6 @@ class Slider {
 
     _addEventListener() {
         function onClick(e) {
-            e.preventDefault();
-
             if (e.target.classList.contains('slider__control')) {
                 e.preventDefault();
                 this._direction = e.target.dataset.slide;
