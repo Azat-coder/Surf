@@ -23,6 +23,7 @@ export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId, us
             main.classList.add(hiddenClass);
             header.classList.add(hiddenClass);
             footer.classList.add(hiddenClass);
+            document.body.style.overflow = 'hidden';
 
             if (focusInputId) {
                 const focusInput = document.querySelector(`#${focusInputId}`);
@@ -40,6 +41,7 @@ export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId, us
         main.classList.remove(hiddenClass);
         header.classList.remove(hiddenClass);
         footer.classList.remove(hiddenClass);
+        document.body.style.overflow = '';
 
         if (spinner) {
             spinner.classList.remove('visually-hidden');
@@ -55,6 +57,7 @@ export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId, us
             main.classList.remove(hiddenClass);
             header.classList.remove(hiddenClass);
             footer.classList.remove(hiddenClass);
+            document.body.style.overflow = '';
             
             if (spinner) {
                 spinner.classList.remove('visually-hidden');
@@ -68,6 +71,7 @@ export function modal(modalClass, modalBtnClass, btnCloseClass, focusInputId, us
             main.classList.remove(hiddenClass);
             header.classList.remove(hiddenClass);
             footer.classList.remove(hiddenClass);
+            document.body.style.overflow = '';
             
             if (spinner) {
                 spinner.classList.remove('visually-hidden');
